@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: f1c796af3400f4b66297355fbf6fa4a3 -->
+<!-- X-Request-ID: 0134a75bbbad70d8a6c528480d42229e -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: 'f1c796af3400f4b66297355fbf6fa4a3',
+            requestId: '0134a75bbbad70d8a6c528480d42229e',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,20 +31,31 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../../../../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../../../../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../../../../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../../../../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../../../../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
     <link rel="stylesheet" href="../../../../assets/css/d/car.Z7KT_2r0BymqMv7i6NvOooI4Gc8.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../../../../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../../../../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../../../../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../../../../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -280,7 +291,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': 'f1c796af3400f4b66297355fbf6fa4a3',
+                        'eid1': '0134a75bbbad70d8a6c528480d42229e',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -301,7 +312,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdesJCck5wCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJMr6K8xaJ1Fpe7-HnYAmN77nFHnw">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdhDGTeRtQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkL7JIQgbmVktpTYxUMoNp88jPbHsg">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -321,7 +332,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F491104566201286733%2Flogbook" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdesJCck5wCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkTp6fUZSGB7ZE6PlfDavjXHz6ODsQ">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F491104566201286733%2Flogbook" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdhDGTeRtQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkTss_YGYMvj_t25MPSnq9iTH3Mg6A">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -339,25 +350,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIxJp0iTUNjB9F73RpTy_jnepETRcg">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIy6KQKTrX3jA8HEBUZ_GbbQqs7FLA">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoLD4K4lsinVzU7NPcHaHUBkOnGuMA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIFlc0XN-g5jA_ccppVX_0aLpj3qg">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoMlK6jDlQom0WYVL3SGdKLVCyCK8w">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoP6J89B6ZpCmRp3Cmqv3iWbLavv7w">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoQeRXX4lrgRA9mIqropeDCZGMbRRQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoQDY0zmyIEYEm2KBF8xMezykq4Gtw">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoXDD05-NT5ksZYuH8IPljKINvF1dw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoVFTFuavDdTlb1gLCb0oI61GBBaGw">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5S_L_M-K7Ub3aljCYYUmvpOwkOJOA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SRxHhirz7Q4xLOINmpftpgnzvsSA">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKobwjhLE2qtLnLXnJQbgJ5P5Ui8rTg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoZ_JlQNC1JSa4hsfnP-WOXdyt278Q">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -372,15 +383,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdesJCcgBQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKocOEE5wUKWcBhN-nt37n20sahXBQA">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoc77ifSDW0xpXAwIb1Bp8uxvPLkvA">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdesJCcidgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoghwb8BNzfRSr2Lug3n7HjpLosXvw">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdhDGTePRACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKohc_ckO56EASXMzrYYA7-c0NrTNIw">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdesJCck5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKon4dmzc1X-D4Ti6tETnz_6P0jeNOw">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdhDGTeRtQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKolPZOwKNBatDIU7pMHRjv7ZAwRaTw">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">14</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -1224,7 +1235,7 @@
 
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_1487022369548130" style="max-height: calc(15vh + 55vh);"></div>
+        <div id="adfox_1487022369548130" style="max-height: calc(46vh + 24vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.create({
@@ -1232,7 +1243,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1487022369548130',
                     params: {
-                        'eid1': 'f1c796af3400f4b66297355fbf6fa4a3',
+                        'eid1': '0134a75bbbad70d8a6c528480d42229e',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'eifa',

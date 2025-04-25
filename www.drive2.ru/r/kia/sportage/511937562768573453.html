@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 1e4958c10ac1901a3f68835a769ccf37 -->
+<!-- X-Request-ID: 584c76fd6049ad38e377168bfa81d9a6 -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: '1e4958c10ac1901a3f68835a769ccf37',
+            requestId: '584c76fd6049ad38e377168bfa81d9a6',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,20 +31,31 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../../../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../../../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../../../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../../../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../../../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
     <link rel="stylesheet" href="../../../assets/css/d/car.Z7KT_2r0BymqMv7i6NvOooI4Gc8.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../../../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../../../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../../../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../../../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -597,7 +608,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': '1e4958c10ac1901a3f68835a769ccf37',
+                        'eid1': '584c76fd6049ad38e377168bfa81d9a6',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -618,7 +629,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdesLTWGwwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkKHB-eAXDdFasZmMSNr811h1hWaOg">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdhDISHl8QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkIzwG58ZHbVgums9xvV-Kx60bKF4Q">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -638,7 +649,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F511937562768573453" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdesLTWJNACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQcDMDKcvonazONkFGC3jC8xYy_QQ">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F511937562768573453" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdhDISHl8QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQSSpD0EJYfYpMmBMm0Qf3E_09PVw">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -657,7 +668,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',
                     params: {
-                        'eid1': '1e4958c10ac1901a3f68835a769ccf37',
+                        'eid1': '584c76fd6049ad38e377168bfa81d9a6',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -686,25 +697,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIwIZdVBjP_CmX_VH9ZF0tl10DwHjw">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIxumGJWbqEN7G2BWu1VkZDiJt1YPw">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIEHGott2elIFRfCO9PNFHXoOc2vA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoK2f_7IGClk745hXPt0SABYO-Bjxg">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoOAYCFYWBrBi8skRWGk9qq8z3G_uQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoO64mh4YGKq4S2vh4ZE3lS2XMWc2g">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoSeHA-yajPp4MNDNZaOFkIyQAgw3A">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoRMI0HEbQ-ASRZ7_iSPeykyFf-mEA">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoVXgtc8qRz3kArDrT6YnJ9p04cVXQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoUuKzAUw2l-Hxg6C_ELxWWy5c91Wg">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SBi9v9acq8ExNtsHW2VXNc0xZ7jw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SzEXeYj5DDnFYXHg6hNI2wQYqmig">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoY-4ms4CKSi384OIuDZikyjEGPHkw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoYaP-w9L0YllEWaZL07xSQX_uC72g">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -719,15 +730,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKodP7N6sN6J3RiGZFRG6OnqlIYog_Q">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKodyWTZUqVykOvGHdfRnVLKwSCZyNA">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdesLTWEUgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKojFZuAHdLzGz6P-Tt0HdLu5WnrdQg">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdhDISHjgACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKohWW6YCKP8mnOq5dB5DWRDYRHap6A">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdesLTWGwwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKonHSaveg_mvQ5gWPwbIcmTgbV_6Zw">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdhDISHl8QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKom2RCFW_yex7tkBdziBpFBTeKFucQ">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">14</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -803,7 +814,7 @@ KIA Sportage КОРОТЫШКА
 
 
 
-<div class="js-gallery c-gallery o-f" data-role="scrolltracking" data-track-target="AhIBRE1NVAjdesLTUu3wCMqugEAADsIAAJ3KiGekOJUGqS1S9k15-AWF4UJ0">
+<div class="js-gallery c-gallery o-f" data-role="scrolltracking" data-track-target="AhIBRE1NVAjdhDISFwwQCMqugEAADsIAACmzh761JAwcovRmlzBZS1DcapAX">
 
         <div class="c-gallery__main-pic" itemscope itemtype="https://schema.org/ImageObject">
 <a href="https://a.d-cd.net/7iAAAgIjWOA-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1520,855" style="--ar:960/540; --height:540px;" rel="noopener" target="_blank"><x-img class="is-rounded" style="--ar: 960/540; --color: #82848e;" width="960" height="540" title="KIA Sportage КОРОТЫШКА"><img src="https://a.d-cd.net/7iAAAgIjWOA-960.jpg" width="960" height="540" loading="lazy" itemprop="contentUrl" alt="KIA Sportage КОРОТЫШКА"></x-img></a>
@@ -822,7 +833,7 @@ KIA Sportage КОРОТЫШКА
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_148101218460247" style="min-height: calc(47px + 43px);"></div>
+        <div id="adfox_148101218460247" style="min-height: calc(63px + 27px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.create({
@@ -830,7 +841,7 @@ KIA Sportage КОРОТЫШКА
                     sequentialLoading: true,
                     containerId: 'adfox_148101218460247',
                     params: {
-                        'eid1': '1e4958c10ac1901a3f68835a769ccf37',
+                        'eid1': '584c76fd6049ad38e377168bfa81d9a6',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -867,7 +878,7 @@ KIA Sportage КОРОТЫШКА
 
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/korol85/" data-ihc-token="p/72005" itemprop="url"><span itemprop="name">Korol85</span></a>
                         <span class="c-user-lcard__status">
-            Был 47 минут назад
+            Был 36 минут назад
         </span>
 
             </div>
@@ -950,7 +961,7 @@ KIA Sportage КОРОТЫШКА
                 <div class="x-secondary x-secondary-color o-flow">
                     <div>
 
-                        Описание написано 6 лет назад
+                        Описание написано 7 лет назад
                     </div>
                 </div>
             </div>
@@ -965,21 +976,21 @@ KIA Sportage КОРОТЫШКА
 <div class="x-box o-f">
             <div class="o-group o-group--v o-group--justify o-b-s">
                 <h3 class="x-header"><a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/511937562768573453/logbook/">Бортжурнал</a>&nbsp;<span class="c-counter">21</span></h3>
-                <form class="o-group" action="https://www.drive2.ru/_api/cars/511937562768573453/logbook" data-role="scrolltracking" data-slot="logbook-search.form" data-track-target="AhIBRE1NVAjdesLTVuWQCMplQEAAUoIAAMKImod2uvwQ2JiGgF08hDjXeU47" onsubmit="return false;">
+                <form class="o-group" action="https://www.drive2.ru/_api/cars/511937562768573453/logbook" data-role="scrolltracking" data-slot="logbook-search.form" data-track-target="AhIBRE1NVAjdhDISHIpQCMplQEAAUoIAAEmQOJUFo5HBjC03Mm6Kt41BvaSO" onsubmit="return false;">
                     <div class="c-search c-search--fw c-search--s m-icon-before" >
                         <input type="search" name="query" placeholder="Поиск" data-action="input:logbook-search.search">
                     </div>
                     <div class="c-radiogroup">
                             <label class="c-radiogroup__item">
-                                <input name="sort" type="radio" value="ByMetatype" checked="checked" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdesLTVuWQCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoVzJDkUap7JzShHaYf80B_bPHJkrg" autocomplete="off">
+                                <input name="sort" type="radio" value="ByMetatype" checked="checked" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdhDISHIpQCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoUrKAAA5-JJtraGfGS1nZE5w6h2IQ" autocomplete="off">
                                 <span class="c-radiogroup__button">По теме</span>
                             </label>
                             <label class="c-radiogroup__item">
-                                <input name="sort" type="radio" value="ByDate" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdesLTVuWQCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoZZlF9MWPSCNRvOgJbKdfxCtSGzOQ" autocomplete="off">
+                                <input name="sort" type="radio" value="ByDate" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdhDISHIpQCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUob47UGIozhz_wGZi0GeN_Fcr06fkA" autocomplete="off">
                                 <span class="c-radiogroup__button">По дате</span>
                             </label>
                             <label class="c-radiogroup__item">
-                                <input name="sort" type="radio" value="ByLikes" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdesLTVuWQCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUofGYKr5OBgCxelSQN1dB6HALgkCJg" autocomplete="off">
+                                <input name="sort" type="radio" value="ByLikes" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdhDISHIpQCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoerULxt7o0EflBs6D3EOGwSOYwHWw" autocomplete="off">
                                 <span class="c-radiogroup__button">По лайкам</span>
                             </label>
                     </div>
@@ -987,7 +998,7 @@ KIA Sportage КОРОТЫШКА
             </div>
             <div class="c-lb-list" data-slot="logbook-search.container">
                             <h4 class="x-group-header c-lb-list__caption">Ремонт и&#160;обслуживание</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/661882911250711618/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/661882911250711618/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a49a90;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/B-llRLb6nbYPD-y_vkhkkbk5-TA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1005,7 +1016,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/619473373377873464/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/619473373377873464/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6e685d;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/jx69-t6LUX6GMbtN153hFvuscJ4-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1023,7 +1034,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/602349029531084892/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/602349029531084892/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #606057;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/J1YFDWbz8YWvl93Dc5xKXNJ46Fo-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1039,7 +1050,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/602026872624143717/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/602026872624143717/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6d665a;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/6ofWXbMbtEBGKxm3j5iFxgffU5U-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1055,7 +1066,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/600995805595198119/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/600995805595198119/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #7c756a;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/4YxTFPjfhxeInftNErRU_E6nj6M-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1067,11 +1078,11 @@ KIA Sportage КОРОТЫШКА
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 20</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 13</div>
-                <div data-tt="14 октября 2021 в&#160;19:54">3 года</div>
+                <div data-tt="14 октября 2021 в&#160;19:54">4 года</div>
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/543125759846252731/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/543125759846252731/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8c837b;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/jgAAAgOJkeA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1083,11 +1094,11 @@ KIA Sportage КОРОТЫШКА
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 31</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 4</div>
-                <div data-tt="14 октября 2019 в&#160;19:41">5 лет</div>
+                <div data-tt="14 октября 2019 в&#160;19:41">6 лет</div>
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/528758166528196769/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/528758166528196769/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #70675b;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/4wAAAgJhauA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1104,7 +1115,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/524448080947314947/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/524448080947314947/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #888076;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/GsAAAgBs4uA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1120,7 +1131,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/519134691006088033/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/519134691006088033/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #82848e;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/7iAAAgIjWOA-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1136,7 +1147,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/517633033000452622/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/517633033000452622/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #625a52;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/NYAAAgIA9OA-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1152,7 +1163,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/517002737959829995/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/517002737959829995/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #60554c;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/8qAAAgNDNOA-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1169,7 +1180,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/514926310250774873/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/514926310250774873/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #83848e;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/LAAAAgFGpOA-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1185,7 +1196,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/514390573210140953/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/514390573210140953/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #4e3f52;" fit="cover" width="120" height="85"><img src="https://a.d-cd.net/6KAAAgLexOA-120.jpg" width="120" height="85" loading="lazy"></x-img>
         </div>
@@ -1201,7 +1212,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/514001071216001895/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/514001071216001895/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #777476;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/8IAAAgEYROA-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1217,7 +1228,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/513365828373053454/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/513365828373053454/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6c798f;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/GYAAAgFr-OA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1234,7 +1245,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/512807001588236825/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/512807001588236825/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #787068;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/yEAAAgLbuOA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1251,7 +1262,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/512257245774348789/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/512257245774348789/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #595149;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/uQAAAgLn2OA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1263,11 +1274,11 @@ KIA Sportage КОРОТЫШКА
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 31</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 3</div>
-                <div data-tt="19 сентября 2018 в&#160;21:25">6 лет</div>
+                <div data-tt="19 сентября 2018 в&#160;21:25">7 лет</div>
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/512181929227846833/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/512181929227846833/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #62696d;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/vgAAAgNF2OA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1279,11 +1290,11 @@ KIA Sportage КОРОТЫШКА
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 45</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 11</div>
-                <div data-tt="18 сентября 2018 в&#160;22:39">6 лет</div>
+                <div data-tt="18 сентября 2018 в&#160;22:39">7 лет</div>
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/511938112524387546/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/511938112524387546/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #5b5c5b;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/_iAAAgCjWOA-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1295,12 +1306,12 @@ KIA Sportage КОРОТЫШКА
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 44</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 3</div>
-                <div data-tt="15 сентября 2018 в&#160;20:44">6 лет</div>
+                <div data-tt="15 сентября 2018 в&#160;20:44">7 лет</div>
             </div>
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Разное</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/517639080314404996/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/517639080314404996/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6d666f;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/gQAAAgBg9OA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1316,7 +1327,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/515774308593696925/" data-track="AiIBRE1NVAjdesLTVpdwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoUeZsRZ1JMSEa4Uo0yRxKwDg4MPsA">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/515774308593696925/" data-track="AiIBRE1NVAjdhDISGrWQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoV-kTarCBfZLNoAQiUSJF_MfIthrw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #1e486d;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/OQAAAgBmFOA-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1350,29 +1361,29 @@ KIA Sportage КОРОТЫШКА
 </a>
         </div>
         <div class="o-grid o-grid--4 o-grid--no-margin" >
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/127300641.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesLTVwygCLeegEAABAIAAHI774Nm1yeOP4wVn4I2rCNQFVhX">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/1p2P_-FrH2fE__P05alezHGn2nk_ZxjYxqH0XHvTeOMoGMuKy_tokKHPO4tJmg_KisQdq5mHje0AzJjf/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2005</h4>
-                    <div class="drom-item__price">485 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/252218921.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesLTVwygCLeegEAABAIAAHI774Nm1yeOP4wVn4I2rCNQFVhX">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/6KeKTAmEVWiEW8wIbHd0Ue1W7JCRo9TLWcWR_Kh3JOHUCOJeBTqgkvwCjaWvuys_CLA3QTnSw3TY-CKK/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2005</h4>
-                    <div class="drom-item__price">385 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/156461538.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesLTVwygCLeegEAABAIAAHI774Nm1yeOP4wVn4I2rCNQFVhX">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/g9ySBtjNQrUa62uWDdYuK7FGFV0r4Nn3H3t4cc02fT9pg50kWI-a1pKnrv-E-ekLIjdLd3Oc0STYUcCN/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/670692066.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDISHLFgCLeegEAABAIAAE8DCpBGamqL8Y9ZIz2INXFJixyw">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/O9rRU3S0UTEX7iD9CaQuUjliZBZ7X3jfh_1mNA6-j-dd0HjJmp8XT_WqsXADEgNM5mGutpWNl1cTH9y7/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2006</h4>
-                    <div class="drom-item__price">399 999 ₽</div>
+                    <div class="drom-item__price">485 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/467533764.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesLTVwygCLeegEAABAIAAHI774Nm1yeOP4wVn4I2rCNQFVhX">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/nQ-n50004kwXsZ1SJRxQ6HtXqE3nYPFbR-IdRlYZjmCpthcV6MXTICWq5z2_7md7onHC4vwU8nF36OmQ/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/405841301.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDISHLFgCLeegEAABAIAAE8DCpBGamqL8Y9ZIz2INXFJixyw">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/dQni0AgNGejx0Vj7TgHke97KJ4oVy76idS1ZLxMtB7hwasJ5W6qxenaGFsxVtJjgMSxJetMynM8juZw-/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2000</h4>
-                    <div class="drom-item__price">399 999 ₽</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
+                    <div class="drom-item__price">290 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/254988519.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDISHLFgCLeegEAABAIAAE8DCpBGamqL8Y9ZIz2INXFJixyw">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/HecJSsA-4zdd8PLCexc-zsVFvYw9Kmq3uRSKxOrLKIP_8AbN-iYholQIkJ5EwS8-22vla8XPVdmVW5C2/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                    <div class="drom-item__location">Москва</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2006</h4>
+                    <div class="drom-item__price">320 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/mytishchi/kia/sportage/224157849.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDISHLFgCLeegEAABAIAAE8DCpBGamqL8Y9ZIz2INXFJixyw">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="1285"><img src="https://s11.auto.drom.ru/photo/v2/RSZkaktcKulAPktbh7Wj5idG-8PPJGtbt5IwEufWQaVYLcr2hAudzyqXNcP-URqcddwTX91Yrti48iZL/gen600.jpg" width="600" height="1285" loading="lazy"></x-img>
+                    <div class="drom-item__location">Мытищи</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
+                    <div class="drom-item__price">295 500 ₽</div>
                 </a>
         </div>
         <a class="x-box-more" href="https://moscow.drom.ru/kia/sportage/generation1/?distance=200&amp;ph=1&amp;unsold=1&amp;utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click">Посмотреть ещё</a>
@@ -1385,7 +1396,7 @@ KIA Sportage КОРОТЫШКА
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_1481012203583458" style="min-height: calc(106px + 144px);"></div>
+        <div id="adfox_1481012203583458" style="min-height: calc(49px + 201px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1393,7 +1404,7 @@ KIA Sportage КОРОТЫШКА
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '1e4958c10ac1901a3f68835a769ccf37',
+                        'eid1': '584c76fd6049ad38e377168bfa81d9a6',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -1415,7 +1426,7 @@ KIA Sportage КОРОТЫШКА
             </div>
         </div>
 
-        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjdesLTVE2ACLi5QEAAF4IAAOdpgZErji2nsch0Y95leNcMiJN-">
+        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjdhDISGJKwCLi5QEAAF4IAANrw6Um-_JIA75eTSmMlm-MtjoFK">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -1425,7 +1436,7 @@ KIA Sportage КОРОТЫШКА
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',
                     params: {
-                        'eid1': '1e4958c10ac1901a3f68835a769ccf37',
+                        'eid1': '584c76fd6049ad38e377168bfa81d9a6',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -1603,7 +1614,7 @@ KIA Sportage КОРОТЫШКА
     ></like-button>
                             <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="512173682890638203">Ответить</button>
             <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/r/kia/sportage/511937562768573453/#a512173682890638203" data-tt="18 сентября 2018 в&#160;20:08"  content="2018-09-18T20:08:27+03:00">
-                6 лет
+                7 лет
             </a>
             
         </div>
@@ -1652,7 +1663,7 @@ KIA Sportage КОРОТЫШКА
     ></like-button>
                             <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="512173682890638526">Ответить</button>
             <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/r/kia/sportage/511937562768573453/#a512173682890638526" data-tt="18 сентября 2018 в&#160;20:09"  content="2018-09-18T20:09:57+03:00">
-                6 лет
+                7 лет
             </a>
             
         </div>
@@ -1699,7 +1710,7 @@ KIA Sportage КОРОТЫШКА
     ></like-button>
                             <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="511985941280194584">Ответить</button>
             <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/r/kia/sportage/511937562768573453/#a511985941280194584" data-tt="16 сентября 2018 в&#160;11:10"  content="2018-09-16T11:10:29+03:00">
-                6 лет
+                7 лет
             </a>
             
         </div>
@@ -1747,7 +1758,7 @@ KIA Sportage КОРОТЫШКА
     ></like-button>
                             <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="511938937158107676">Ответить</button>
             <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/r/kia/sportage/511937562768573453/#a511938937158107676" data-tt="15 сентября 2018 в&#160;20:57"  content="2018-09-15T20:57:30+03:00">
-                6 лет
+                7 лет
             </a>
             
         </div>
@@ -1796,7 +1807,7 @@ KIA Sportage КОРОТЫШКА
     ></like-button>
                             <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="511939212036014269">Ответить</button>
             <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/r/kia/sportage/511937562768573453/#a511939212036014269" data-tt="15 сентября 2018 в&#160;21:00"  content="2018-09-15T21:00:55+03:00">
-                6 лет
+                7 лет
             </a>
             
         </div>
@@ -1812,7 +1823,7 @@ KIA Sportage КОРОТЫШКА
         <div class="o-columns__side">
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_151031424031449778" style="max-height: calc(9vh + 61vh);"></div>
+        <div id="adfox_151031424031449778" style="max-height: calc(68vh + 2vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1820,7 +1831,7 @@ KIA Sportage КОРОТЫШКА
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '1e4958c10ac1901a3f68835a769ccf37',
+                        'eid1': '584c76fd6049ad38e377168bfa81d9a6',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',

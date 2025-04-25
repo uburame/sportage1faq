@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 171ebeb19d331bcae0666155ff7a7e69 -->
+<!-- X-Request-ID: f532211512ebea179e89015c0ecb7f7b -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: '171ebeb19d331bcae0666155ff7a7e69',
+            requestId: 'f532211512ebea179e89015c0ecb7f7b',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,20 +31,31 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../../../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../../../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../../../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../../../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../../../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
     <link rel="stylesheet" href="../../../assets/css/d/car.Z7KT_2r0BymqMv7i6NvOooI4Gc8.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../../../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../../../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../../../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../../../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -590,7 +601,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': '171ebeb19d331bcae0666155ff7a7e69',
+                        'eid1': 'f532211512ebea179e89015c0ecb7f7b',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -611,7 +622,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdesDT1q7QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkKoHVYlZMEobfGDIqeJ60N9uTed5A">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdhDAiLtZwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJMrF3JaxQGHfYoA3XGozhqVqT-EA">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -631,7 +642,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F1714325" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdesDT1q7QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQDn_kFFIrEM2CwDXChlvunwQ1XKA">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F1714325" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdhDAiLv2ACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQeIZjKnEwiQiYuJrj-GyWDVKteQg">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -650,7 +661,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',
                     params: {
-                        'eid1': '171ebeb19d331bcae0666155ff7a7e69',
+                        'eid1': 'f532211512ebea179e89015c0ecb7f7b',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -679,25 +690,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIyH58Ukz_Km2d-7AZGU_yy30b66mw">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIzSjpWsnwzkgRdyC-7HmdKDDud1Ug">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoJrzJIZIZa5o8tznFC0FiK5qFEU-A">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoInE5lKeew1uEDEIYtyw1aJrABMcA">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoOHCLAzbD5kAAFoLU1a6YAkxZuXbw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoNTtahO9b5-H-w2xeWzSOI4agwl9w">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoR2equ8r5Gxe8SY8TuhY65EGmLCvQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoQVwnNbBPorqJQkueXlLb-oZe6XFQ">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoUCS9Y2bCk_NXzISJTyx_2GgOLdqQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoUTVjFsFscoOGaG_YFqiqYlrsZGRQ">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5St04BtiF8e_X3HbpAxkvNSHJ9ojA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SHFaxd7Yl9QdrPUlZOdBPQUDqftg">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoaH44sUuaJC5sW4w8lbEnCtkSaFAg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdhDAiLq9gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoZoNEXG31pFrewZxOjlZSAPF1QSYQ">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -712,15 +723,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKodrrWbT5xbMAJ8_uC8NMcF-FS-_ug">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdhDAiLtZwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoekkyL39f303BzeId3K0PRQbZ4NFw">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdesDT1ofACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKojfJv79ryijbQLYG6I97ng4dMdJzQ">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdhDAiLtZwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoig1Bjsy73iBKFrqF3-0MwA6JejfA">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdesDT1q7QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKol_2lNKReceAa5DGnWvneDK1EAybw">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdhDAiLtZwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKon7NTQWefz8PHQeduTDfhLXpTwzCg">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">14</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -796,7 +807,7 @@
 
 
 
-<div class="js-gallery c-gallery o-f" data-role="scrolltracking" data-track-target="AhIBRE1NVAjdesDTyWhgCMqugEAADsIAAA1g5TLPTmmhUtWF_mYSyLAqlswH">
+<div class="js-gallery c-gallery o-f" data-role="scrolltracking" data-track-target="AhIBRE1NVAjdhDAiH7tACMqugEAADsIAAGlwbqZWBv8weog1mqRJala6U-tD">
 
         <div class="c-gallery__main-pic" itemscope itemtype="https://schema.org/ImageObject">
 <a href="https://a.d-cd.net/54a7225s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1920,1080" style="--ar:960/540; --height:540px;" rel="noopener" target="_blank"><x-img class="is-rounded" style="--ar: 960/540; --color: #979485;" width="960" height="540" title="KIA Sportage Полноприводный Джипок"><img src="https://a.d-cd.net/54a7225s-960.jpg" width="960" height="540" loading="lazy" itemprop="contentUrl" alt="KIA Sportage Полноприводный Джипок"></x-img></a>
@@ -870,7 +881,7 @@
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_148101218460247" style="min-height: calc(11px + 79px);"></div>
+        <div id="adfox_148101218460247" style="min-height: calc(42px + 48px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.create({
@@ -878,7 +889,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_148101218460247',
                     params: {
-                        'eid1': '171ebeb19d331bcae0666155ff7a7e69',
+                        'eid1': 'f532211512ebea179e89015c0ecb7f7b',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -915,7 +926,7 @@
 
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/sania17/" data-ihc-token="p/389113" itemprop="url"><span itemprop="name">Sania17</span></a>
                         <span class="c-user-lcard__status">
-            Был 2 дня назад
+            Был 1 неделю назад
         </span>
 
             </div>
@@ -1014,21 +1025,21 @@
 <div class="x-box o-f">
             <div class="o-group o-group--v o-group--justify o-b-s">
                 <h3 class="x-header"><a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1714325/logbook/">Бортжурнал</a>&nbsp;<span class="c-counter">76</span></h3>
-                <form class="o-group" action="https://www.drive2.ru/_api/cars/1714325/logbook" data-role="scrolltracking" data-slot="logbook-search.form" data-track-target="AhIBRE1NVAjdesDT01NwCMplQEAAUoIAAG9JGWZl5ZvVkmBV4fxY9Pf6zLx_" onsubmit="return false;">
+                <form class="o-group" action="https://www.drive2.ru/_api/cars/1714325/logbook" data-role="scrolltracking" data-slot="logbook-search.form" data-track-target="AhIBRE1NVAjdhDAiK8kwCMplQEAAUoIAAFodETrb_VUkXBo-rmfA19FePU3T" onsubmit="return false;">
                     <div class="c-search c-search--fw c-search--s m-icon-before" >
                         <input type="search" name="query" placeholder="Поиск" data-action="input:logbook-search.search">
                     </div>
                     <div class="c-radiogroup">
                             <label class="c-radiogroup__item">
-                                <input name="sort" type="radio" value="ByMetatype" checked="checked" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdesDT03qACMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoWmPf875gDAcQEqmlK5xf53IawVAQ" autocomplete="off">
+                                <input name="sort" type="radio" value="ByMetatype" checked="checked" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdhDAiK8kwCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoWvDDX9JzLiFC3crQBrAelQo9C_5Q" autocomplete="off">
                                 <span class="c-radiogroup__button">По теме</span>
                             </label>
                             <label class="c-radiogroup__item">
-                                <input name="sort" type="radio" value="ByDate" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdesDT03qACMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoZ8_WlBfAEuwmeTgsUUr8YfSzXGHQ" autocomplete="off">
+                                <input name="sort" type="radio" value="ByDate" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdhDAiK8kwCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUob3MpSDH-bL-sRuAmM6AchANIjquQ" autocomplete="off">
                                 <span class="c-radiogroup__button">По дате</span>
                             </label>
                             <label class="c-radiogroup__item">
-                                <input name="sort" type="radio" value="ByLikes" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdesDT03qACMplQEAAUoMAAQjKZUBAAFKECMplQEAAUocHUMUaUkkXrpcb9R1rgaMx79n99w" autocomplete="off">
+                                <input name="sort" type="radio" value="ByLikes" data-action="change:logbook-search.sort" data-track="AiIBRE1NVAjdhDAiK8kwCMplQEAAUoMAAQjKZUBAAFKECMplQEAAUoeKoR53F9igL1xy4Hmen8IGo0jp_Q" autocomplete="off">
                                 <span class="c-radiogroup__button">По лайкам</span>
                             </label>
                     </div>
@@ -1036,7 +1047,7 @@
             </div>
             <div class="c-lb-list" data-slot="logbook-search.container">
                             <h4 class="x-group-header c-lb-list__caption">Аксессуары</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/505093652641480993/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/505093652641480993/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #85838c;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/sgAAAgAuQOA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1053,7 +1064,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Доработки</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/503809148182331508/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/503809148182331508/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #998b89;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/TgAAAgPHv2A-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1069,7 +1080,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/500303080479261280/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/500303080479261280/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8b8e90;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/aa0119ds-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1085,7 +1096,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497688991584223710/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497688991584223710/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #abb6b7;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/9dca5ads-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1101,7 +1112,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497687892072595683/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497687892072595683/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #605e58;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/c7225ads-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1117,7 +1128,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497370957845889962/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497370957845889962/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #796f71;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/6bbb4ads-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1133,7 +1144,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/488821980062024148/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/488821980062024148/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #535151;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/5634615s-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1149,7 +1160,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/488821430306210444/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/488821430306210444/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #666666;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/51c4615s-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1165,7 +1176,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473730083459170401/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473730083459170401/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8f8686;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/4cd9609s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1181,7 +1192,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451103508549076569/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451103508549076569/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6e5346;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/c097f0es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1197,7 +1208,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10355166/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10355166/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #787774;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/deee876s-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1213,7 +1224,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10306673/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10306673/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #79584a;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/187e9b6s-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1230,7 +1241,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Колёса</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497369858334261899/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/497369858334261899/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #7e8181;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/35b4ads-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1246,7 +1257,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/474153670313771616/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/474153670313771616/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #818283;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/96d1c89s-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1262,7 +1273,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/474153670313771614/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/474153670313771614/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #818283;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/96d1c89s-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1278,7 +1289,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/469390036186431761/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/469390036186431761/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #7d8288;" fit="cover" width="120" height="87"><img src="https://a.d-cd.net/d53811s-120.jpg" width="120" height="87" loading="lazy"></x-img>
         </div>
@@ -1294,7 +1305,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/457198926135559900/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/457198926135559900/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #9a9b9c;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/6d5daees-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1310,7 +1321,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/454659604031210168/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/454659604031210168/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #726f72;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/5edb92es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1322,12 +1333,12 @@
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 86</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 31</div>
-                <div data-tt="22 сентября 2016 в&#160;10:01">8 лет</div>
+                <div data-tt="22 сентября 2016 в&#160;10:01">9 лет</div>
             </div>
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Наблюдения и&#160;впечатления</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/553485358403159192/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/553485358403159192/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8d8a6c;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/s0AAAgP6deA-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1343,7 +1354,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/524915648267026982/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/524915648267026982/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #565653;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/soAAAgAHEuA-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1359,7 +1370,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/483117163981308471/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/483117163981308471/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #535353;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/40ab779s-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1375,7 +1386,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/483116064469680759/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/483116064469680759/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #868582;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/8f13779s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1391,7 +1402,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/478929673946923690/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/478929673946923690/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #9b9f9b;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/3592319s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1407,7 +1418,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/477588544638943257/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/477588544638943257/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #676866;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/7d9c369s-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1423,7 +1434,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/461476851001327698/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/461476851001327698/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #706e6d;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/e3acbdes-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1439,7 +1450,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/460048035641064859/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/460048035641064859/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #978d88;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/ba3065es-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1455,7 +1466,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/457039496949530889/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/457039496949530889/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #4e4d4e;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/baa74ees-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1471,7 +1482,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10557961/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10557961/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #60605c;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/bea380es-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1487,7 +1498,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10355097/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10355097/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #51574d;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/d52e876s-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1504,7 +1515,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Неприятности</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/491358553387303316/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/491358553387303316/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #919090;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/c47535s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1520,7 +1531,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475070937889243276/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475070937889243276/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #9a9c99;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/156f349s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1536,7 +1547,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/456960606990238437/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/456960606990238437/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #979485;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/54a7225s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1553,7 +1564,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Ремонт и&#160;обслуживание</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/525360125842555332/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/525360125842555332/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #85837f;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/PkAAAgAuUuA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1569,7 +1580,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/524797725644947915/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/524797725644947915/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #cfcfcf;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/mwAAAgMuEuA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1585,7 +1596,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/505285792298435110/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/505285792298435110/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #798281;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/ZYAAAgNEwOA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1601,7 +1612,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/483116889103401250/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/483116889103401250/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #868788;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/edb3779s-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -1617,7 +1628,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/476157255377485943/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/476157255377485943/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8f605f;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/3656929s-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1633,7 +1644,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475854614801940518/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475854614801940518/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a69d97;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/3ge829s-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1649,7 +1660,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475202879284577158/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475202879284577158/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #88898b;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/c6fa0c9s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1665,7 +1676,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475070388133429268/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/475070388133429268/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #88837c;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/9daf349s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1681,7 +1692,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473692150308012207/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473692150308012207/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #807b7c;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/fc39a09s-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1697,7 +1708,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473466475546411484/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473466475546411484/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a07c62;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/f7c6ff1s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1713,7 +1724,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473005230418559145/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/473005230418559145/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #b7b5b4;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/5dc88f1s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1729,7 +1740,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/472612429889536113/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/472612429889536113/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #444547;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/b616271s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1745,7 +1756,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/470242157697957924/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/470242157697957924/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #948a8b;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/7045391s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -1761,7 +1772,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/464272634192855277/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/464272634192855277/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #7f6756;" fit="cover" width="112" height="200"><img src="https://a.d-cd.net/f318d7es-120.jpg" width="112" height="200" loading="lazy"></x-img>
         </div>
@@ -1777,7 +1788,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/461828694722216575/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/461828694722216575/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #756155;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/2280c3es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1793,7 +1804,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/460998013687433344/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/460998013687433344/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #746561;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/2b4eades-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1809,7 +1820,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/459653036088770020/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/459653036088770020/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #906b67;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/dee8f9es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1825,7 +1836,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/458636812466803933/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/458636812466803933/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #776f68;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/9cd171es-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1841,7 +1852,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/458323451652902657/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/458323451652902657/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #9c9897;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/fdc291es-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1858,7 +1869,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/455409470961352770/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/455409470961352770/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #9ea0a1;" fit="cover" width="120" height="144"><img src="https://a.d-cd.net/37526aes-120.jpg" width="120" height="144" loading="lazy"></x-img>
         </div>
@@ -1874,7 +1885,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/454918813897459401/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/454918813897459401/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a5a099;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/agbb2es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1886,11 +1897,11 @@
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 72</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 12</div>
-                <div data-tt="25 сентября 2016 в&#160;13:48">8 лет</div>
+                <div data-tt="25 сентября 2016 в&#160;13:48">9 лет</div>
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/452997692205826062/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/452997692205826062/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #eeebeb;" fit="cover" width="120" height="72"><img src="https://a.d-cd.net/804b74es-120.jpg" width="120" height="72" loading="lazy"></x-img>
         </div>
@@ -1906,7 +1917,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451815717205968075/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451815717205968075/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a19080;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/7192d8es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1922,7 +1933,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451815442328060776/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451815442328060776/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a7adaf;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/9ea2d8es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1938,7 +1949,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10594291/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10594291/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #e1e1e1;" fit="cover" width="120" height="80"><img src="https://a.d-cd.net/c121e0es-120.jpg" width="120" height="80" loading="lazy"></x-img>
         </div>
@@ -1954,7 +1965,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10476810/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10476810/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8c9bba;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/2c452f6s-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -1970,7 +1981,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10421681/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10421681/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6f6b62;" fit="cover" width="120" height="160"><img src="https://a.d-cd.net/ee73d76s-120.jpg" width="120" height="160" loading="lazy"></x-img>
         </div>
@@ -1986,7 +1997,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10306384/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10306384/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #7f8893;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/66769b6s-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2002,7 +2013,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10305907/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10305907/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6e6d65;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/e8469b6s-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2019,7 +2030,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">События</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/509328971431675303/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/509328971431675303/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #80a2b2;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/-kAAAgABiOA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -2036,7 +2047,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/509328146797953259/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/509328146797953259/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #827c74;" fit="cover" width="113" height="200"><img src="https://a.d-cd.net/9KAAAgD-iOA-120.jpg" width="113" height="200" loading="lazy"></x-img>
         </div>
@@ -2053,7 +2064,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/505840221036741139/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/505840221036741139/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #97a1ae;" fit="cover" width="120" height="74"><img src="https://a.d-cd.net/SEAAAgDYoOA-120.jpg" width="120" height="74" loading="lazy"></x-img>
         </div>
@@ -2069,7 +2080,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/481406323888488502/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/481406323888488502/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #7b838c;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/4cb0a39s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -2085,7 +2096,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/452249749421073164/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/452249749421073164/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #aba89b;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/260544es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2101,7 +2112,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451903953014098134/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451903953014098134/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #949582;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/c338es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2117,7 +2128,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451816816717595233/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/451816816717595233/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #beb7bb;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/32d2d8es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2133,7 +2144,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10545345/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/10545345/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #92a2b2;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/c5ddff6s-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2150,7 +2161,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Топливо и&#160;расход</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/460939464693252707/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/460939464693252707/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #8e8d92;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/a7652des-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2166,7 +2177,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/458936979141213268/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/458936979141213268/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #9fa09c;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/1526c9es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2183,7 +2194,7 @@
         </div>
     </a>
                             <h4 class="x-group-header c-lb-list__caption">Разное</h4>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/489133416730591331/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/489133416730591331/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #30302f;" fit="cover" width="120" height="68"><img src="https://a.d-cd.net/aa7ef15s-120.jpg" width="120" height="68" loading="lazy"></x-img>
         </div>
@@ -2199,7 +2210,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/477786181854036193/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/477786181854036193/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #727880;" fit="cover" width="120" height="94"><img src="https://a.d-cd.net/7ee70e9s-120.jpg" width="120" height="94" loading="lazy"></x-img>
         </div>
@@ -2215,7 +2226,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/474180883226558702/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/474180883226558702/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #f3f3f3;" fit="cover" width="120" height="111"><img src="https://a.d-cd.net/4d6e289s-120.jpg" width="120" height="111" loading="lazy"></x-img>
         </div>
@@ -2231,7 +2242,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/456348179013567788/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/456348179013567788/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #6689a9;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/80f966es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2247,7 +2258,7 @@
             </div>
         </div>
     </a>
-    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/454369332961477526/" data-track="AiIBRE1NVAjdesDT0mkQCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoXETwuwY9bQPDKLO8XBvpRm9cPv4g">
+    <a class="x-box c-post-lcard c-darkening-hover-container" href="https://www.drive2.ru/l/454369332961477526/" data-track="AiIBRE1NVAjdhDAiKpCwCMpzgEAAMMIAAQjKZUBAAFKECMplQEAAUoVya8I0igPmSeTIs8QMh_c41hMmnw">
         <div class="c-post-lcard__pic">
 <x-img class="is-rounded has-darkening-hover" style="--ar: 1/1; --color: #a59c9b;" fit="cover" width="120" height="90"><img src="https://a.d-cd.net/ea3b22es-120.jpg" width="120" height="90" loading="lazy"></x-img>
         </div>
@@ -2259,7 +2270,7 @@
             <div class="c-post-lcard__meta x-secondary x-secondary-color">
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-like-s"></span> 73</div>
                 <div class="c-icon-counter"><span class="m-icon c-icon c-icon--s c-icon--secondary i-comments-s"></span> 8</div>
-                <div data-tt="18 сентября 2016 в&#160;15:45">8 лет</div>
+                <div data-tt="18 сентября 2016 в&#160;15:45">9 лет</div>
             </div>
         </div>
     </a>
@@ -2281,29 +2292,29 @@
 </a>
         </div>
         <div class="o-grid o-grid--4 o-grid--no-margin" >
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/326358692.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesDT06GQCLeegEAABAIAAK7myIWhL2FSA4YfCGylkhfUQ9xn">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/ncTQFVytMzAjjF803lFYhqaEqIcmFh6a0ApmGVvPJRogn3TsHqWiUguZnrPRzCL38Zf34M-4ra99_J5K/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2005</h4>
-                    <div class="drom-item__price">420 000 ₽</div>
+                <a class="drom-item" href="https://auto.drom.ru/tver/kia/sportage/412036276.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDAiK_BACLeegEAABAIAADczd9eBioCRStbrLpbJ910yEqZM">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="628" height="435"><img src="https://s11.auto.drom.ru/photo/v2/FpF_4uvPXb0l9fyHhuoXqtVtpUZgfniGzoWO6O4JH31iPB0-St3qHFdop03lfQacrlvkdxls8nnD35St/gen600.jpg" width="628" height="435" loading="lazy"></x-img>
+                    <div class="drom-item__location">Тверь</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
+                    <div class="drom-item__price">305 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/358773055.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesDT06GQCLeegEAABAIAAK7myIWhL2FSA4YfCGylkhfUQ9xn">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/zM0Z6bLV2ufnqlViR_x53amJJOxs_tWGA_Hi4U8M6o9kBFn37fueO7qmvowiZwav-t9c1zMWyPfyL7mb/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/254988519.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDAiK_BACLeegEAABAIAADczd9eBioCRStbrLpbJ910yEqZM">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/HecJSsA-4zdd8PLCexc-zsVFvYw9Kmq3uRSKxOrLKIP_8AbN-iYholQIkJ5EwS8-22vla8XPVdmVW5C2/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2006</h4>
-                    <div class="drom-item__price">545 000 ₽</div>
+                    <div class="drom-item__price">320 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/tula/kia/sportage/476340191.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesDT06GQCLeegEAABAIAAK7myIWhL2FSA4YfCGylkhfUQ9xn">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="1067"><img src="https://s12.auto.drom.ru/photo/v2/aFTopgJEtT1fnquhsVriOGFrHo3THYzlXctozp46p8yOQsqqpooornG0voekXMOiywMnJvB4LwLkdOvc/gen600.jpg" width="600" height="1067" loading="lazy"></x-img>
-                    <div class="drom-item__location">Тула</div>
+                <a class="drom-item" href="https://auto.drom.ru/dolgoprudniy/kia/sportage/132550104.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDAiK_BACLeegEAABAIAADczd9eBioCRStbrLpbJ910yEqZM">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="863"><img src="https://s11.auto.drom.ru/photo/v2/1xmxYN7-AXfHMCX-ckL6WViB8f0unZ_m1j-biVmn1sOstlL-Lsw-0P5qoPlM5LvdJmXn-xOTBrygIFPQ/gen600.jpg" width="600" height="863" loading="lazy"></x-img>
+                    <div class="drom-item__location">Долгопрудный</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2002</h4>
+                    <div class="drom-item__price">250 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/vladimir/kia/sportage/108637776.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdhDAiK_BACLeegEAABAIAADczd9eBioCRStbrLpbJ910yEqZM">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/EEDhJT40v8Ru6_EtMfeQKSBguQhe6yXoJ-1otZjFlMDN0kKhvD9rdMWudKZkMUR4G4dCf8EW_fLSt2Wc/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                    <div class="drom-item__location">Владимир</div>
                     <h4 class="drom-item__caption">Kia Sportage, 1993</h4>
-                    <div class="drom-item__price">269 999 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/340915343.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click" data-track="AhIBRE1NVAjdesDT06GQCLeegEAABAIAAK7myIWhL2FSA4YfCGylkhfUQ9xn">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s12.auto.drom.ru/photo/v2/7evX80UwbN89HGajHrpasEuDvF0gfWWPtTKq8NfojJoIjY80mmnnAL_TlV8kdoMafStv0uJcTQ2y6GS5/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
-                    <div class="drom-item__price">385 000 ₽</div>
+                    <div class="drom-item__price">350 000 ₽</div>
                 </a>
         </div>
         <a class="x-box-more" href="https://moscow.drom.ru/kia/sportage/generation1/?distance=200&amp;ph=1&amp;unsold=1&amp;utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_car-page" rel="noopener" target="_blank" data-ym-target="drom_car_click">Посмотреть ещё</a>
@@ -2316,7 +2327,7 @@
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_1481012203583458" style="min-height: calc(190px + 60px);"></div>
+        <div id="adfox_1481012203583458" style="min-height: calc(50px + 200px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -2324,7 +2335,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '171ebeb19d331bcae0666155ff7a7e69',
+                        'eid1': 'f532211512ebea179e89015c0ecb7f7b',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -2346,7 +2357,7 @@
             </div>
         </div>
 
-        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjdesDTzE6QCLi5QEAAF4IAAO42AlyykgbaoxNJmCGNqstxafCL">
+        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjdhDAiInpgCLi5QEAAF4IAAJ8Q0pT0d0whpGfvS27uq8Nx-8pz">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -2356,7 +2367,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',
                     params: {
-                        'eid1': '171ebeb19d331bcae0666155ff7a7e69',
+                        'eid1': 'f532211512ebea179e89015c0ecb7f7b',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -3354,7 +3365,7 @@
         <div class="o-columns__side">
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_151031424031449778" style="max-height: calc(0vh + 70vh);"></div>
+        <div id="adfox_151031424031449778" style="max-height: calc(36vh + 34vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -3362,7 +3373,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '171ebeb19d331bcae0666155ff7a7e69',
+                        'eid1': 'f532211512ebea179e89015c0ecb7f7b',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',

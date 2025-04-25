@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 119205d78fe07a20cbf6ec5c7a7ca337 -->
+<!-- X-Request-ID: 413554fb9323c82f99ce3935fcbcfcf0 -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: '119205d78fe07a20cbf6ec5c7a7ca337',
+            requestId: '413554fb9323c82f99ce3935fcbcfcf0',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,18 +31,29 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -285,7 +296,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': '119205d78fe07a20cbf6ec5c7a7ca337',
+                        'eid1': '413554fb9323c82f99ce3935fcbcfcf0',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -306,7 +317,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJvp7c_hRlcnkH3CsQqpzz5BXSiCA">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJ5Je2zgPVXvOKpCKmaKurLpWjTbA">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -326,7 +337,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fusers%2Fthatredsportage" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkSlxMR2PkEf8HcmY4cKoYj_TGN9HA">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fusers%2Fthatredsportage" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkSfUI-i8OjPC52I_jsOxcXPtuoGmQ">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -344,25 +355,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIwlllituUCdZNM9cjAylOIFZpdgNg">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdhDgS0qwwCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIwYvBXSS8fH8elf7UjhBNeVZKlR1A">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIAHOZStTTRhTuD1cyBIgzteSoIRw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoLBPpWSJbn8fq54AW_956g1M5Z-_w">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoNDip9Na1WX6pHkS7ibOulfowuOJw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoMQ-LeMU3KkcMLFVAxuiY119xRCvQ">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoSvAm2xX7b_o4JmlerVzlRFCll_AQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoTWbN7A4kzvR49DecpLS-f-xDLvRw">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoV9ytT6vuaAoUOIka7X6s4enTwH0A">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoU24KAqgVM9W0GinWL1PC3g5XPZ-w">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5TNpaTJrjTiT76Bt59ne2cHlfYlCQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5RsyQ5FNM9W2rfxoj9ngkTkmfDFOg">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdesjCDEOwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoah3PM5BDLgHD701YBNLRVdSzzyCQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdhDgS0tNACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKobw4IJX2R2g1E1lZEnfvhGSM-LQ4w">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -527,7 +538,7 @@ Evgeny, 43&nbsp;года                </div>
         
         <div class="c-user__stats">
             <div>
-                <a class="c-link c-link--current" href="https://www.drive2.ru/users/thatredsportage/followers"><b id="user-followers">35</b>&nbsp;<span id="user-followers-legend">подписчиков</span></a><br>
+                <a class="c-link c-link--current" href="https://www.drive2.ru/users/thatredsportage/followers"><b id="user-followers">36</b>&nbsp;<span id="user-followers-legend">подписчиков</span></a><br>
             </div>
             <div>
                 <a class="c-link c-link--current" href="https://www.drive2.ru/users/thatredsportage/carsfollowing"><b>19</b>&nbsp;машин читает</a>
@@ -686,14 +697,6 @@ Evgeny, 43&nbsp;года                </div>
                             <span class="c-snaps-list__title-text">Брошенные Машины</span>
                         </div>
                     </a>
-                    <a class="c-snaps-list__item c-darkening-hover-container" href="https://www.drive2.ru/communities/496/" data-ym-target="user2community">
-                        <div class="c-snaps-list__pic">
-<x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #8d897e;" width="60" height="60"><img src="https://a.d-cd.net/edfc2dcs-60.jpg" width="60" height="60" loading="lazy"></x-img>
-                        </div>
-                        <div class="c-snaps-list__title">
-                            <span class="c-snaps-list__title-text">Old Cars (классические ретро автомобили)</span>
-                        </div>
-                    </a>
                     <a class="c-snaps-list__item c-darkening-hover-container" href="https://www.drive2.ru/communities/342/" data-ym-target="user2community">
                         <div class="c-snaps-list__pic">
 <x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #838383;" width="60" height="60"><img src="https://a.d-cd.net/d2e284as-60.jpg" width="60" height="60" loading="lazy"></x-img>
@@ -726,20 +729,28 @@ Evgeny, 43&nbsp;года                </div>
                             <span class="c-snaps-list__title-text">All Oldschool</span>
                         </div>
                     </a>
-                    <a class="c-snaps-list__item c-darkening-hover-container" href="https://www.drive2.ru/communities/2504/" data-ym-target="user2community">
-                        <div class="c-snaps-list__pic">
-<x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #754820;" width="60" height="60"><img src="https://a.d-cd.net/22f56es-60.jpg" width="60" height="60" loading="lazy"></x-img>
-                        </div>
-                        <div class="c-snaps-list__title">
-                            <span class="c-snaps-list__title-text">Ножемания</span>
-                        </div>
-                    </a>
                     <a class="c-snaps-list__item c-darkening-hover-container" href="https://www.drive2.ru/communities/3631/" data-ym-target="user2community">
                         <div class="c-snaps-list__pic">
 <x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #eceaea;" width="60" height="60"><img src="https://a.d-cd.net/dc9d9aes-60.jpg" width="60" height="60" loading="lazy"></x-img>
                         </div>
                         <div class="c-snaps-list__title">
                             <span class="c-snaps-list__title-text">Автомобильный Клуб Москвич (официальное представительство на DRIVE2)</span>
+                        </div>
+                    </a>
+                    <a class="c-snaps-list__item c-darkening-hover-container" href="https://www.drive2.ru/communities/496/" data-ym-target="user2community">
+                        <div class="c-snaps-list__pic">
+<x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #8d897e;" width="60" height="60"><img src="https://a.d-cd.net/edfc2dcs-60.jpg" width="60" height="60" loading="lazy"></x-img>
+                        </div>
+                        <div class="c-snaps-list__title">
+                            <span class="c-snaps-list__title-text">Old Cars (классические ретро автомобили)</span>
+                        </div>
+                    </a>
+                    <a class="c-snaps-list__item c-darkening-hover-container" href="https://www.drive2.ru/communities/2504/" data-ym-target="user2community">
+                        <div class="c-snaps-list__pic">
+<x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #754820;" width="60" height="60"><img src="https://a.d-cd.net/22f56es-60.jpg" width="60" height="60" loading="lazy"></x-img>
+                        </div>
+                        <div class="c-snaps-list__title">
+                            <span class="c-snaps-list__title-text">Ножемания</span>
                         </div>
                     </a>
             </div>
@@ -751,7 +762,7 @@ Evgeny, 43&nbsp;года                </div>
 
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_1487022369548130" style="max-height: calc(53vh + 17vh);"></div>
+        <div id="adfox_1487022369548130" style="max-height: calc(13vh + 57vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.create({
@@ -759,7 +770,7 @@ Evgeny, 43&nbsp;года                </div>
                     sequentialLoading: true,
                     containerId: 'adfox_1487022369548130',
                     params: {
-                        'eid1': '119205d78fe07a20cbf6ec5c7a7ca337',
+                        'eid1': '413554fb9323c82f99ce3935fcbcfcf0',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'eifa',

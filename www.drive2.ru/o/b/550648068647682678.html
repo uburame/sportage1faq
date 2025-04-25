@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 7af700d5e99ce25727dcf405db2c19b5 -->
+<!-- X-Request-ID: 78c5668e1f46b84eb4acf92090e72f84 -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: '7af700d5e99ce25727dcf405db2c19b5',
+            requestId: '78c5668e1f46b84eb4acf92090e72f84',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,20 +31,31 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
     <link rel="stylesheet" href="../../assets/css/d/car.Z7KT_2r0BymqMv7i6NvOooI4Gc8.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -592,7 +603,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': '7af700d5e99ce25727dcf405db2c19b5',
+                        'eid1': '78c5668e1f46b84eb4acf92090e72f84',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -613,7 +624,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkKf8lUzdv87eVbqfz941FY4U6WQyw">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkLAdnZ7dJEuN8FwD8M7-J-KBWRu5w">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -633,7 +644,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fo%2Fb%2F550648068647682678" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkTktWziFpm3mV2cgpeMoe4jqymZtw">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fo%2Fb%2F550648068647682678" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkSGjxgLAfNmiNGx115KxX6ZAezGPQ">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -651,25 +662,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIyA-R3G8JftK_2SC8RMB5RBkYNy8Q">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIzQqzDRdgmVTXJjTi9gaFYvTMgkKg">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIezxaTOORpCDQ-r5tTxRCyPh5vBQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIACv1UGXNfIEIJ1JTWx9crNXazbw">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoOnWysP7CqAIo10RCFOUT4YtkfAYw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoNvopg42uzQvI4Ce76ZQgByvzreLQ">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoTUs0jCtHO28RIrnX_1cg8DTcRsew">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoRjz2QzUAGiC_sfkL7vUMjCOZPDxQ">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoVCQ3OTZveNCOGuk6IZyC6LVU34eQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoXY45MJdAwQwNU0YIK5uYsYYJSxdQ">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5TRfc6nKoxyC-gJ-yaIM-5PeJKGoQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SVpMNvscJYJgAJ-fXVsTl8FxB6DA">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjder_b4h7QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKob55uHAl73ZP7aAWsT5YZ0nMbV2OA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdhC8ruR5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoZs27eJBHTUkFq0VQXAeK_gwOaC_g">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -764,7 +775,7 @@
 
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/o/lfaservice/" data-ihc-token="p/1729382256910270560" itemprop="url"><span itemprop="name">LFA</span></a>
                         <span class="c-user-lcard__status">
-            Была 1 день назад
+            Была 4 часа назад
         </span>
 
             </div>
@@ -849,7 +860,7 @@
     ></like-button>
 
                             <a class="m-icon-before c-counter-group c-counter-group--comments js-commentscounter" href="550648068647682678.html#comments" data-tt="Комментарии">3</a>
-                        <repost-button  disabled kind="ubr" token="AhsBU0xJVAAFAAekS4BAAAJ2AAAAAAAAAAAAAAAAAAAAAAvOLUYItRivelaYJe2p-c493mhU" ></repost-button>
+                        <repost-button   kind="ubr" token="AhsBU0xJVAAFAAekS4BAAAJ2AAAAAAAAAAAAAAAAAAAAAAvOLUYItRivelaYJe2p-c493mhU" ></repost-button>
                     </div>
 <div class="o-group o-group--m c-share" data-slot="share.root" data-type="ubr" data-token="AhsBU0xJVAAFAAekS4BAAAJ2AAAAAAAAAAAAAAAAAAAAAAvOLUYItRivelaYJe2p-c493mhU" data-url="https://www.drive2.ru/o/b/550648068647682678/">
         <span class="c-share__label">Поделиться:</span>

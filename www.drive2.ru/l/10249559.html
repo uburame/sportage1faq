@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 4b57716a931e52efe92cba0e40438c41 -->
+<!-- X-Request-ID: 4c89f108618d720174e68e24ad853eb2 -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: '4b57716a931e52efe92cba0e40438c41',
+            requestId: '4c89f108618d720174e68e24ad853eb2',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,20 +31,31 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
     <link rel="stylesheet" href="../assets/css/d/car.Z7KT_2r0BymqMv7i6NvOooI4Gc8.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -592,7 +603,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': '4b57716a931e52efe92cba0e40438c41',
+                        'eid1': '4c89f108618d720174e68e24ad853eb2',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -613,7 +624,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdenkN2a-ACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJrbFfNOjbhuKgT3IFpoTOT7aA2zg">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdg-cMeI7wCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkInOQgCOVWyyFdp3rZboxo2UlQ_fQ">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -633,7 +644,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F10249559" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdenkN2a-ACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQO45Wc--KGyIeZ5jmKXMFUjwmBxQ">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F10249559" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdg-cMeI7wCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkRlGOjtxrrV5Q7x4h0YdKRS9xn5tA">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -652,7 +663,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',
                     params: {
-                        'eid1': '4b57716a931e52efe92cba0e40438c41',
+                        'eid1': '4c89f108618d720174e68e24ad853eb2',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -681,25 +692,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIzGb1sk2-c-INEDBiVQXO8oLmEQ5w">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIykdrtJ0Dw4G1ynRamy2LWEgpyTAQ">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoISWLEJ4iAWSc1bSsb1ZJvzDmM5iQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIyOuwaqYp9B31VlBPjNqUD6_M5Ng">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoO3jEZJphArCcWQB9un5BvlsXSytw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoNeoOw6aSeTkPhILnphOxyHeZqMcg">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoTYLPvi2iMdh-OcLAQnMSOilgXDDA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoRqw4AP_lbaIcP_ti47jkmA50-USg">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoUvnSbGC7Y13vvACmft2FjPdi3rdw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoWkMILvYBENKResMpnoHkSbWTy3Hw">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5RU-0eNVDn-tMMNwHTTrqdAw7qWHw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5Tt6MgxtZme6BJ5RKYPX1xh74gSeA">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoYyxtp9l909LeM0w1Ok2hwsIP_5XA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoaU_4kiZgf-zMgKhc0FQWJYbCBMfQ">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -714,15 +725,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKod7xGemmN9fMZOHayeBSeed1mSM7Q">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoeq8pZxnZBISUGIwkm76IfaOutr7A">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdenkN2YhwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKohO5iukHLvE4GQeriyOjqkLREjV9A">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdg-cMeGfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKohoaJVqEzUKjP8KkWvOlPf1PRKaDQ">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdenkN2a-ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKon86FyHQf1J1C6SX48KiNLKlIRr4Q">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdg-cMeI7wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKokAJfm2faGBtV15ZnFbqZJwIZgdQg">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">14</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -831,7 +842,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_148101218460247',
                     params: {
-                        'eid1': '4b57716a931e52efe92cba0e40438c41',
+                        'eid1': '4c89f108618d720174e68e24ad853eb2',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -865,7 +876,7 @@
 
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span itemprop="name">demanvolc</span></a>
                         <span class="c-user-lcard__status">
-            Был 5 дней назад
+            Был 3 дня назад
         </span>
 
             </div>
@@ -972,7 +983,7 @@
         count="32" 
     ></like-button>
 
-                            <a class="m-icon-before c-counter-group c-counter-group--comments js-commentscounter" href="10249559.html#comments" data-tt="Комментарии">8</a>
+                            <a class="m-icon-before c-counter-group c-counter-group--comments js-commentscounter" href="10249559.html#comments" data-tt="Комментарии">22</a>
                         <repost-button   kind="cjr" token="AhsBU0xJVAAEAAAAAAAAnGVXAAAAAAAAAAAAAAAAAAAAAGHCvInXVoRnI74HMxKJkcRm2AVB"   count="2"  ></repost-button>
                     </div>
 <div class="o-group o-group--m c-share" data-slot="share.root" data-type="cjr" data-token="AhsBU0xJVAAEAAAAAAAAnGVXAAAAAAAAAAAAAAAAAAAAAGHCvInXVoRnI74HMxKJkcRm2AVB" data-url="https://www.drive2.ru/l/10249559/">
@@ -1005,7 +1016,7 @@
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_1481012203583458" style="min-height: calc(143px + 107px);"></div>
+        <div id="adfox_1481012203583458" style="min-height: calc(36px + 214px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1013,7 +1024,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '4b57716a931e52efe92cba0e40438c41',
+                        'eid1': '4c89f108618d720174e68e24ad853eb2',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -1054,28 +1065,28 @@
 </a>
         </div>
         <div class="o-grid o-grid--4 o-grid--no-margin" >
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/127300641.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdenkN2E_wCLeegEAABAIAACMNP7_wFrCxXdcbY1qg96nn8WS2">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/1p2P_-FrH2fE__P05alezHGn2nk_ZxjYxqH0XHvTeOMoGMuKy_tokKHPO4tJmg_KisQdq5mHje0AzJjf/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/670692066.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdg-cMdpMgCLeegEAABAIAALlGr9-nJfFturVGafNywUSdmubr">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/O9rRU3S0UTEX7iD9CaQuUjliZBZ7X3jfh_1mNA6-j-dd0HjJmp8XT_WqsXADEgNM5mGutpWNl1cTH9y7/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2005</h4>
+                    <h4 class="drom-item__caption">Kia Sportage, 2006</h4>
                     <div class="drom-item__price">485 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/tula/kia/sportage/476340191.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdenkN2E_wCLeegEAABAIAACMNP7_wFrCxXdcbY1qg96nn8WS2">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="1067"><img src="https://s11.auto.drom.ru/photo/v2/aFTopgJEtT1fnquhsVriOGFrHo3THYzlXctozp46p8yOQsqqpooornG0voekXMOiywMnJvB4LwLkdOvc/gen600.jpg" width="600" height="1067" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/tula/kia/sportage/762950830.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdg-cMdpMgCLeegEAABAIAALlGr9-nJfFturVGafNywUSdmubr">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/vMmRsppNFX4U5D5SGQ6Gpk4O3AAdxCyYEw0WAf3zYynNjWS_W3CNwdVGFxfJt3p8tlJdBLcqhS7CZcnr/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Тула</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 1993</h4>
-                    <div class="drom-item__price">269 999 ₽</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
+                    <div class="drom-item__price">249 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/753344460.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdenkN2E_wCLeegEAABAIAACMNP7_wFrCxXdcbY1qg96nn8WS2">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/XMaEk8VuwNWNsszeOaxnPnx7rX3EbtQyAXuYqbLuy-vI_xDwM6UX2IVin9FITSFzXVQLZFOlOad4QSmx/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/919509021.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdg-cMdpMgCLeegEAABAIAALlGr9-nJfFturVGafNywUSdmubr">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/h_hnnXxqQhITAPtgeOGPEjODoyCT_LqMdBNMfrth4SQUC02MqpewXknPW0WlbZW6CP-YJG0EDUlQubOI/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2002</h4>
-                    <div class="drom-item__price">400 000 ₽</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2006</h4>
+                    <div class="drom-item__price">450 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/467533764.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdenkN2E_wCLeegEAABAIAACMNP7_wFrCxXdcbY1qg96nn8WS2">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/nQ-n50004kwXsZ1SJRxQ6HtXqE3nYPFbR-IdRlYZjmCpthcV6MXTICWq5z2_7md7onHC4vwU8nF36OmQ/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/812191615.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjdg-cMdpMgCLeegEAABAIAALlGr9-nJfFturVGafNywUSdmubr">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/GltGupM3ZgCq5gqwrIflqgtnh3DHU8rZ7b0sxO430K0kfcxssg17YaGH33ufoWvr19mVK79IbaFnaBoj/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2000</h4>
+                    <h4 class="drom-item__caption">Kia Sportage, 2006</h4>
                     <div class="drom-item__price">399 999 ₽</div>
                 </a>
         </div>
@@ -1083,7 +1094,7 @@
     </div>
 
 
-        <div class="c-block c-block--mh" data-track="AhIBRE1NVAjdenkN07wQCLi5QEAAF4IAABtjM6p6G-J6cM0yK1CqX5GtLzn1">
+        <div class="c-block c-block--mh" data-track="AhIBRE1NVAjdg-cMcpuACLi5QEAAF4IAABpeCe0I0SWQneoZT3zN5jChzCq-">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -1093,7 +1104,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',
                     params: {
-                        'eid1': '4b57716a931e52efe92cba0e40438c41',
+                        'eid1': '4c89f108618d720174e68e24ad853eb2',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -1118,7 +1129,7 @@
             <div id="comments" class="c-block c-block--content">
                         <h3 class="c-header c-header--margin-l" id="commentstitle">
                             Комментарии
-<span class="c-counter">8</span>                        </h3>
+<span class="c-counter">22</span>                        </h3>
                                 
 <div class="c-link-decorated o-b-xl x-text">
     Войдите или зарегистрируйтесь, чтобы писать комментарии, задавать вопросы и&nbsp;участвовать в&nbsp;обсуждении.
@@ -1129,11 +1140,679 @@
 </div>
 
 
-
-
-
-
                 <div class="c-comments">
+
+
+    <div id="a702079681972683179" class="c-comment"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>И ещё один вопрос, впечатления от замены какие?</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702079681972683179" kind="cmnt" key="AhsBU0xJVAAJAwm-ScBAAEGrAAAAAAAX8M8AAAAAAJxlVyStGUs9sMi8CN-O8LQkB9Qs74Kt"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702079681972683179">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702079681972683179" data-tt="13 апреля 2025 в&#160;16:58"  itemprop="datePublished"  content="2025-04-13T16:58:30+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702079956850580428" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/demanvolc/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/994224cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span  itemprop="name">demanvolc</span></a>
+
+
+                <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                        Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/renault/clio/586682088346894093/" data-ihc-token="c/586682088346894093" data-ym-target="comments_car">Renault Clio II</a>
+                        (до&nbsp;этого&nbsp;— <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1568975/" data-ihc-token="c/1568975" data-ym-target="comments_car">KIA Sportage (1G)</a>)
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Нармально главное после снятия вискамуфту все закрепить нормально я про насос тнвд он крепится тем же кронштейном что и виска муфта</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702079956850580428" kind="cmnt" key="AhsBU0xJVAAJAwm-SgBAABvMAAAAAAAX8M8AAAAAAJxlV4gcA-O_CI0rr3Eld3hhfo9ZeCQd"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702079956850580428">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702079956850580428" data-tt="13 апреля 2025 в&#160;17:01"  itemprop="datePublished"  content="2025-04-13T17:01:35+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702080506606404349" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Спасибо, всех благ!</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702080506606404349" kind="cmnt" key="AhsBU0xJVAAJAwm-SoBAAEL9AAAAAAAX8M8AAAAAAJxlV38XOE0V6A3qjkht-KkoI87hCAAg"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702080506606404349">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702080506606404349" data-tt="13 апреля 2025 в&#160;17:13"  itemprop="datePublished"  content="2025-04-13T17:13:28+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702076658315691709" class="c-comment"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Добрый вечер, я понимаю, это было давно, но может подскажешь, датчик включения вентилятора ставил на вход в радиатор, после термостата( судя по фото)?<br />И почему не на выход? Твой отчёт установки на дизель единственный, остальные все зажигалки и ставили на выход из радиатора. Спасибо.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702076658315691709" kind="cmnt" key="AhsBU0xJVAAJAwm-RwBAAAa9AAAAAAAX8M8AAAAAAJxlVxIl1E7XX2kAH6eBZzmtV8SytSSb"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702076658315691709">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702076658315691709" data-tt="13 апреля 2025 в&#160;16:00"  itemprop="datePublished"  content="2025-04-13T16:00:31+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702076933193604771" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/demanvolc/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/994224cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span  itemprop="name">demanvolc</span></a>
+
+
+                <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                        Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/renault/clio/586682088346894093/" data-ihc-token="c/586682088346894093" data-ym-target="comments_car">Renault Clio II</a>
+                        (до&nbsp;этого&nbsp;— <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1568975/" data-ihc-token="c/1568975" data-ym-target="comments_car">KIA Sportage (1G)</a>)
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>В основном на машинах с электро вентелятором датчики стоят в термостате или верху радиатора, логично было ставить на входе.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702076933193604771" kind="cmnt" key="AhsBU0xJVAAJAwm-R0BAAB6jAAAAAAAX8M8AAAAAAJxlV3KIvJ-r9MgDhF5vDar9vJJlAIQt"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702076933193604771">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702076933193604771" data-tt="13 апреля 2025 в&#160;16:06"  itemprop="datePublished"  content="2025-04-13T16:06:43+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702077208071504712" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Понятно, спасибо.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702077208071504712" kind="cmnt" key="AhsBU0xJVAAJAwm-R4BAAANIAAAAAAAX8M8AAAAAAJxlV7NvwqffH8YQgCUogoLs-9VnSIIR"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702077208071504712">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702077208071504712" data-tt="13 апреля 2025 в&#160;16:10"  itemprop="datePublished"  content="2025-04-13T16:10:16+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702077482949416095" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/demanvolc/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/994224cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span  itemprop="name">demanvolc</span></a>
+
+
+                <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                        Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/renault/clio/586682088346894093/" data-ihc-token="c/586682088346894093" data-ym-target="comments_car">Renault Clio II</a>
+                        (до&nbsp;этого&nbsp;— <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1568975/" data-ihc-token="c/1568975" data-ym-target="comments_car">KIA Sportage (1G)</a>)
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>На скажу сразу всеровно закипит так как это крайне не удачные моторы мазда 626 2.0дизель он должен стаять поперёк и охлождатса с боку а тут он стоит вдоль и с зади он перегривался.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702077482949416095" kind="cmnt" key="AhsBU0xJVAAJAwm-R8BAABSfAAAAAAAX8M8AAAAAAJxlV6lLow4wMXnxUwHFEsioiSbbJv7l"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702077482949416095">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702077482949416095" data-tt="13 апреля 2025 в&#160;16:16"  itemprop="datePublished"  content="2025-04-13T16:16:15+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702077757827336716" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Не удачные, это мягко сказано, у меня вторая голова полетела, ( с разборки, но всё таки), теперь взял новую тайваньскую, ну и буду ставить электро веник. Всё, что отмечено маркером, трещины. Посмотрим.</p>
+                <p style="max-width: 240px">
+<a href="https://i-a.d-cd.net/Jf4qYs5WIXdSC31Pi5nyBlvj0Z4-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1920,1080" style="--ar:240/135; --height:135px;" rel="noopener" target="_blank"><x-img class="is-rounded has-darkening-hover" style="--ar: 240/135; --color: #887e6e;" width="240" height="135"><img src="https://i-a.d-cd.net/Jf4qYs5WIXdSC31Pi5nyBlvj0Z4-240.jpg" width="240" height="135" loading="lazy"></x-img></a>
+                    </p>
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702077757827336716" kind="cmnt" key="AhsBU0xJVAAJAwm-SABAAEoMAAAAAAAX8M8AAAAAAJxlV3y1j22RvnWUO2ymfa6kb1p9XeOZ"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702077757827336716">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702077757827336716" data-tt="13 апреля 2025 в&#160;16:24"  itemprop="datePublished"  content="2025-04-13T16:24:05+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702078032705230034" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/demanvolc/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/994224cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span  itemprop="name">demanvolc</span></a>
+
+
+                <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                        Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/renault/clio/586682088346894093/" data-ihc-token="c/586682088346894093" data-ym-target="comments_car">Renault Clio II</a>
+                        (до&nbsp;этого&nbsp;— <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1568975/" data-ihc-token="c/1568975" data-ym-target="comments_car">KIA Sportage (1G)</a>)
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Посути он должен постоянно крутится и включатса на полную мощность когда перегриваетса</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702078032705230034" kind="cmnt" key="AhsBU0xJVAAJAwm-SEBAABTSAAAAAAAX8M8AAAAAAJxlV1aT5kDiHILbMWpCzpwwIf4IHI1L"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702078032705230034">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702078032705230034" data-tt="13 апреля 2025 в&#160;16:26"  itemprop="datePublished"  content="2025-04-13T16:26:14+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702078307583142938" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>По этому и буду ставить кнопку принудиловки.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702078307583142938" kind="cmnt" key="AhsBU0xJVAAJAwm-SIBAACwaAAAAAAAX8M8AAAAAAJxlV4ltjo_nPF6UqQZ1OlOfMHBaDzjM"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702078307583142938">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702078307583142938" data-tt="13 апреля 2025 в&#160;16:32"  itemprop="datePublished"  content="2025-04-13T16:32:18+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702078307583148641" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/demanvolc/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/994224cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span  itemprop="name">demanvolc</span></a>
+
+
+                <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                        Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/renault/clio/586682088346894093/" data-ihc-token="c/586682088346894093" data-ym-target="comments_car">Renault Clio II</a>
+                        (до&nbsp;этого&nbsp;— <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1568975/" data-ihc-token="c/1568975" data-ym-target="comments_car">KIA Sportage (1G)</a>)
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Ставил тоже через диод</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702078307583148641" kind="cmnt" key="AhsBU0xJVAAJAwm-SIBAAEJhAAAAAAAX8M8AAAAAAJxlV67lpXTgd0Cjs_9hUPYXpSpGFadr"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702078307583148641">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702078307583148641" data-tt="13 апреля 2025 в&#160;16:33"  itemprop="datePublished"  content="2025-04-13T16:33:26+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702078582461046581" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Ну, всю электрику будет ставить электрик, наверное знает же как и что.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702078582461046581" kind="cmnt" key="AhsBU0xJVAAJAwm-SMBAAB81AAAAAAAX8M8AAAAAAJxlV_6NpBNvNz34mVIb7PRxA244X_8U"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702078582461046581">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702078582461046581" data-tt="13 апреля 2025 в&#160;16:36"  itemprop="datePublished"  content="2025-04-13T16:36:44+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702078582461055650" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/demanvolc/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/994224cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/demanvolc/" data-ihc-token="p/1629525" itemprop="url"><span  itemprop="name">demanvolc</span></a>
+
+
+                <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                        Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/renault/clio/586682088346894093/" data-ihc-token="c/586682088346894093" data-ym-target="comments_car">Renault Clio II</a>
+                        (до&nbsp;этого&nbsp;— <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/1568975/" data-ihc-token="c/1568975" data-ym-target="comments_car">KIA Sportage (1G)</a>)
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Дела все сам там нечего сложного нет совсем.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702078582461055650" kind="cmnt" key="AhsBU0xJVAAJAwm-SMBAAEKiAAAAAAAX8M8AAAAAAJxlV8ZwiS6JGO0L2jevElocheUlspU6"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702078582461055650">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702078582461055650" data-tt="13 апреля 2025 в&#160;16:38"  itemprop="datePublished"  content="2025-04-13T16:38:26+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
+
+
+    <div id="a702078582461063416" class="c-comment c-comment--reply"
+        data-role="comment" 
+  itemprop="comment" itemtype="https://schema.org/Comment" itemscope  >
+            <div class="c-comment__userinfo">
+<div class="c-user-mcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/curious58/"><x-img class="is-round has-darkening-hover u-vignette" style="--ar: 60/60; --color: #49443a;" width="60" height="60"><img src="https://a.d-cd.net/e5f7a81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
+    <div class="c-user-mcard__username">
+        <div class="c-user-mcard__group">
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/curious58/" data-ihc-token="p/2336309" itemprop="url"><span  itemprop="name">curious58</span></a>
+
+
+
+
+        </div>
+                <div class="c-user-mcard__meta">
+                    Я езжу на <a class="c-link c-link--current" href="https://www.drive2.ru/r/kia/sportage/465471376745038528/" data-ihc-token="c/465471376745038528" data-ym-target="comments_car">KIA Sportage (1G)</a>
+                </div>
+            </div>
+</div>
+
+            </div>
+        <div class="c-comment__text c-link-decorated" itemprop="text">
+            <div>
+                <emoji-zoom data-slot="comment.text">
+                <p>Нее, это не моё, только электрик.</p>
+                
+                </emoji-zoom>
+            </div>
+        </div>
+        <div class="c-comment__footer">
+    <like-button
+        class="is-plus-one"
+        uid="702078582461063416" kind="cmnt" key="AhsBU0xJVAAJAwm-SMBAAGD4AAAAAAAX8M8AAAAAAJxlV_QzqaPffUpHgb9Gcd-9IMV1m6Vh"
+        
+        
+        
+        
+    ></like-button>
+                            <button class="r-button-unstyled c-link c-link--current u-extended-area" data-slot="comment.reply" data-action="comment.reply" data-parent="702078582461063416">Ответить</button>
+            <a class="c-link c-link--current u-extended-area" href="https://www.drive2.ru/l/10249559/#a702078582461063416" data-tt="13 апреля 2025 в&#160;16:39"  itemprop="datePublished"  content="2025-04-13T16:39:55+03:00">
+                2 недели
+            </a>
+            
+        </div>
+    </div>
 
 
     <div id="a177278223" class="c-comment"
@@ -1499,7 +2178,7 @@
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p>Самую дешевая виск муфта стоит что нашол <a href="https://www.drive2.ru/parts?query=1200000" class="c-link c-link--text u-bold" data-ihc-token="cc/1200000" data-ym-target="parts_from_comment">1 200 000</a> беларуских рублей но она может пол года прожить</p>
+                <p>Самую дешевая виск муфта стоит что нашол 1 200 000 беларуских рублей но она может пол года прожить</p>
                 
                 </emoji-zoom>
             </div>
@@ -1523,11 +2202,8 @@
 
 
                 </div>
-
-
-
-
-                                            </div>
+                                                    <a class="c-block__more" href="https://www.drive2.ru/l/10249559?page=0#comments">Все комментарии</a>
+            </div>
         </div>
             <div class="o-columns__side">
         <div class="c-dv-side o-row o-sticky o-f">
@@ -1540,7 +2216,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '4b57716a931e52efe92cba0e40438c41',
+                        'eid1': '4c89f108618d720174e68e24ad853eb2',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',

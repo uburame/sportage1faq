@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: b7eac053ce5139712ecae7d3bf24244c -->
+<!-- X-Request-ID: 4dfb0696f05f84e3186c6d75f8274a9c -->
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
-            requestId: 'b7eac053ce5139712ecae7d3bf24244c',
+            requestId: '4dfb0696f05f84e3186c6d75f8274a9c',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -31,20 +31,31 @@
         window.__nativeIO = 'IntersectionObserver' in window
             && 'IntersectionObserverEntry' in window
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
-        fetch('/_api/vuv', { method: 'POST', body: '0' });
+        
+        {
+            const ac = new AbortController();
+            fetch('/_api/vuv', { method: 'POST', body: '0', signal: ac.signal })
+                .finally((e) => {
+                    window.verificationInProgress = undefined;
+                    document.dispatchEvent(new CustomEvent('verification-complete'));
+                });
+            window.verificationInProgress = true;
+            setTimeout(() => { ac.abort() }, 2500);
+        }
+        
     </script>
-    <script src="../../../../assets/js/sync-start.9hoiogI2pKU7BkDPK9jZY1uwgxI.js"></script>
+    <script src="../../../../assets/js/sync-start.xEae79ry8HAS3rWBITVSdjFrwPA.js"></script>
     
-    <link rel="stylesheet" href="../../../../assets/css/d/main.LIDsYzRsfrQr1QCkwKLlGsoEB4w.css">
+    <link rel="stylesheet" href="../../../../assets/css/d/main.QxQC8CobiDmSO03O9JL7VQlyqfo.css">
     <link rel="stylesheet" href="../../../../assets/css/d/res.rD8bXaM6_YgEY_7R0YYL6ggesQg.css">
     
     <link rel="stylesheet" href="../../../../assets/css/d/car.Z7KT_2r0BymqMv7i6NvOooI4Gc8.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-CcDEefbx.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DiQv8UAT.js">
     
-    <script type="module" src="../../../../assets/js/ru/maina.BiUb9XzQd960Pw9GZz5nFQZmwCQ.js"></script>
+    <script type="module" src="../../../../assets/js/ru/maina.7nAoBnZ7etAK4QUwvjcpPExme-s.js"></script>
     
-<script src="../../../../assets/js/prebid.IREWlvgXvHSxHAwcwAu40V6Hn7c.js" async></script>
+<script src="../../../../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
 <script>
     window.pbjs = window.pbjs || {};
@@ -280,7 +291,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',
                     params: {
-                        'eid1': 'b7eac053ce5139712ecae7d3bf24244c',
+                        'eid1': '4dfb0696f05f84e3186c6d75f8274a9c',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -301,7 +312,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdesD28OOQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkLS8mki9sQvWCooNpBg-oX67iZTOw">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjdhDBF2iegCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkI2MfjO8pP_WoEkMlLrdBpaeqnCIQ">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -321,7 +332,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F1739962%2Flogbook" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdesD28OOQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkSVmLOj4eDdzChrTV3A31S9iJ6VWw">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fr%2Fkia%2Fsportage%2F1739962%2Flogbook" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjdhDBF2iegCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkTKTb3XYCHINvg5hpcBtGiul3Vbzw">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -339,25 +350,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIzZkYi7cB3GdNQCjqgDnqF_JgdeLw">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjdhDBF2dmACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIxNvDjLMdGQX0NwuYlc5edelcr5PA">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoLx8PeY77CQAgz38WbeGzVWUgX-Dw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjdhDBF2dmACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoLej3vmdPDn4LQqHLxRzIpvk0W7WA">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoP-Ua1HKABq93JhlMxalbMfWDaYMQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjdhDBF2dmACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoMGT5DZncAYcInIltWHHhesF_XhEQ">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoREeIg1qHWP5tYU0786jURrx9BHwQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjdhDBF2dmACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoTHxEDOnlVSdE9UWiGXppBxktilEw">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoVLR4kLm3X9_RxJk9DtZzS6mQ5TPQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjdhDBF2gCQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoUCrKHxIjQG0pFMPyJkQahxqnhfXg">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5ROwxE8IC-owmZc3zsIn6uz7ZZKrw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjdhDBF2gCQCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SGfVm4n_GfdkpQ3s647D7YnE2cAw">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoYmUFGrCvFyHQjKA1SwqvSEB7TJ-g">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjdhDBF2gCQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoa2ZhQTaRaKfImsfkzrd2vJYyAQcA">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -372,15 +383,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKocXh0xguVLo7hihEiFUHNH-6U9HIg">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjdhDBF2gCQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKod8fJBVVnIpx2IQcRHayMz_4Q7lsw">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdesD28LyACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKogZYUAbJo14fzRefHrzhDiW2jUEfQ">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjdhDBF2gCQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKogbc_pD8JnFCrfD1Thpzs78SWFZGA">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdesD28OOQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKok8c7UAPZ2GPI-fYl0n6_sn0GFoeg">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjdhDBF2iegCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKomD6IoksDmyOcVIw7yTgUo5IV_eJA">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">14</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -604,7 +615,7 @@ FAQ «Sportage»-1: II.
             </div>
         </div>
         <div class="c-author__date">
-            1 месяц
+            2 месяца
         </div>
 
 
@@ -692,7 +703,7 @@ FAQ «Sportage»-1: II.
             </div>
         </div>
         <div class="c-author__date">
-            1 месяц
+            2 месяца
         </div>
 
 
@@ -766,7 +777,7 @@ FAQ «Sportage»-1: II.
             </div>
         </div>
         <div class="c-author__date">
-            1 месяц
+            2 месяца
         </div>
 
 
@@ -863,7 +874,7 @@ Reinz 71-52444-0…&nbsp;<button class="c-post-preview__more r-button-unstyled c
             </div>
         </div>
         <div class="c-author__date">
-            1 месяц
+            2 месяца
         </div>
 
 
@@ -1303,7 +1314,7 @@ Hyundai ACCENT …&nbsp;<button class="c-post-preview__more r-button-unstyled c-
             </div>
         </div>
         <div class="c-author__date">
-            10 месяцев
+            11 месяцев
         </div>
 
 
@@ -2265,19 +2276,19 @@ FAQ «Sportage»-1: II.
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j699378181903243302">FAQ «Sportage»-1: бак: система вентиляции: сепаратор.</a>
-                        <span class="c-side-nav__meta">1 месяц</span>
+                        <span class="c-side-nav__meta">2 месяца</span>
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j699376532635779782">FAQ «Sportage»-1: бак: система вентиляции. Схема-оглавление.</a>
-                        <span class="c-side-nav__meta">1 месяц</span>
+                        <span class="c-side-nav__meta">2 месяца</span>
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j699052451583515922">FAQ «Sportage»-1: двигатель 8-клап бенз: ГБЦ ремонт: запчасти проверенные.</a>
-                        <span class="c-side-nav__meta">1 месяц</span>
+                        <span class="c-side-nav__meta">2 месяца</span>
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j698973561624200509">FAQ «Sportage»-1: стеклоочиститель передний: щётки.</a>
-                        <span class="c-side-nav__meta">1 месяц</span>
+                        <span class="c-side-nav__meta">2 месяца</span>
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j698430402880099673">FAQ «Sportage-1»: бак: система залива: схема-оглавление.</a>
@@ -2297,7 +2308,7 @@ FAQ «Sportage»-1: II.
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j677436602737257753">FAQ «Sportage»-1: двери: стеклоподъёмники дорестайл: кнопки: блок кнопок водительской двери: заменитель: ГАЗ 31105 (Волга): блок кнопок силовых водительской двери. Совсем без реле. Родная фишка.</a>
-                        <span class="c-side-nav__meta">10 месяцев</span>
+                        <span class="c-side-nav__meta">11 месяцев</span>
                     </li>
                     <li class="c-side-nav__item">
                             <a class="c-link c-link--current" href="logbook.html#j672764502952928551">FAQ «Sportage»-1: калитка (держатель «запаски»): пальцы.</a>
@@ -2342,7 +2353,7 @@ FAQ «Sportage»-1: II.
 
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_1487022369548130" style="max-height: calc(54vh + 16vh);"></div>
+        <div id="adfox_1487022369548130" style="max-height: calc(49vh + 21vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.create({
@@ -2350,7 +2361,7 @@ FAQ «Sportage»-1: II.
                     sequentialLoading: true,
                     containerId: 'adfox_1487022369548130',
                     params: {
-                        'eid1': 'b7eac053ce5139712ecae7d3bf24244c',
+                        'eid1': '4dfb0696f05f84e3186c6d75f8274a9c',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'eifa',
