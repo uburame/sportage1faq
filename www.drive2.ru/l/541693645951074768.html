@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 6a779a5706af246ca271da311e605443 -->
+<!-- X-Request-ID: 878883921e060e327173847f1620f0c6 -->
 
 <head>
     <meta charset="utf-8">
@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://ad.mail.ru">
     <script>
         window.d2Env = Object.freeze({
-                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2h3d0FJQUFKQ3M2HBIwCLi8LW_MxqEykKM4L4gpwQ' },
+                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2gtUVFJQUFCZ2_UfE4D8NVyts46JFFSuK_4TStGJA' },
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/_api/upload?.AMIG=.AMIG',
-            requestId: '6a779a5706af246ca271da311e605443',
+            requestId: '878883921e060e327173847f1620f0c6',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -33,9 +33,27 @@
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
         
         {
-            if (navigator.webdriver === false) {
+            {
+                const body = {
+                    webdriver: navigator?.webdriver,
+                    notChrome: !window.chrome,
+                    noPlugins: navigator?.plugins?.length === 0,
+                    oddSampleRate: false,
+                    noAvailScreen: window.screen?.availWidth === 0 || window.screen?.availHeight === 0,
+                }
+                try {
+                    const audioCtx = new AudioContext();
+                    if (audioCtx.sampleRate === 24000) body.oddSampleRate = true;
+                    audioCtx.close();
+                } catch {}
                 const ac = new AbortController();
-                fetch('/_api/vuv', { method: 'POST', body: '6a779a5706af246ca271da311e605443', signal: ac.signal })
+                fetch('/_api/vuv', {
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8',
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    signal: ac.signal })
                     .finally((e) => {
                         window.verificationInProgress = undefined;
                         document.dispatchEvent(new CustomEvent('verification-complete'));
@@ -46,16 +64,16 @@
         }
         
     </script>
-    <script src="../assets/js/sync-start.Jt2FpfMcIudHRv6nGJHtvtbyQpY.js"></script>
+    <script src="../assets/js/sync-start.UptCqyzjzTTavRXIb_CY4pZfF68.js"></script>
     
-    <link rel="stylesheet" href="../assets/css/d/main.yGu-xApn6thsk_gDtkcgBDYvPyw.css">
+    <link rel="stylesheet" href="../assets/css/d/main.vzcnltE4RCshacLrElVzi1zsd90.css">
     <link rel="stylesheet" href="../assets/css/d/res.tl63HPykNqAv7UeLg2Ubh8Fr_Qs.css">
     
     <link rel="stylesheet" href="../assets/css/d/car.IyqRU4Nc3uNM5zszOrOLtoWCmes.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-YKS6ehaH.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DN6cMgP1.js">
     
-    <script type="module" src="../assets/js/ru/maina.3wj6DcI1nd_4SUpiWJ__oLuvVmk.js"></script>
+    <script type="module" src="../assets/js/ru/maina.X6cbj2hwSA-cIlvcM2VlKtNyVRo.js"></script>
     
 <script src="../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
@@ -711,7 +729,7 @@ Aisin 03-72LE.
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',                    params: {
-                        'eid1': '6a779a5706af246ca271da311e605443',
+                        'eid1': '878883921e060e327173847f1620f0c6',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -732,7 +750,7 @@ Aisin 03-72LE.
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjegQjJ7KYACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJbgjbkbHL_J-xih7a5koWjrmaJUw">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjeinc7tj-QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkK25OReuInEUluWLiV5D-XQVe5rzA">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -752,7 +770,7 @@ Aisin 03-72LE.
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjegQjJ7KYACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQ0RvGqBygtyE-5CWVAl9tUep5EKg">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjeinc7tj-QCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkR7DeHzuaLevedJ808FLDF1K8CV1g">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -770,7 +788,7 @@ Aisin 03-72LE.
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',                    params: {
-                        'eid1': '6a779a5706af246ca271da311e605443',
+                        'eid1': '878883921e060e327173847f1620f0c6',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -809,25 +827,25 @@ Aisin 03-72LE.
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIyH2GrMsuaw8rJrfPrA5mTaWREeqw">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIy_agnFuHZE8kca51rsPyhalebmLg">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoL24FfwluP2kqOPRrwUy1guLXspkg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIWs5Liu07C2TRrPhSmZcPC9tIIGg">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoO5xJAG0EhoNoTiSya5_DpVjQVedQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoNqp7asArICQFAUtqCDszLaQ_RouQ">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoRqQhY-0QadbCbkdbwHLVkjLW6mlg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoRqTJXa5zq3flE5G9Gu13hWC7uxhw">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoXHpLSiADcvNv879oEto_1F9VFlbQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoWgFH-gH1S-lO21BHf8q4HYZSO1Fw">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5Tan9fwstpJofSD7vXkhC2GgYI4jQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5QwGgbA9dj2zdG_9XYgtG04NxcvkQ">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoYqDqU8UdTiCzxUc6B50HAYvN5P8Q">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKobenbWAYRje1nXQjiYmuz3V2wKEyg">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -842,15 +860,15 @@ Aisin 03-72LE.
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKodC3tnim9D2HtNs7upUokc8OBnDQg">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoe83u12PQ3q8UFyM_Vil3bv8MFfdQ">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjegQjJ7FfgCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoijbTV-yGN55YO-eevHbJr3XYVJdQ">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjeinc7thiACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKohFcvd_WB3H4u0QOUFJZveXocwdgw">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjegQjJ7KYACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKokRCrfmS0DkDsjYWxCwpcMmZ_qZ5w">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjeinc7tj-QCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKols1yTkgph9wmPOjvURU6tRi1uopw">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">7</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -912,7 +930,7 @@ Aisin 03-72LE.
 
 
 <div class="u-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
-
+    
 
 <div id="j541693645951074768" class="g-full-size-post c-post o-f">
     <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://www.drive2.ru/l/541693645951074768/">
@@ -990,17 +1008,21 @@ Aisin 03-72LE.
                 <h3 class="x-header">
                     Запчасти KIA — это РОССКО
                 </h3>
-                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>ROSSKO</span></a>
+                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>РОССКО</span></a>
                     <button class="r-button-unstyled u-extended-area u-icon-hover rossko-dots" data-action="menu.show">
                         <div class="m-icon c-icon i-dots"></div>
                     </button>
                     <div hidden>
                         <header>Реклама</header>
-                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAQ/">Информация о рекламе</a>
+                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAg/">Информация о рекламе</a>
                     </div>
             </div>
-            <p>Та самая запчасть в наличии <span>сегодня</span></p>
-            <a class="rossko-button c-button c-button--primary c-button--standard c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
+            <ul>
+                <li>Без контрафакта <span>Прямые контракты с брендами</span></li>
+                <li>1,5 млн. наименований <span>запчастей в ассортименте</span></li>
+                <li>Быстрая доставка <span>От 30 минут</span></li>
+            </ul>
+            <a class="rossko-button c-button c-button--primary c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
                 Купить в РОССКО
             </a>
         </div>
@@ -1017,8 +1039,6 @@ Aisin 03-72LE.
                     </a>
                     <div class="c-user-mcard__username">
                         <div class="c-user-mcard__group">
-                            
-
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span itemprop="name">Lankras</span></a>
                         </div>
 
@@ -1030,12 +1050,12 @@ Aisin 03-72LE.
                             <div class="c-post__body js-gallery o-f">
                 <div class="c-link-decorated" itemprop="articleBody">
 <p><a href="https://www.drive2.ru/l/456720913455384076/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/456720913455384076"><b>FAQ «Sportage»-1</b></a><br /><b>===============</b><br /><a href="https://www.drive2.ru/l/625447844685296006/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/625447844685296006"><b>АКПП 03-72LE (Toyota A44DE): оглавление.</b></a><br />=================</p><figure class="c-post__pic" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/syQweYQ4h_PWqtD-Ls9Cv9LNn84-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1447,1130" style="--ar:960/750; --height:750px;" rel="noopener" target="_blank"><x-img style="--ar: 960/750; --color: #767971;" width="960" height="750"><img alt="Фото в бортжурнале KIA Sportage (1G)" src="https://a.d-cd.net/syQweYQ4h_PWqtD-Ls9Cv9LNn84-960.jpg" width="960" height="750" loading="lazy" itemprop="contentUrl"></x-img></a></figure><p>
-<b>КПП автоматическая <a href="https://www.drive2.ru/parts/kia-hyundai/0k02519090/CUvGAEAAauM" class="c-link c-link--text u-bold" data-ihc-token="cp/CUvGAEAAauM" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">0K 025 19 090</a>.<br />В специализированных сервисах известна под названием —<br />Aisin 03-72LE.<br />Другие названия:<br />Toyota A44DE<br />Mitsubishi V4AW4 (V4AW4DAG / V4AW4-D-AG)<br /><a href="https://www.drive2.ru/parts/mitsubishi/mr377404/B-ZLgEAEs2E" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZLgEAEs2E" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">MR377404</a><br />Genegal Morors M41<br />AW372LE<br />A45DE<br />Предшественница этой коробки — Toyota A40.</b><br />Четырёхступенчатая автоматическая трансмиссия.<br />Обозначения AISIN (шильдик на коробке): 03-72 — это номер пакета фрикционов.<br />L — гидромеханическое переключение, LE — электронноуправляемая.</p><figure class="c-post__pic" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/KjaRqdQpoeiaewCBStCmlZ0Wf5c-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="970,464" style="--ar:960/460; --height:460px;" rel="noopener" target="_blank"><x-img style="--ar: 960/460; --color: #768083;" width="960" height="460"><img alt="Фото в бортжурнале KIA Sportage (1G)" src="https://a.d-cd.net/KjaRqdQpoeiaewCBStCmlZ0Wf5c-960.jpg" width="960" height="460" loading="lazy" itemprop="contentUrl"></x-img></a></figure><p>
+<b>КПП автоматическая <a href="https://www.drive2.ru/parts/kia-hyundai/0k02519090/CUvGAEAAauM" class="c-link c-link--text u-bold" data-ihc-token="cp/CUvGAEAAauM" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">0K 025 19 090</a>.<br />В специализированных сервисах известна под названием —<br />Aisin 03-72LE.<br />Другие названия:<br />Toyota A44DE<br />Mitsubishi V4AW4 (V4AW4DAG / V4AW4-D-AG)<br /><a href="https://www.drive2.ru/parts/mitsubishi/mr377404/B-ZLgEAEs2E" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZLgEAEs2E" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">MR377404</a><br />Genegal Morors M41<br />AW372LE<br />A45DE<br />Предшественница этой коробки — Toyota A40.</b><br />Четырёхступенчатая автоматическая трансмиссия.<br />Обозначения AISIN (шильдик на коробке): 03-72 — это номер пакета фрикционов.<br />L — гидромеханическое переключение, LE — электронноуправляемая.</p><figure class="c-post__pic" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/KjaRqdQpoeiaewCBStCmlZ0Wf5c-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="970,464" style="--ar:960/460; --height:460px;" rel="noopener" target="_blank"><x-img style="--ar: 960/460; --color: #768083;" width="960" height="460"><img alt="Фото в бортжурнале KIA Sportage (1G)" src="https://a.d-cd.net/KjaRqdQpoeiaewCBStCmlZ0Wf5c-960.jpg" width="960" height="460" loading="lazy" itemprop="contentUrl"></x-img></a></figure><p>
 <b><i>Устанавливалась, кроме «Sportage»-1, на многие другие автомобили.</i></b><br />Самая близкая модификация A44DE устанавливалась на:</p><p>Toyota Mark II 1984-<br />Toyota Hilux 2000-2005 4 SP R/AWD<br />Toyota Zace 2000-2007 4 SP FWD<br />Toyota previa 1998<br />Hyundai Terracan 2001<br />CHEVOLET/GAM GRAND VITARA 2005-. 4 SP RWD/4X4 03-72LE A44DE<br />CHEVOLET/GAM TRACKER 98-04 4 SP RWD/4X4 03-72LE A44DE<br />GEO TRACKER 1996-1997 4 SP RWD/4X4 03-72LE A44DE<br />ISUZU PANTHER 00-. IDN 4 SP RWD 03-72LE A44DE<br />KIA/ Chevrolet SPECTRA/SPECTRA5 2006-2009 PRK 4 SP FWD 03-72LE A44DE<br />Mazda MIATA/MX5 98-05 4 SP RWD A44DE<br />SUZUKI ESCUDO/GRAND ESCUDO 00-. JPN IDN 4 SP R/AWD 03-72LE A44DE<br />SUZUKI GRAND VITARA 1999-. IDN IRN RUS TWN 4 SP R/AWD L4 1.8L 2.0L V6 2.5L 2.7L 03-72LE A44DE<br />SUZUKI SIDEKICK 4 DOOR 92098 4 SP 2 &amp; 4WD L4 1.6L 03-72LE<br />SUZUKI VITARA 2000-2004 MYS PHL THA 4 SP R/AWD L4 1.6L 2.0L 03-72LE A44DE<br />SUZUKI XL-7 01-03 4 SP F/AWD V6 2.7L 03-72LE A44DE<br />SUZUKI X-90 95-98 4 SP 4X4 L4 1.6L 03-72LE A44DE<br />Mitsubishi Pajero IO 1998 — 2007<br />Mitsubishi Delica 1999<br />-----------------------<br /><b><i>03-72L</i></b>. Коробки 03-72L и 03-72LE отличаются между собой тем, что L — это «безмозглая» гидромеханическая коробка, а LE — это та же самая коробка, но переключение происходит за счёт электромагнитных клапанов, которым нужны мозги. Это абсолютно та же самая коробка, отличается только гидроблоками!</p><p>Японская 03-72L ставилась на 50 разных марок и моделей автомобилей. Отличия были только в колоколах и задних крышках. Например, на &quot;Митсубиси паджеро&quot; колокол имел отлив под стартер с левой стороны и раздатку, прикручиваемую прямо к коробке с выходом под передний кардан, также с левой стороны. А на &quot;Дайхатсу роки&quot; отлив под стартер — с правой стороны, а раздатка, также прикручиваемая к коробке, имеет выход под передний кардан с правой стороны. На всем известной коробке от &quot;Тойтоы ноах&quot; крышка прикручивалась сразу с выходом на кардан. При всём при этом тушка самой АКПП на всех марках и моделях автомобилей — абсолютно одинаковая!</p><p>То есть можно снять &quot;мозговитый&quot; гидроблок от коробки LE. И поставить вместо него гидроблок от L-серии. Причём, это можно сделать как с 72-й серией так и с 71-й — отличаются они только передаточным числом. Тем самым сделав из АКПП, которая шла с мозгами, абсолютно безмозглую АКПП. Конечно, если у вас имеется гидроблок от L серии.</p><p>АКПП без индекса E работает на основании только лишь данных с входного и выходного валов. А 4-я передача там блокируется через соленоид по температуре ДВС. Можно и без неё ездить или соленоид зашунтировать плюсом. То есть эта коробка не нуждается ни в каких электронных блоках управления! Можно ставить хоть на &quot;Москвича&quot;, и она поедет!<br />----------------------------<br /><b>Коробку 2wd можно поставить на Sportage 4wd.<br />Заменяется выходной вал на &quot;короткий&quot;.</b><br />--------------------------<br /><b>Ремонт:</b></p><p>1. <a href="https://www.drive2.ru/l/2793564/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/2793564">Отчёт.</a><br />2. <a href="https://www.drive2.ru/l/6674481/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/6674481">Отчёт.</a><br />3. Ведущая шестерня масляного насоса.<br /><a href="https://www.drive2.ru/l/608731969408231649/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/608731969408231649">Отчёт.</a></p><p><b>На других машинах:</b></p><p>1. Установка. <a href="https://www.drive2.ru/l/544306085578670975/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/544306085578670975">www.drive2.ru/l/544306085578670975/</a><br />2. Установка. <a href="https://www.drive2.ru/l/479411809795703071/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/479411809795703071">www.drive2.ru/l/479411809795703071/</a><br />3. совсем мало. <a href="https://www.drive2.ru/c/521340861087219745/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="gbr/521340861087219745">www.drive2.ru/c/521340861087219745/</a><br />4. Пружинки. <a href="https://www.drive2.ru/l/10509390/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/10509390">www.drive2.ru/l/10509390/</a><br />5. <a href="https://www.drive2.ru/l/543706851741532262/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/543706851741532262">www.drive2.ru/l/543706851741532262/</a><br />6. <a href="https://www.drive2.ru/l/554348749908870151/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/554348749908870151">www.drive2.ru/l/554348749908870151/</a></p><p><b><i>Совет:</i></b> <i>&quot;Нейтраль вообще не желательно включать, так как масло по коробке в этот момент не двигается, на перекрёстке — паркинг или ручник. Когда прогреваешь, попереключай коробку R-D-R-D с 5-10 сек задержкой, чтоб по коробке масло разошлось&quot;.</i><br /><b>Буксировка.</b> В заведенном двигателе в АКПП работает система подачи масла под давлением, которая доставляет жидкость АТФ ко всем трущимся механизмам. В неработающем двигателе автомобиля эта система не функционирует, детали планетарной коробки начинают вращаться без масла, механизмы работают в «сухом» режиме, в результате чего происходит быстрый износ этих деталей. Машину с АКПП с неработающим двигателем разрешается буксировать <b><i>до 40 км со скоростью до 40 км/ч</i></b> в положении &quot;нейтраль&quot;, далее требуется получасовой перерыв на остывание. Есть непроверенное утверждение, что отсоединить задний мост можно, поставив ручку раздатки в положение между 4H и 4L. Говорят, что именно там находится &quot;нейтраль&quot; раздатки. Но рекомендовать такое сомнительное решение никак нельзя. Чтобы буксировать далеко и быстро, нужно открутить задний кардан от моста и подвязать. От коробки откручивать нет смысла — будет вращаться от моста и оборвет подвязку. Передний кардан можно не откручивать, если полный привод не заблочен на постоянку.</p><figure class="c-post__pic" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/UGAAAgCVMeA-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="960,720" style="--ar:960/720; --height:720px;" rel="noopener" target="_blank"><x-img title="Нужно открутить эти болты — крепление заднего кардана к заднему мосту. Четыре болта на 14." style="--ar: 960/720; --color: #8e8993;" width="960" height="720"><img alt="Нужно открутить эти болты — крепление заднего кардана к заднему мосту. Четыре болта на 14. — KIA Sportage (1G)" src="https://a.d-cd.net/UGAAAgCVMeA-960.jpg" width="960" height="720" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Нужно открутить эти болты — крепление заднего кардана к заднему мосту. Четыре болта на 14.</figcaption></figure><p>Если болты откручиваются без труда, можно отсоединить кардан и от коробки. И снять его с автомобиля. Перед отсоединением рекомендуется пометить взаимное расположение отсоединяемых частей, например, царапиной.</p><figure class="c-post__pic c-post__pic--narrow c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/VyAAAgKVMeA-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="768,1024" style="max-width: 768px; --ar:768/1024; --height:1024px;" rel="noopener" target="_blank"><x-img title="Крепление заднего кардана к коробке. 4 болта на 12." style="--ar: 768/1024; --color: #87828a; max-width: 768px;" width="768" height="1024"><img alt="Крепление заднего кардана к коробке. 4 болта на 12. — KIA Sportage (1G)" src="https://a.d-cd.net/VyAAAgKVMeA-960.jpg" width="768" height="1024" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Крепление заднего кардана к коробке. 4 болта на 12.</figcaption></figure><p>
 <br /><b>Аккумулятор разряжен (Sportage-1 c АКПП)</b> — Легенды гласят, что у кого-то получалось запускать двигатель &quot;с толкача&quot;. Проверять правдивость легенд не стоит, чтобы не испортить коробку передач. Тем более, что есть более гуманный способ. Опыт: <i>&quot;Для запуска двигателя нам понадобится:<br />1. убрать ремень кондиционера, 2. верёвка около 5-6 мм диаметром (желательно не упругая), 3. крепкая палка (черенок от лопаты или ручка джека) 4. что-то постелить на землю. Теперь по пунктам: 1. убрать ремень можно, сняв его — если есть инструменты, или разрезав его, если инструментов нет. 2. верёвку наматываем, как на фото, на шкив коленвала, лёжа на земле (см. пункт 4.) Входит 3-4 оборота легко. 3. направляем свободный конец через шкив компрессора на улицу и наматываем его на крепкую палку. Я так делал три раза. Если будет помощник включать по команде стартер, будет совсем легко. Но я пробовал и в одиночку&quot;.</i></p><figure class="c-post__pic" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/geAAAgAUseA-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="960,720" style="--ar:960/720; --height:720px;" rel="noopener" target="_blank"><x-img title="Спасительная верёвка." style="--ar: 960/720; --color: #6b655c;" width="960" height="720"><img alt="Спасительная верёвка. — KIA Sportage (1G)" src="https://a.d-cd.net/geAAAgAUseA-960.jpg" width="960" height="720" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Спасительная верёвка.</figcaption></figure><p>
 </p><figure class="c-post__pic" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/3eAAAgAUseA-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="960,720" style="--ar:960/720; --height:720px;" rel="noopener" target="_blank"><x-img title="Спасительная палка." style="--ar: 960/720; --color: #8a8688;" width="960" height="720"><img alt="Спасительная палка. — KIA Sportage (1G)" src="https://a.d-cd.net/3eAAAgAUseA-960.jpg" width="960" height="720" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Спасительная палка.</figcaption></figure><p>
 
-<b>Сальник первичного вала заднего со стороны раздатки.</b> — <a href="https://www.drive2.ru/parts/kia-hyundai/0k02519711/B-ZOQEAEqEc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAEqEc" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">0K025 19 711</a>. Замена — <a href="https://www.drive2.ru/l/517633033000452622/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/517633033000452622">www.drive2.ru/l/517633033000452622/</a><br />------------------------<br /><b>АКПП: защита </b>— <a href="https://www.avtz.ru/?a=position&amp;pos=93" rel="nofollow noopener" target="_blank" data-generated class="c-link">www.avtz.ru/?a=position&amp;pos=93</a><br />--------------------------<br />Датчик скорости АКПП — <a href="https://www.drive2.ru/parts/kia-hyundai/0k0151944d/B-ZOQEAEoh4" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAEoh4" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">0K0151944D</a><br />Клапан давления масла АКПП — <a href="https://www.drive2.ru/parts/kia-hyundai/mk04r18742/B-ZOQEAGwM0" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGwM0" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">MK04R18742</a><br />----------------------<br />Щуп АКПП на Sportage имеет длину точно 67 сантиметров.<br />----------------------<br /><b>Радиатор двигателя (АКПП) (16-клап.)</b> — <a href="https://www.drive2.ru/parts/kia-hyundai/0k02215200/B-ZOQEAEp-8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAEp-8" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">0K022 15 200</a>, <a href="https://www.drive2.ru/parts/kia-hyundai/0k04815200/B9bkAEAFAH0" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEAFAH0" data-track="AjIBRE1NVAjegQjJ46VQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Us5uuaIq8gaH9Wv8qaYenz5lPnE" data-ym-target="parts_from_text">0K048 15 200</a>. Установка: <a href="https://www.drive2.ru/l/452263768194285752/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/452263768194285752">www.drive2.ru/l/452263768194285752/</a>. На этих радиаторах есть дополнительные трубки для системы охлаждения АКПП. Надо быть готовым к тому, что заливная горловина нового радиатора будет ближе к центру, чем на родном, поэтому надо запастись резиновой трубкой бОльшей длины от расширительного бачка к заливной горловине радиатора. Радиатор от машины с АКПП можно поставить на машину с МКПП. При этом просто не используется теплообменник масла коробки передач. Можно ли вместо радиатора АКПП поставить радиатор МКПП? Поставить можно — соединив масляные шланги простой трубочкой. Однако, если автомобиль используется суровой зимой, это нежелательно. Контур жидкости АКПП проходит через основной радиатор ОЖ не для охлаждения, а для теплообмена. ОЖ нагревается от двигателя, часть тепла передаётся на жидкость АКПП. В варианте с радиатором от МКПП в морозы будут проблемы. АКПП не прогревается в режиме &quot;P&quot; (парковки). А 4-ая передача не включается при температуре ATF ниже +30'C. Повышенная вязкость холодной ATF тоже положительно на ресурсе и режимах работы не скажется.<br />----------------------------------<br /><b>На бездорожье.</b> <i>&quot;Если в двух словах. Автомат даёт большие внедорожные возможности. Во-первых при установке больших колёс не хватает занижения (мощности чтобы провернуть колёса) автомат это своей ГТ-шкой компенсирует.Во вторых авто в основном садится на слабонесущих поверхностях где нужно двигаться на &quot;мягких лапах&quot; и также плавно трогаться .На сцеплении это можно сделать поджигая его, но на больших колёсах плавно тронуться практически не получается (горит ). Я сам был приверженцем механики, но пришлось пересмотреть свои взгляды, к этому подвиг опыт езды по тяжёлому бездорожью. У нас в клубе сейчас практически все меняют механику на автомат. И ещё из трофи-рейдов машины на автоматах возвращались всегда сами, а вот машины со сгоревшим сцеплением притаскивали пачками.Не обошла эта проблема и меня&quot;.</i><br />Отчёты в работе.</p><p>Устранение течи, покраска поддона — <a href="https://www.drive2.ru/l/635906674166604829/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/635906674166604829">www.drive2.ru/l/635906674166604829/</a><br />============<br /><b>Отчёты в работе.</b></p><p>Маховик <a href="https://www.drive2.ru/l/638108721079127579/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/638108721079127579">www.drive2.ru/l/638108721079127579/</a><br />Диагностика <a href="https://www.drive2.ru/l/643493854154088702/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/643493854154088702">www.drive2.ru/l/643493854154088702/</a><br />ремонт гидроблока — <a href="https://www.drive2.ru/l/643976264880772695/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/643976264880772695">www.drive2.ru/l/643976264880772695/</a><br />Датчик <a href="https://www.drive2.ru/l/652700889647153402/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/652700889647153402">www.drive2.ru/l/652700889647153402/</a><br /><a href="https://www.drive2.ru/l/650759701868328108/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/650759701868328108">www.drive2.ru/l/650759701868328108/</a><br />=================<br /><b>Отчёты-источники.</b></p><p>1. <a href="https://www.drive2.ru/l/550586770874433770/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/550586770874433770">Отчёт</a>. Автор <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/myatnokriliy/" data-ihc-token="u/Myatnokriliy"><span>Myatnokriliy</span></a>. О разновидностях этой коробки на разных машинах.<br /><b>===============</b><br /><a href="https://www.drive2.ru/l/456720913455384076/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/456720913455384076"> <b>FAQ «Sportage»-1</b></a></p>                </div>
+<b>Сальник первичного вала заднего со стороны раздатки.</b> — <a href="https://www.drive2.ru/parts/kia-hyundai/0k02519711/B-ZOQEAEqEc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAEqEc" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">0K025 19 711</a>. Замена — <a href="https://www.drive2.ru/l/517633033000452622/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/517633033000452622">www.drive2.ru/l/517633033000452622/</a><br />------------------------<br /><b>АКПП: защита </b>— <a href="https://www.avtz.ru/?a=position&amp;pos=93" rel="nofollow noopener" target="_blank" data-generated class="c-link">www.avtz.ru/?a=position&amp;pos=93</a><br />--------------------------<br />Датчик скорости АКПП — <a href="https://www.drive2.ru/parts/kia-hyundai/0k0151944d/B-ZOQEAEoh4" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAEoh4" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">0K0151944D</a><br />Клапан давления масла АКПП — <a href="https://www.drive2.ru/parts/kia-hyundai/mk04r18742/B-ZOQEAGwM0" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGwM0" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">MK04R18742</a><br />----------------------<br />Щуп АКПП на Sportage имеет длину точно 67 сантиметров.<br />----------------------<br /><b>Радиатор двигателя (АКПП) (16-клап.)</b> — <a href="https://www.drive2.ru/parts/kia-hyundai/0k02215200/B-ZOQEAEp-8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAEp-8" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">0K022 15 200</a>, <a href="https://www.drive2.ru/parts/kia-hyundai/0k04815200/B9bkAEAFAH0" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEAFAH0" data-track="AjIBRE1NVAjeinc7q99QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6794mmFsHwdZUDJJP3CUWxNDkT2g" data-ym-target="parts_from_text">0K048 15 200</a>. Установка: <a href="https://www.drive2.ru/l/452263768194285752/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/452263768194285752">www.drive2.ru/l/452263768194285752/</a>. На этих радиаторах есть дополнительные трубки для системы охлаждения АКПП. Надо быть готовым к тому, что заливная горловина нового радиатора будет ближе к центру, чем на родном, поэтому надо запастись резиновой трубкой бОльшей длины от расширительного бачка к заливной горловине радиатора. Радиатор от машины с АКПП можно поставить на машину с МКПП. При этом просто не используется теплообменник масла коробки передач. Можно ли вместо радиатора АКПП поставить радиатор МКПП? Поставить можно — соединив масляные шланги простой трубочкой. Однако, если автомобиль используется суровой зимой, это нежелательно. Контур жидкости АКПП проходит через основной радиатор ОЖ не для охлаждения, а для теплообмена. ОЖ нагревается от двигателя, часть тепла передаётся на жидкость АКПП. В варианте с радиатором от МКПП в морозы будут проблемы. АКПП не прогревается в режиме &quot;P&quot; (парковки). А 4-ая передача не включается при температуре ATF ниже +30'C. Повышенная вязкость холодной ATF тоже положительно на ресурсе и режимах работы не скажется.<br />----------------------------------<br /><b>На бездорожье.</b> <i>&quot;Если в двух словах. Автомат даёт большие внедорожные возможности. Во-первых при установке больших колёс не хватает занижения (мощности чтобы провернуть колёса) автомат это своей ГТ-шкой компенсирует.Во вторых авто в основном садится на слабонесущих поверхностях где нужно двигаться на &quot;мягких лапах&quot; и также плавно трогаться .На сцеплении это можно сделать поджигая его, но на больших колёсах плавно тронуться практически не получается (горит ). Я сам был приверженцем механики, но пришлось пересмотреть свои взгляды, к этому подвиг опыт езды по тяжёлому бездорожью. У нас в клубе сейчас практически все меняют механику на автомат. И ещё из трофи-рейдов машины на автоматах возвращались всегда сами, а вот машины со сгоревшим сцеплением притаскивали пачками.Не обошла эта проблема и меня&quot;.</i><br />Отчёты в работе.</p><p>Устранение течи, покраска поддона — <a href="https://www.drive2.ru/l/635906674166604829/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/635906674166604829">www.drive2.ru/l/635906674166604829/</a><br />============<br /><b>Отчёты в работе.</b></p><p>Маховик <a href="https://www.drive2.ru/l/638108721079127579/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/638108721079127579">www.drive2.ru/l/638108721079127579/</a><br />Диагностика <a href="https://www.drive2.ru/l/643493854154088702/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/643493854154088702">www.drive2.ru/l/643493854154088702/</a><br />ремонт гидроблока — <a href="https://www.drive2.ru/l/643976264880772695/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/643976264880772695">www.drive2.ru/l/643976264880772695/</a><br />Датчик <a href="https://www.drive2.ru/l/652700889647153402/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/652700889647153402">www.drive2.ru/l/652700889647153402/</a><br /><a href="https://www.drive2.ru/l/650759701868328108/" rel="noopener" target="_blank" data-generated class="c-link" data-ihc-token="cjr/650759701868328108">www.drive2.ru/l/650759701868328108/</a><br />=================<br /><b>Отчёты-источники.</b></p><p>1. <a href="https://www.drive2.ru/l/550586770874433770/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/550586770874433770">Отчёт</a>. Автор <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/myatnokriliy/" data-ihc-token="u/Myatnokriliy"><span>Myatnokriliy</span></a>. О разновидностях этой коробки на разных машинах.<br /><b>===============</b><br /><a href="https://www.drive2.ru/l/456720913455384076/" rel="noopener" target="_blank" class="c-link" data-ihc-token="cjr/456720913455384076"> <b>FAQ «Sportage»-1</b></a></p>                </div>
 
                 
 
@@ -1045,11 +1065,7 @@ Aisin 03-72LE.
                     <div>
                             <span class="c-post-meta__item">26 сентября 2019</span>
                                                                                                             <span class="c-post-meta__item">Метки: <a class="c-link c-link--current" href="https://www.drive2.ru/experience/kia/g569/?t=165" itemprop="about">своими руками</a></span>
-                                                                    </div>
-
-                    <div>
-                        
-                    </div>
+                                            </div>
                 </div>
                 <div class="o-group o-group--justify o-f">
                     <div class="o-group o-group--l">
@@ -1081,7 +1097,7 @@ Aisin 03-72LE.
     </summary>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k02519090/CUvGAEAAauM" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k02519090/CUvGAEAAauM" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Автоматическая коробка передач</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">0K02519090</span></div>
                     <div class="c-post-part__manufacturer">KIA HYUNDAI</div>
@@ -1091,7 +1107,7 @@ Aisin 03-72LE.
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/mitsubishi/mr377404/B-ZLgEAEs2E" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/mitsubishi/mr377404/B-ZLgEAEs2E" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Автоматическая коробка передач для Pajero</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">MR377404</span></div>
                     <div class="c-post-part__manufacturer">Mitsubishi</div>
@@ -1101,7 +1117,7 @@ Aisin 03-72LE.
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/japko/27l03/CbL0AEAAYN8" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/japko/27l03/CbL0AEAAYN8" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Поперечная рулевая тяга</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">27L03</span></div>
                     <div class="c-post-part__manufacturer">JapKo</div>
@@ -1111,7 +1127,7 @@ Aisin 03-72LE.
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/japko/20l03/CL6ygEAAQ7s" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/japko/20l03/CL6ygEAAQ7s" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Воздушный фильтр</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">20L03</span></div>
                     <div class="c-post-part__manufacturer">JapKo</div>
@@ -1121,7 +1137,7 @@ Aisin 03-72LE.
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k02519711/B-ZOQEAEqEc" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k02519711/B-ZOQEAEqEc" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Уплотнительное кольцо вала кпп</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">0K02519711</span></div>
                     <div class="c-post-part__manufacturer">KIA HYUNDAI</div>
@@ -1130,7 +1146,7 @@ Aisin 03-72LE.
             </div>
         </div>
             <script type="application/json">
-            [{"tag":"CP:0K0151944D","code":"0K0151944D","visible":true,"metricToken":"AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg","link":"/parts/kia-hyundai/0k0151944d/B-ZOQEAEoh4","caption":"Датчик скорости","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"},{"tag":"CP:MK04R18742","code":"MK04R18742","visible":true,"metricToken":"AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg","link":"/parts/kia-hyundai/mk04r18742/B-ZOQEAGwM0","caption":"Маслогидравлический клапан акп","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"},{"tag":"CP:0K02215200","code":"0K02215200","visible":true,"metricToken":"AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg","link":"/parts/kia-hyundai/0k02215200/B-ZOQEAEp-8","caption":"Радиатор в сборе","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"},{"tag":"CP:0K04815200","code":"0K04815200","visible":true,"metricToken":"AiIBRE1NVAjegQjJ6SOQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHobWT6NjSDDJgAtzQOaFfxMnZdamg","link":"/parts/kia-hyundai/0k04815200/B9bkAEAFAH0","caption":"Радиатор в сборе","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"}]
+            [{"tag":"CP:0K0151944D","code":"0K0151944D","visible":true,"metricToken":"AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q","link":"/parts/kia-hyundai/0k0151944d/B-ZOQEAEoh4","caption":"Датчик скорости","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"},{"tag":"CP:MK04R18742","code":"MK04R18742","visible":true,"metricToken":"AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q","link":"/parts/kia-hyundai/mk04r18742/B-ZOQEAGwM0","caption":"Маслогидравлический клапан акп","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"},{"tag":"CP:0K02215200","code":"0K02215200","visible":true,"metricToken":"AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q","link":"/parts/kia-hyundai/0k02215200/B-ZOQEAEp-8","caption":"Радиатор в сборе","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"},{"tag":"CP:0K04815200","code":"0K04815200","visible":true,"metricToken":"AiIBRE1NVAjeinc7swtACeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHrN73IgE4v6bn5UnPAE6N1kU_X29Q","link":"/parts/kia-hyundai/0k04815200/B9bkAEAFAH0","caption":"Радиатор в сборе","manufacturers":"KIA HYUNDAI","helpLink":"/help/support?topic=carparts\u0026message=%D0%92%D1%8B+%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C+%D1%81%D0%BE+%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%3A+https%3A%2F%2Fwww.drive2.ru%2Fl%2F541693645951074768%0A%0A"}]
         </script>
         <button class="x-box-more" data-action="post.parts" data-slot="post.parts-all">Показать все 9</button>
 </details>
@@ -1138,8 +1154,8 @@ Aisin 03-72LE.
    __run('d2.ym')('posts_with_parts');
 </script>
 
-
 </div>
+
 
 
         <div class="x-box o-f">
@@ -1156,7 +1172,7 @@ Aisin 03-72LE.
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '6a779a5706af246ca271da311e605443',
+                        'eid1': '878883921e060e327173847f1620f0c6',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -1181,10 +1197,10 @@ Aisin 03-72LE.
 
 
 
-
-    <h2 style="display: none;">
-        KIA Sportage 1995, двигатель бензиновый 2.0 л, 128 л. с., полный привод, автоматическая коробка передач — своими руками
-    </h2>
+    
+        <h2 style="display: none;">
+            KIA Sportage 1995, двигатель бензиновый 2.0 л, 128 л. с., полный привод, автоматическая коробка передач — своими руками
+        </h2>
 
     <div class="u-mobile-noselect x-box x-box--legacy o-f x-box--w-label" data-slot="drom.root" data-ym-view="drom_logbook_view">
         <div class="o-group o-group--justify o-group--top">
@@ -1209,29 +1225,29 @@ Aisin 03-72LE.
             </div>
         </div>
         <div class="drom-grid" style="--cols: 4" >
-                <a class="drom-item" href="https://auto.drom.ru/odintsovo/kia/sportage/833883194.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegQjJ6b_QCLeegEAABAIAAFUhGJY_xy8GLpzjFvKju9P-3v-j">
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/750984383.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeinc7s4BwCLeegEAABAIAAI8pNqYxpZqJNuXKLaKAtn--8AqA">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/C1qZ8XDzL1jI2nS450Ub8X2HVtOb32pknhaR2lnYc1PNCJaaIww_Wp2UwvC8fou23Gwg3SKySryc2uVq/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
+                    <div class="drom-item__location">Москва</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2000</h4>
+                    <div class="drom-item__price">180 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/odintsovo/kia/sportage/833883194.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeinc7s4BwCLeegEAABAIAAI8pNqYxpZqJNuXKLaKAtn--8AqA">
 <x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/yNxYS_UcM48jLI6YsSyJcG_PZleEQ_2nWbHjpMbmaSAlpEkZsEp88mMtPEz433Rtd8y9ojhaNlJHMjWQ/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
                     <div class="drom-item__location">Одинцово</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2002</h4>
                     <div class="drom-item__price">570 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/843803035.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegQjJ6b_QCLeegEAABAIAAFUhGJY_xy8GLpzjFvKju9P-3v-j">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/5aFk2ysWAG3XZqypxug8X5fAJIDvghI1BLXtWADy9OpLK1oCm705e_0YfqO_TCXvLOkWYqcG4IesfGmu/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
-                    <div class="drom-item__price">230 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/orehovo-zuevo/kia/sportage/417823419.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegQjJ6b_QCLeegEAABAIAAFUhGJY_xy8GLpzjFvKju9P-3v-j">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/CvYbSIwkp8dNRXXiHtzN0lRhAn4SN9ee34OIO8BsyuTNJZV9t4CjTUEtJ4MhNEYUnHmduk054Nxr2FLT/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
-                    <div class="drom-item__location">Орехово-Зуево</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 1995</h4>
-                    <div class="drom-item__price">210 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/766720248.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegQjJ6b_QCLeegEAABAIAAFUhGJY_xy8GLpzjFvKju9P-3v-j">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/yA-If2ldfmZGqidJ1wueNuZwHbSZwJIoYYRLOXHZWi6GwaFk7QPwBa1qeZc7A53T9LRxUpCikZwmHT_W/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/609531573.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeinc7s4BwCLeegEAABAIAAI8pNqYxpZqJNuXKLaKAtn--8AqA">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/wYwUu-HhjzJcdsADCUPBfCcKYpuosyY5gU967uPQGqVTGYbYZ1T4aY1ZRUr6deZg4XyLRNOXaGtHwg7y/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
-                    <div class="drom-item__price">465 000 ₽</div>
+                    <div class="drom-item__price">250 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/pushkino/kia/sportage/292528576.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeinc7s4BwCLeegEAABAIAAI8pNqYxpZqJNuXKLaKAtn--8AqA">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/VGMZ-OJaaeG9cq_vOr9sL7Wi8opKaxSlmshJinmSZq32KKscMQA1HCnr6XHn4CGBV50egajpZNOezYGf/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                    <div class="drom-item__location">Пушкино</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 1999</h4>
+                    <div class="drom-item__price">110 000 ₽</div>
                 </a>
         </div>
         <a class="x-box-more" href="https://auto.drom.ru/moscow/kia/sportage/generation1/?distance=200&amp;ph=1&amp;unsold=1&amp;utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click">Посмотреть ещё</a>
@@ -1239,7 +1255,7 @@ Aisin 03-72LE.
     </div>
 
 
-        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjegQjJ4JgQCLi5QEAAF4IAACgyTXJKE0Pw9psOPbz2_18vd4aZ">
+        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjeinc7qNIQCLi5QEAAF4IAADsknub7t-Hg_RBPT8SA67Krq9Sm">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -1248,7 +1264,7 @@ Aisin 03-72LE.
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',                    params: {
-                        'eid1': '6a779a5706af246ca271da311e605443',
+                        'eid1': '878883921e060e327173847f1620f0c6',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -1268,13 +1284,13 @@ Aisin 03-72LE.
 
         </div>
 
-    <div class="o-columns o-f">
-        <div id="comments" class="x-box">
-                    <h3 class="x-header x-header--m" id="commentstitle">
-                        Комментарии
-                            <span class="c-counter">15</span>
-                    </h3>
-                        
+        <div class="o-columns o-f">
+            <div id="comments" class="x-box">
+                        <h3 class="x-header x-header--m" id="commentstitle">
+                            Комментарии
+                                <span class="c-counter">15</span>
+                        </h3>
+                                
 <div class="c-link-decorated o-b-xl x-text">
     Войдите или зарегистрируйтесь, чтобы писать комментарии, задавать вопросы и&nbsp;участвовать в&nbsp;обсуждении.
     <div class="o-t-l o-group o-group--v">
@@ -1288,7 +1304,7 @@ Aisin 03-72LE.
 
 
 
-            <div class="c-comments o-f">
+                <div class="c-comments o-f">
 
 
     <div id="a592823960299636506" class="c-comment"
@@ -1299,8 +1315,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/fan34/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #d2abac;" width="60" height="60"><img src="https://a.d-cd.net/2j1nclYRdYQtQ1bKyx1owYwQtPg-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/fan34/" data-ihc-token="p/592822036154308721" itemprop="url"><span  itemprop="name">FAN34</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/fan34/" data-ihc-token="p/592822036154308721" itemprop="url"><span itemprop="name">FAN34</span></a>
 
 
 
@@ -1315,7 +1330,7 @@ Aisin 03-72LE.
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p>Не сочтите за труд откликнуться и помочь.<br />КИА 1995 г, бензин, полный. Машиной владею несколько дней. Накрылась АКПП. Судорожно начинаю искать. НО (!) не могу даже определить марку/тип. Несколько развеяла недостаток образования данная статья. Нашёл на <a href="https://www.drom.ru/?utm_source=drive2&utm_medium=cpt&utm_campaign=drom_00_russia_integration_desktop_media_handmade&utm_content=desktop_and_mobile_integration_text" rel="nofollow noopener" target="_blank" class="c-link " data-track="AiIBRE1NVAjegQjJ6tFACROOgEAABQIAAQkTjoBAAAUDCNCiQEAADIw3hg1QyJ8ApsjCilNZQp8XTQO3jg">Дроме</a> недорогой вариант. Модель 03-72LE, японская. Но указана, что от заднеприводного. Продавец говорит, что на 4вд не пойдёт. Хочется спросить подтверждения людей опытных</p>
+                <p>Не сочтите за труд откликнуться и помочь.<br />КИА 1995 г, бензин, полный. Машиной владею несколько дней. Накрылась АКПП. Судорожно начинаю искать. НО (!) не могу даже определить марку/тип. Несколько развеяла недостаток образования данная статья. Нашёл на <a href="https://www.drom.ru/?utm_source=drive2&utm_medium=cpt&utm_campaign=drom_00_russia_integration_desktop_media_handmade&utm_content=desktop_and_mobile_integration_text" rel="nofollow noopener" target="_blank" class="c-link " data-track="AiIBRE1NVAjeinc7tJHgCROOgEAABQIAAQkTjoBAAAUDCNCiQEAADIziYhP7HvnRRYsmd7exu9p61QzwUQ">Дроме</a> недорогой вариант. Модель 03-72LE, японская. Но указана, что от заднеприводного. Продавец говорит, что на 4вд не пойдёт. Хочется спросить подтверждения людей опытных</p>
                 <p style="max-width: 640px">
 <a href="https://i-a.d-cd.net/wI3uvjsb2shfiQ-XCriflfeJoMk-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="640,480" style="--ar:640/480; --height:480px;" rel="noopener" target="_blank"><x-img class="is-rounded has-darkening-hover" style="--ar: 640/480; --color: #7c8797;" width="640" height="480"><img src="https://i-a.d-cd.net/wI3uvjsb2shfiQ-XCriflfeJoMk-960.jpg" width="640" height="480" loading="lazy"></x-img></a>
                     </p>
@@ -1348,8 +1363,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lankras/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #7f889d;" width="60" height="60"><img src="https://a.d-cd.net/68d6176s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span  itemprop="name">Lankras</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span itemprop="name">Lankras</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1396,8 +1410,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/fan34/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #d2abac;" width="60" height="60"><img src="https://a.d-cd.net/2j1nclYRdYQtQ1bKyx1owYwQtPg-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/fan34/" data-ihc-token="p/592822036154308721" itemprop="url"><span  itemprop="name">FAN34</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/fan34/" data-ihc-token="p/592822036154308721" itemprop="url"><span itemprop="name">FAN34</span></a>
 
 
 
@@ -1443,8 +1456,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lankras/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #7f889d;" width="60" height="60"><img src="https://a.d-cd.net/68d6176s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span  itemprop="name">Lankras</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span itemprop="name">Lankras</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1491,8 +1503,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/fan34/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #d2abac;" width="60" height="60"><img src="https://a.d-cd.net/2j1nclYRdYQtQ1bKyx1owYwQtPg-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/fan34/" data-ihc-token="p/592822036154308721" itemprop="url"><span  itemprop="name">FAN34</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/fan34/" data-ihc-token="p/592822036154308721" itemprop="url"><span itemprop="name">FAN34</span></a>
 
 
 
@@ -1538,8 +1549,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lankras/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #7f889d;" width="60" height="60"><img src="https://a.d-cd.net/68d6176s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span  itemprop="name">Lankras</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span itemprop="name">Lankras</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1586,8 +1596,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/andy-izhevsky/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #95999b;" width="60" height="60"><img src="https://a.d-cd.net/LRL82L2akCHWBgXX9utnirm9v6M-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andy-izhevsky/" data-ihc-token="p/1443446" itemprop="url"><span  itemprop="name">AndY-Izhevsky</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andy-izhevsky/" data-ihc-token="p/1443446" itemprop="url"><span itemprop="name">AndY-Izhevsky</span></a>
 
 
 
@@ -1636,8 +1645,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/golovkin88/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b9930au-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span  itemprop="name">golovkin88</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span itemprop="name">golovkin88</span></a>
 
 
 
@@ -1683,8 +1691,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/golovkin88/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b9930au-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span  itemprop="name">golovkin88</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span itemprop="name">golovkin88</span></a>
 
 
 
@@ -1699,7 +1706,7 @@ Aisin 03-72LE.
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p><a href="https://www.drive2.ru/parts/eneos/oil1304/B9bkAEAAStM" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEAAStM" data-track="AjIBRE1NVAjegQjJ67ugCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6T2WI8lqIkI4esIqdrn3wyPjsEN8" data-ym-target="parts_from_comment">OIL1304</a> я брал для замены две таких и две литрушки <a href="https://www.drive2.ru/parts/eneos/oil1300/B9bkAEABwF8" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEABwF8" data-track="AjIBRE1NVAjegQjJ67ugCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6T2WI8lqIkI4esIqdrn3wyPjsEN8" data-ym-target="parts_from_comment">OIL1300</a>, одна литровая осталась</p>
+                <p><a href="https://www.drive2.ru/parts/eneos/oil1304/B9bkAEAAStM" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEAAStM" data-track="AjIBRE1NVAjeinc7tXxACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6YzHKD6ALT0CYrsker7ZJJjoJfXs" data-ym-target="parts_from_comment">OIL1304</a> я брал для замены две таких и две литрушки <a href="https://www.drive2.ru/parts/eneos/oil1300/B9bkAEABwF8" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEABwF8" data-track="AjIBRE1NVAjeinc7tXxACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6YzHKD6ALT0CYrsker7ZJJjoJfXs" data-ym-target="parts_from_comment">OIL1300</a>, одна литровая осталась</p>
                 <p style="max-width: 444px">
 <a href="https://i-a.d-cd.net/RIAAAgH9YeA-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="887,1920" style="--ar:444/960; --height:960px;" rel="noopener" target="_blank"><x-img class="is-rounded has-darkening-hover" style="--ar: 444/960; --color: #f4f4f5;" width="444" height="960"><img src="https://i-a.d-cd.net/RIAAAgH9YeA-960.jpg" width="444" height="960" loading="lazy"></x-img></a>
                     </p>
@@ -1732,8 +1739,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/golovkin88/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b9930au-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span  itemprop="name">golovkin88</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span itemprop="name">golovkin88</span></a>
 
 
 
@@ -1779,8 +1785,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lankras/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #7f889d;" width="60" height="60"><img src="https://a.d-cd.net/68d6176s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span  itemprop="name">Lankras</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lankras/" data-ihc-token="p/1682288" itemprop="url"><span itemprop="name">Lankras</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1827,8 +1832,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/golovkin88/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b9930au-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span  itemprop="name">golovkin88</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/golovkin88/" data-ihc-token="p/4899916394579289574" itemprop="url"><span itemprop="name">golovkin88</span></a>
 
 
 
@@ -1878,8 +1882,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/andy-izhevsky/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #95999b;" width="60" height="60"><img src="https://a.d-cd.net/LRL82L2akCHWBgXX9utnirm9v6M-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andy-izhevsky/" data-ihc-token="p/1443446" itemprop="url"><span  itemprop="name">AndY-Izhevsky</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andy-izhevsky/" data-ihc-token="p/1443446" itemprop="url"><span itemprop="name">AndY-Izhevsky</span></a>
 
 
 
@@ -1940,8 +1943,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/dpas/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #5f5954;" width="60" height="60"><img src="https://a.d-cd.net/48c952ds-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/dpas/" data-ihc-token="p/497036431433138913" itemprop="url"><span  itemprop="name">Dpas</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/dpas/" data-ihc-token="p/497036431433138913" itemprop="url"><span itemprop="name">Dpas</span></a>
 
 
 
@@ -1999,8 +2001,7 @@ Aisin 03-72LE.
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/dpas/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #5f5954;" width="60" height="60"><img src="https://a.d-cd.net/48c952ds-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/dpas/" data-ihc-token="p/497036431433138913" itemprop="url"><span  itemprop="name">Dpas</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/dpas/" data-ihc-token="p/497036431433138913" itemprop="url"><span itemprop="name">Dpas</span></a>
 
 
 
@@ -2050,16 +2051,16 @@ Aisin 03-72LE.
     </div>
 
 
-            </div>
+                </div>
 
 
 
 
-                                </div>
-            <div>
+                                            </div>
+                <div>
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_151031424031449778" style="max-height: calc(47vh + 23vh);"></div>
+        <div id="adfox_151031424031449778" style="max-height: calc(44vh + 26vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -2067,7 +2068,7 @@ Aisin 03-72LE.
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '6a779a5706af246ca271da311e605443',
+                        'eid1': '878883921e060e327173847f1620f0c6',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',
@@ -2087,8 +2088,8 @@ Aisin 03-72LE.
 
         </div>
 
-            </div>
-    </div>
+                </div>
+        </div>
 </div>
 
 
@@ -2121,6 +2122,7 @@ Aisin 03-72LE.
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/rules/">Правила сайта</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/">Пользовательское соглашение</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/data-use/">Политика конфиденциальности</a>
+                                            <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/recommendations/">Применяются рекомендательные технологии</a>
                                         </p>
                                 </div>
                             <div class="c-footer__copyrights">

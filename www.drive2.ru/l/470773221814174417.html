@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 9853063d0aef393ebbcbf12a7ad15f1c -->
+<!-- X-Request-ID: 2f6ded22e592ea2b39b7b04b1200bcf1 -->
 
 <head>
     <meta charset="utf-8">
@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://ad.mail.ru">
     <script>
         window.d2Env = Object.freeze({
-                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2h3d0FJQUFKQ3M2HBIwCLi8LW_MxqEykKM4L4gpwQ' },
+                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2gtUVFJQUFCZ2_UfE4D8NVyts46JFFSuK_4TStGJA' },
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/_api/upload?.AMIG=.AMIG',
-            requestId: '9853063d0aef393ebbcbf12a7ad15f1c',
+            requestId: '2f6ded22e592ea2b39b7b04b1200bcf1',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -33,9 +33,27 @@
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
         
         {
-            if (navigator.webdriver === false) {
+            {
+                const body = {
+                    webdriver: navigator?.webdriver,
+                    notChrome: !window.chrome,
+                    noPlugins: navigator?.plugins?.length === 0,
+                    oddSampleRate: false,
+                    noAvailScreen: window.screen?.availWidth === 0 || window.screen?.availHeight === 0,
+                }
+                try {
+                    const audioCtx = new AudioContext();
+                    if (audioCtx.sampleRate === 24000) body.oddSampleRate = true;
+                    audioCtx.close();
+                } catch {}
                 const ac = new AbortController();
-                fetch('/_api/vuv', { method: 'POST', body: '9853063d0aef393ebbcbf12a7ad15f1c', signal: ac.signal })
+                fetch('/_api/vuv', {
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8',
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    signal: ac.signal })
                     .finally((e) => {
                         window.verificationInProgress = undefined;
                         document.dispatchEvent(new CustomEvent('verification-complete'));
@@ -46,16 +64,16 @@
         }
         
     </script>
-    <script src="../assets/js/sync-start.Jt2FpfMcIudHRv6nGJHtvtbyQpY.js"></script>
+    <script src="../assets/js/sync-start.UptCqyzjzTTavRXIb_CY4pZfF68.js"></script>
     
-    <link rel="stylesheet" href="../assets/css/d/main.x3yjlldghefGxzIMrmg51ek89mA.css">
+    <link rel="stylesheet" href="../assets/css/d/main.vzcnltE4RCshacLrElVzi1zsd90.css">
     <link rel="stylesheet" href="../assets/css/d/res.tl63HPykNqAv7UeLg2Ubh8Fr_Qs.css">
     
     <link rel="stylesheet" href="../assets/css/d/car.IyqRU4Nc3uNM5zszOrOLtoWCmes.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-YKS6ehaH.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DRDg6CPe.js">
     
-    <script type="module" src="../assets/js/ru/maina.3wj6DcI1nd_4SUpiWJ__oLuvVmk.js"></script>
+    <script type="module" src="../assets/js/ru/maina.LwqEs1dvGLYX_LxwsaKkgCHR7pU.js"></script>
     
 <script src="../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
@@ -695,7 +713,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',                    params: {
-                        'eid1': '9853063d0aef393ebbcbf12a7ad15f1c',
+                        'eid1': '2f6ded22e592ea2b39b7b04b1200bcf1',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -716,7 +734,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjegPiiVnlQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkLfGqp_L1kU1Z5-8_4QqcCyrT_4Zw">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjeimbYoTVQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJaUPpP-SaMuI-b80jfJl2rOJSKhw">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -736,7 +754,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F470773221814174417" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjegPiiVnlQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQbQTzJduRCZjETJ0zJqPDTnUeO6g">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F470773221814174417" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjeimbYoTVQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkRzuBhideUUBRMFaKRsm4nDWw3Iyg">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -754,7 +772,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',                    params: {
-                        'eid1': '9853063d0aef393ebbcbf12a7ad15f1c',
+                        'eid1': '2f6ded22e592ea2b39b7b04b1200bcf1',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -793,25 +811,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIyvNG7uxsX1XQjLN3n7WcSfCmxU9g">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCNCiQEAADIxwuCE0hBacXlpI3HnQLqysB8k8sA">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIJPLTn1LDksgexUTzS6aNDtrIY5A">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoK5Ic2QKAY9AmIM_GmZTPaEp5a7PA">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoP5SFvyyOcMZCXKHikIl-wNEq-TIQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoMtzwCSlRndtXkC9FfOFGeTfmoGig">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoSjnPlvY5cpOODTj515Bfo0T1d_Yg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoQgg1vw2EQASmXfhpoUXD5bxicJzQ">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoX25bVQ16zIKEMJp24F6aFHVFUejQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoVg_GQGG202Wzg1TclesSHtSGvbTA">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5Tr2JfgthPOI6iewUtT6eJ6SfVJYw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5TkpJHHueo0JPUaEBABrszjx-moeA">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoYBgYWTxhyqaOiTMUMAwYb8_otrqw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoabIV9oq1CnATEeVvjQkO4myyoKZg">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -826,15 +844,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoc0FVRNIe9mk8uJum3PnUKpMTLMaA">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoczA0jmeyLXD-wzu9YV1pmO7CBfXA">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjegPiiVlJACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKojFsocgaro5jn8ke7RccuOnQy71ZQ">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjeimbYoQ5ACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoinsUOBOzHm3RleqtXBlQFlrRDrMA">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjegPiiVnlQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKolWRw9DuJQfFAu6OvNTV6YE6Nei2g">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjeimbYoTVQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKonFwXIWnmXJO8HdKVLFZeXHeVhJrg">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">7</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -896,7 +914,7 @@
 
 
 <div class="u-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
-
+    
 
 <div id="j470773221814174417" class="g-full-size-post c-post o-f">
     <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://www.drive2.ru/l/470773221814174417/">
@@ -966,17 +984,21 @@
                 <h3 class="x-header">
                     Запчасти KIA — это РОССКО
                 </h3>
-                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>ROSSKO</span></a>
+                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>РОССКО</span></a>
                     <button class="r-button-unstyled u-extended-area u-icon-hover rossko-dots" data-action="menu.show">
                         <div class="m-icon c-icon i-dots"></div>
                     </button>
                     <div hidden>
                         <header>Реклама</header>
-                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAQ/">Информация о рекламе</a>
+                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAg/">Информация о рекламе</a>
                     </div>
             </div>
-            <p>Та самая запчасть в наличии <span>сегодня</span></p>
-            <a class="rossko-button c-button c-button--primary c-button--standard c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
+            <ul>
+                <li>Без контрафакта <span>Прямые контракты с брендами</span></li>
+                <li>1,5 млн. наименований <span>запчастей в ассортименте</span></li>
+                <li>Быстрая доставка <span>От 30 минут</span></li>
+            </ul>
+            <a class="rossko-button c-button c-button--primary c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
                 Купить в РОССКО
             </a>
         </div>
@@ -993,8 +1015,6 @@
                     </a>
                     <div class="c-user-mcard__username">
                         <div class="c-user-mcard__group">
-                            
-
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/maklayvrn/" data-ihc-token="p/4899916394579281857" itemprop="url"><span itemprop="name">Maklayvrn</span></a>
                         </div>
 
@@ -1005,7 +1025,7 @@
         </div>
                             <div class="c-post__body js-gallery o-f">
                 <div class="c-link-decorated" itemprop="articleBody">
-<p>Вроде бы давно избитая тема о том, что ключ в положение старта, все работает, а сигнал на стартер не уходит. Зимой в стоящей заледенелой незаведенной машине, движения руки ниже руля вводили в ступор не только прохожих… Достала меня изрядно такая утренняя &quot;зарядка&quot;<br />Ну что же… начал искать свою контакную группу. Тока сначала пошел и разобрал пластик посмотреть что за замок и какая КГ. Посмотрел и пошел бороздить просторы сети. Нашел и приуныл… сама КГ (<a href="https://www.drive2.ru/parts/kia-hyundai/0k2bw66154/B9bkAEAHGiU" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEAHGiU" data-track="AjIBRE1NVAjegPiiUoGwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6UVow2AN98WnKt4PWd43NNsHKzgA" data-ym-target="parts_from_text">0k2BW66154</a>) стоила дороже всего замка в сборе (<a href="https://www.drive2.ru/parts/kia-hyundai/0k08h76990a/CUuVgEAAW3g" class="c-link c-link--text u-bold" data-ihc-token="cp/CUuVgEAAW3g" data-track="AjIBRE1NVAjegPiiUoGwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6UVow2AN98WnKt4PWd43NNsHKzgA" data-ym-target="parts_from_text">0k08h76990a</a>)</p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/e1fcb51s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1080,1920" style="--ar:960/1707; --height:1707px;" rel="noopener" target="_blank"><x-img title="КГ старая" style="--ar: 960/1707; --color: #8d8079;" width="960" height="1707"><img alt="КГ старая — KIA Sportage (1G)" src="https://a.d-cd.net/e1fcb51s-960.jpg" width="960" height="1707" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">КГ старая</figcaption></figure><p>Ну что же, заказал замок в сборе.<br />Менять целиком замок не тянуло в принципе. Поэтому когда приехал новый замок, сразу снял с него КГ и поехал в гараж. С заменой одного на другое проблем никаких — мелкую отвертку под крест, положение рулевой колонки максимально вниз, винт крепящий выключатель зажигания выкрычиваем, вытаскиваем на свет божий старую КГ, отключаем ниже коннектор, подключаем новую в обратном порядке.<br />Радостно, машина стартует с легкого поворота…ура…<br />Ура, сука, было недолгим…<br />Ну не хочу я менять замок хоть убейте — у меня и так связка ключей огромная, а тут еще и от дверей один от зажигания другой…<br />Знакомые симптомы появились несколько дней назад. Знакомая дорога — дом (шуруповерт)-гараж. Разобрал. Достал КГ наружу. Начал крутить отверткой — заводится без проблем. Ничего не понял. Пока шатался по гаражу в поисках решения проблемы вытащил ключ из замка… сел перед замком, сижу смотрю на него, дай, думаю заведу… и опа — не завелась. Нет ключа в замке заводиться не хочет. Забавно. Вставил ключ — завелась, но не сразу. Ага. беру я новый замок и давай его сравнивать со старым — все одинаково, кроме одного датчика- толи подсветки гнезда толи иммобилайзера, у меня такого не оказалось. Открутил я со старого замка контроллер, не знаю как называется, как я понял отвечает за наличие ключа в замке (другого объяснения я ему не нашел), и снова молчок при старте. Разобрал его, видны подгоревшие следы.</p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/dc5cb51s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1080,1920" style="--ar:960/1707; --height:1707px;" rel="noopener" target="_blank"><x-img title="Старый замок на колонке" style="--ar: 960/1707; --color: #898c8b;" width="960" height="1707"><img alt="Старый замок на колонке — KIA Sportage (1G)" src="https://a.d-cd.net/dc5cb51s-960.jpg" width="960" height="1707" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Старый замок на колонке</figcaption></figure><p>
+<p>Вроде бы давно избитая тема о том, что ключ в положение старта, все работает, а сигнал на стартер не уходит. Зимой в стоящей заледенелой незаведенной машине, движения руки ниже руля вводили в ступор не только прохожих… Достала меня изрядно такая утренняя &quot;зарядка&quot;<br />Ну что же… начал искать свою контакную группу. Тока сначала пошел и разобрал пластик посмотреть что за замок и какая КГ. Посмотрел и пошел бороздить просторы сети. Нашел и приуныл… сама КГ (<a href="https://www.drive2.ru/parts/kia-hyundai/0k2bw66154/B9bkAEAHGiU" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEAHGiU" data-track="AjIBRE1NVAjeimbYnT2wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6NxlscNrLnSbXRZUE3LEPIQ5dS7A" data-ym-target="parts_from_text">0k2BW66154</a>) стоила дороже всего замка в сборе (<a href="https://www.drive2.ru/parts/kia-hyundai/0k08h76990a/CUuVgEAAW3g" class="c-link c-link--text u-bold" data-ihc-token="cp/CUuVgEAAW3g" data-track="AjIBRE1NVAjeimbYnT2wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6NxlscNrLnSbXRZUE3LEPIQ5dS7A" data-ym-target="parts_from_text">0k08h76990a</a>)</p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/e1fcb51s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1080,1920" style="--ar:960/1707; --height:1707px;" rel="noopener" target="_blank"><x-img title="КГ старая" style="--ar: 960/1707; --color: #8d8079;" width="960" height="1707"><img alt="КГ старая — KIA Sportage (1G)" src="https://a.d-cd.net/e1fcb51s-960.jpg" width="960" height="1707" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">КГ старая</figcaption></figure><p>Ну что же, заказал замок в сборе.<br />Менять целиком замок не тянуло в принципе. Поэтому когда приехал новый замок, сразу снял с него КГ и поехал в гараж. С заменой одного на другое проблем никаких — мелкую отвертку под крест, положение рулевой колонки максимально вниз, винт крепящий выключатель зажигания выкрычиваем, вытаскиваем на свет божий старую КГ, отключаем ниже коннектор, подключаем новую в обратном порядке.<br />Радостно, машина стартует с легкого поворота…ура…<br />Ура, сука, было недолгим…<br />Ну не хочу я менять замок хоть убейте — у меня и так связка ключей огромная, а тут еще и от дверей один от зажигания другой…<br />Знакомые симптомы появились несколько дней назад. Знакомая дорога — дом (шуруповерт)-гараж. Разобрал. Достал КГ наружу. Начал крутить отверткой — заводится без проблем. Ничего не понял. Пока шатался по гаражу в поисках решения проблемы вытащил ключ из замка… сел перед замком, сижу смотрю на него, дай, думаю заведу… и опа — не завелась. Нет ключа в замке заводиться не хочет. Забавно. Вставил ключ — завелась, но не сразу. Ага. беру я новый замок и давай его сравнивать со старым — все одинаково, кроме одного датчика- толи подсветки гнезда толи иммобилайзера, у меня такого не оказалось. Открутил я со старого замка контроллер, не знаю как называется, как я понял отвечает за наличие ключа в замке (другого объяснения я ему не нашел), и снова молчок при старте. Разобрал его, видны подгоревшие следы.</p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/dc5cb51s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1080,1920" style="--ar:960/1707; --height:1707px;" rel="noopener" target="_blank"><x-img title="Старый замок на колонке" style="--ar: 960/1707; --color: #898c8b;" width="960" height="1707"><img alt="Старый замок на колонке — KIA Sportage (1G)" src="https://a.d-cd.net/dc5cb51s-960.jpg" width="960" height="1707" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Старый замок на колонке</figcaption></figure><p>
 
 </p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/955cb51s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1080,1920" style="--ar:960/1707; --height:1707px;" rel="noopener" target="_blank"><x-img title="Новый" style="--ar: 960/1707; --color: #989b9c;" width="960" height="1707"><img alt="Новый — KIA Sportage (1G)" src="https://a.d-cd.net/955cb51s-960.jpg" width="960" height="1707" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">Новый</figcaption></figure><p>
 
@@ -1025,11 +1045,7 @@
                     <div>
                             <span class="c-post-meta__item">13 апреля 2017</span>
                                                                                                             <span class="c-post-meta__item">Метки: <a class="c-link c-link--current" href="https://www.drive2.ru/experience/kia/g569/?t=165" itemprop="about">своими руками</a></span>
-                                                                    </div>
-
-                    <div>
-                        
-                    </div>
+                                            </div>
                 </div>
                 <div class="o-group o-group--justify o-f">
                     <div class="o-group o-group--l">
@@ -1061,7 +1077,7 @@
     </summary>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k2bw66154/B9bkAEAHGiU" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegPiiVPKwCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHoRrW0EndnJbd3EfGNcSCmHKly49g">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k2bw66154/B9bkAEAHGiU" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeimbYn4egCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHonHdnCzJirsdQhhr_9gwe1XQiuWw">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Концевой выключатель замка зажигания</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">0K2BW66154</span></div>
                     <div class="c-post-part__manufacturer">KIA HYUNDAI</div>
@@ -1071,7 +1087,7 @@
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k08h76990a/CUuVgEAAW3g" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegPiiVPKwCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHoRrW0EndnJbd3EfGNcSCmHKly49g">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k08h76990a/CUuVgEAAW3g" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeimbYn4egCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHonHdnCzJirsdQhhr_9gwe1XQiuWw">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Комплект 1 замок зажигания, 2 ключа</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">0K08H76990A</span></div>
                     <div class="c-post-part__manufacturer">KIA HYUNDAI</div>
@@ -1084,8 +1100,8 @@
    __run('d2.ym')('posts_with_parts');
 </script>
 
-
 </div>
+
 
 
         <div class="x-box o-f">
@@ -1094,7 +1110,7 @@
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_1481012203583458" style="min-height: calc(198px + 52px);"></div>
+        <div id="adfox_1481012203583458" style="min-height: calc(31px + 219px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1102,7 +1118,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '9853063d0aef393ebbcbf12a7ad15f1c',
+                        'eid1': '2f6ded22e592ea2b39b7b04b1200bcf1',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -1127,10 +1143,10 @@
 
 
 
-
-    <h2 style="display: none;">
-        KIA Sportage 2004, двигатель бензиновый 2.0 л, 128 л. с., полный привод, механическая коробка передач — своими руками
-    </h2>
+    
+        <h2 style="display: none;">
+            KIA Sportage 2004, двигатель бензиновый 2.0 л, 128 л. с., полный привод, механическая коробка передач — своими руками
+        </h2>
 
     <div class="u-mobile-noselect x-box x-box--legacy o-f x-box--w-label" data-slot="drom.root" data-ym-view="drom_logbook_view">
         <div class="o-group o-group--justify o-group--top">
@@ -1155,25 +1171,25 @@
             </div>
         </div>
         <div class="drom-grid" style="--cols: 4" >
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/600539109.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPiiVWfgCLeegEAABAIAANNCmLcFOuXvu-Igg3KLJV9Z7MLu">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="451"><img src="https://s11.auto.drom.ru/photo/v2/ySdgGafBI7G7224E0LMGik1O3SfE5C3qVST1Qg0A1oPCzgXVYmF8w84l1CLt3Q2EZ8xtiUj_at9KHLD6/gen600.jpg" width="600" height="451" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 1998</h4>
-                    <div class="drom-item__price">190 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/609531573.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPiiVWfgCLeegEAABAIAANNCmLcFOuXvu-Igg3KLJV9Z7MLu">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/wYwUu-HhjzJcdsADCUPBfCcKYpuosyY5gU967uPQGqVTGYbYZ1T4aY1ZRUr6deZg4XyLRNOXaGtHwg7y/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
-                    <div class="drom-item__price">250 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/843803035.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPiiVWfgCLeegEAABAIAANNCmLcFOuXvu-Igg3KLJV9Z7MLu">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/5aFk2ysWAG3XZqypxug8X5fAJIDvghI1BLXtWADy9OpLK1oCm705e_0YfqO_TCXvLOkWYqcG4IesfGmu/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/667784256.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimbYoCPgCLeegEAABAIAAI78CjgeTds5LTKmI9LY4gVEYvuj">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/BF05sdcaDQp9_QH6qTG4BX8nVTgIx0oXWhDwNrIJNuecu7X4Z-mcQ4lHt7phIKjkXtm0k3FzB5kpWqjw/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
-                    <div class="drom-item__price">230 000 ₽</div>
+                    <div class="drom-item__price">265 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/odintsovo/kia/sportage/833883194.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPiiVWfgCLeegEAABAIAANNCmLcFOuXvu-Igg3KLJV9Z7MLu">
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/750984383.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimbYoCPgCLeegEAABAIAAI78CjgeTds5LTKmI9LY4gVEYvuj">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/C1qZ8XDzL1jI2nS450Ub8X2HVtOb32pknhaR2lnYc1PNCJaaIww_Wp2UwvC8fou23Gwg3SKySryc2uVq/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
+                    <div class="drom-item__location">Москва</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2000</h4>
+                    <div class="drom-item__price">180 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/vladimir/kia/sportage/208384601.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimbYoCPgCLeegEAABAIAAI78CjgeTds5LTKmI9LY4gVEYvuj">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/Gz_weh8FSeXPApPIHH41hFLWfeGEVnASeIw_XYqxMjRcTd3G5X0u3M2B5AOE69SykSgLk6Yqsb7xERva/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                    <div class="drom-item__location">Владимир</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2005</h4>
+                    <div class="drom-item__price">380 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/odintsovo/kia/sportage/833883194.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimbYoCPgCLeegEAABAIAAI78CjgeTds5LTKmI9LY4gVEYvuj">
 <x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/yNxYS_UcM48jLI6YsSyJcG_PZleEQ_2nWbHjpMbmaSAlpEkZsEp88mMtPEz433Rtd8y9ojhaNlJHMjWQ/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
                     <div class="drom-item__location">Одинцово</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2002</h4>
@@ -1185,7 +1201,7 @@
     </div>
 
 
-        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjegPiiUXBACLi5QEAAF4IAAOiVCIomxJc3jxW9F8iO6ByW6Bks">
+        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjeimbYnAUwCLi5QEAAF4IAAMnJvb8xhg_iY4mXMFlRFifDV-9W">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -1194,7 +1210,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',                    params: {
-                        'eid1': '9853063d0aef393ebbcbf12a7ad15f1c',
+                        'eid1': '2f6ded22e592ea2b39b7b04b1200bcf1',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -1214,13 +1230,13 @@
 
         </div>
 
-    <div class="o-columns o-f">
-        <div id="comments" class="x-box">
-                    <h3 class="x-header x-header--m" id="commentstitle">
-                        Комментарии
-                            <span class="c-counter">3</span>
-                    </h3>
-                        
+        <div class="o-columns o-f">
+            <div id="comments" class="x-box">
+                        <h3 class="x-header x-header--m" id="commentstitle">
+                            Комментарии
+                                <span class="c-counter">3</span>
+                        </h3>
+                                
 <div class="c-link-decorated o-b-xl x-text">
     Войдите или зарегистрируйтесь, чтобы писать комментарии, задавать вопросы и&nbsp;участвовать в&nbsp;обсуждении.
     <div class="o-t-l o-group o-group--v">
@@ -1234,7 +1250,7 @@
 
 
 
-            <div class="c-comments o-f">
+                <div class="c-comments o-f">
 
 
     <div id="a518388672366641314" class="c-comment"
@@ -1245,8 +1261,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/andreymeshok/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #807164;" width="60" height="60"><img src="https://a.d-cd.net/2b9c494s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andreymeshok/" data-ihc-token="p/1186257" itemprop="url"><span  itemprop="name">AndreyMeshok</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andreymeshok/" data-ihc-token="p/1186257" itemprop="url"><span itemprop="name">AndreyMeshok</span></a>
 
 
 
@@ -1293,8 +1308,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/apueu/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #929f7b;" width="60" height="60"><img src="https://a.d-cd.net/1d82d81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span  itemprop="name">Apueu</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span itemprop="name">Apueu</span></a>
 
 
 
@@ -1341,8 +1355,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kuchum76/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #636770;" width="60" height="60"><img src="https://a.d-cd.net/52947a4s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span  itemprop="name">kuchum76</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span itemprop="name">kuchum76</span></a>
 
 
 
@@ -1380,16 +1393,16 @@
     </div>
 
 
-            </div>
+                </div>
 
 
 
 
-                                </div>
-            <div>
+                                            </div>
+                <div>
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_151031424031449778" style="max-height: calc(10vh + 60vh);"></div>
+        <div id="adfox_151031424031449778" style="max-height: calc(11vh + 59vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1397,7 +1410,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '9853063d0aef393ebbcbf12a7ad15f1c',
+                        'eid1': '2f6ded22e592ea2b39b7b04b1200bcf1',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',
@@ -1417,8 +1430,8 @@
 
         </div>
 
-            </div>
-    </div>
+                </div>
+        </div>
 </div>
 
 
@@ -1451,6 +1464,7 @@
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/rules/">Правила сайта</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/">Пользовательское соглашение</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/data-use/">Политика конфиденциальности</a>
+                                            <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/recommendations/">Применяются рекомендательные технологии</a>
                                         </p>
                                 </div>
                             <div class="c-footer__copyrights">

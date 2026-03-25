@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 10a59c9d4729bfd1a385f3167ef22cda -->
+<!-- X-Request-ID: a21005a4b80cdcf06befbdaf967f6c19 -->
 
 <head>
     <meta charset="utf-8">
@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://ad.mail.ru">
     <script>
         window.d2Env = Object.freeze({
-                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2h3d0FJQUFKQ3M2HBIwCLi8LW_MxqEykKM4L4gpwQ' },
+                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2gtUVFJQUFCZ2_UfE4D8NVyts46JFFSuK_4TStGJA' },
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/_api/upload?.AMIG=.AMIG',
-            requestId: '10a59c9d4729bfd1a385f3167ef22cda',
+            requestId: 'a21005a4b80cdcf06befbdaf967f6c19',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -33,9 +33,27 @@
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
         
         {
-            if (navigator.webdriver === false) {
+            {
+                const body = {
+                    webdriver: navigator?.webdriver,
+                    notChrome: !window.chrome,
+                    noPlugins: navigator?.plugins?.length === 0,
+                    oddSampleRate: false,
+                    noAvailScreen: window.screen?.availWidth === 0 || window.screen?.availHeight === 0,
+                }
+                try {
+                    const audioCtx = new AudioContext();
+                    if (audioCtx.sampleRate === 24000) body.oddSampleRate = true;
+                    audioCtx.close();
+                } catch {}
                 const ac = new AbortController();
-                fetch('/_api/vuv', { method: 'POST', body: '10a59c9d4729bfd1a385f3167ef22cda', signal: ac.signal })
+                fetch('/_api/vuv', {
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8',
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    signal: ac.signal })
                     .finally((e) => {
                         window.verificationInProgress = undefined;
                         document.dispatchEvent(new CustomEvent('verification-complete'));
@@ -46,16 +64,16 @@
         }
         
     </script>
-    <script src="../assets/js/sync-start.Jt2FpfMcIudHRv6nGJHtvtbyQpY.js"></script>
+    <script src="../assets/js/sync-start.UptCqyzjzTTavRXIb_CY4pZfF68.js"></script>
     
-    <link rel="stylesheet" href="../assets/css/d/main.x3yjlldghefGxzIMrmg51ek89mA.css">
+    <link rel="stylesheet" href="../assets/css/d/main.vzcnltE4RCshacLrElVzi1zsd90.css">
     <link rel="stylesheet" href="../assets/css/d/res.tl63HPykNqAv7UeLg2Ubh8Fr_Qs.css">
     
     <link rel="stylesheet" href="../assets/css/d/car.IyqRU4Nc3uNM5zszOrOLtoWCmes.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-YKS6ehaH.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DRDg6CPe.js">
     
-    <script type="module" src="../assets/js/ru/maina.3wj6DcI1nd_4SUpiWJ__oLuvVmk.js"></script>
+    <script type="module" src="../assets/js/ru/maina.LwqEs1dvGLYX_LxwsaKkgCHR7pU.js"></script>
     
 <script src="../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
@@ -709,7 +727,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',                    params: {
-                        'eid1': '10a59c9d4729bfd1a385f3167ef22cda',
+                        'eid1': 'a21005a4b80cdcf06befbdaf967f6c19',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -730,7 +748,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjegPmSrUSwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkIvTNY03eoKFEaZ7oj6UK-7Pko7Aw">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjeimfV--lwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJZ12cvCVr-QsfVe8UvkNcQIIeTtQ">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -750,7 +768,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F472797697598816679" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjegPmSrUSwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkRRjml9VfkPVjCsvBaBWhQdjwp14A">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F472797697598816679" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjeimfV--lwCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkSWkKUdmrX0g2cQc7yxaNdM1uz4PA">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -768,7 +786,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',                    params: {
-                        'eid1': '10a59c9d4729bfd1a385f3167ef22cda',
+                        'eid1': 'a21005a4b80cdcf06befbdaf967f6c19',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -807,25 +825,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjegPmSrPaQCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIyYPvVuKcJ3Rdo0xa3cq57S5VE6TQ">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIzkdgD_ocYCImL_nmYQgY5sVwuVzA">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjegPmSrPaQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoKJ2ynSUzgxWb3SQuWNuvfdq6_ohA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoL-2Qc42h9m9OKf7nYNj4B0Sb0FgQ">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjegPmSrPaQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoML9jCFTQ0LvF7T5LB0UAcWu-tvKw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoOVw9OYPJUfYXhWvlGD1SbDnCAGDA">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjegPmSrPaQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoRRn3jdytIE01Z038XynSkMmgpbYg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoShHFqS04bTQlzZAy1I1vBG4ccdiw">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjegPmSrR2gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoVA0Xclzc3Kcwwwx_gH9xk_A4rTaw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoXa4mAdApDy4OqVnLKak5rQkIT5lA">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjegPmSrR2gCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5Q59203nLRupWnjEBfK3WdFFdtKMQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5T5ImQTGCyHZXp3VRMwUlxO1E3zHQ">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjegPmSrR2gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKobtXQLKh3vhH6T0iJoQJ13YnlvmTg">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKob6oPbv8RqwaSGHO1pY7u9T-OcuLg">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -840,15 +858,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjegPmSrR2gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoe8wU0uiabaviBkj06TfnWBtxNP0w">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKodfEweVkJDT8kG0LZZXZjCXTsGYBA">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjegPmSrR2gCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKogB7xq0EkjSUzCZkCm9kUTAYCG-YA">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjeimfV-5tQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKog12JAPR9p5O7waIoHQ6_6La_s3ag">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjegPmSrUSwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKontcvT8bbEwuL0_Y3jJU0qkwZbKIA">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjeimfV--lwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKolNbue2E49C2NLcLKSiKJbNMHb2hA">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">7</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -910,7 +928,7 @@
 
 
 <div class="u-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
-
+    
 
 <div id="j472797697598816679" class="g-full-size-post c-post o-f">
     <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://www.drive2.ru/l/472797697598816679/">
@@ -987,17 +1005,21 @@
                 <h3 class="x-header">
                     Запчасти KIA — это РОССКО
                 </h3>
-                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>ROSSKO</span></a>
+                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>РОССКО</span></a>
                     <button class="r-button-unstyled u-extended-area u-icon-hover rossko-dots" data-action="menu.show">
                         <div class="m-icon c-icon i-dots"></div>
                     </button>
                     <div hidden>
                         <header>Реклама</header>
-                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAQ/">Информация о рекламе</a>
+                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAg/">Информация о рекламе</a>
                     </div>
             </div>
-            <p>Та самая запчасть в наличии <span>сегодня</span></p>
-            <a class="rossko-button c-button c-button--primary c-button--standard c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
+            <ul>
+                <li>Без контрафакта <span>Прямые контракты с брендами</span></li>
+                <li>1,5 млн. наименований <span>запчастей в ассортименте</span></li>
+                <li>Быстрая доставка <span>От 30 минут</span></li>
+            </ul>
+            <a class="rossko-button c-button c-button--primary c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
                 Купить в РОССКО
             </a>
         </div>
@@ -1014,8 +1036,6 @@
                     </a>
                     <div class="c-user-mcard__username">
                         <div class="c-user-mcard__group">
-                            
-
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
                         </div>
 
@@ -1042,11 +1062,7 @@
                     <div>
                             <span class="c-post-meta__item">9 мая 2017</span>
                                                                                                             <span class="c-post-meta__item">Метки: <a class="c-link c-link--current" href="https://www.drive2.ru/experience/kia/g569/?t=165" itemprop="about">своими руками</a></span>
-                                                                    </div>
-
-                    <div>
-                        
-                    </div>
+                                            </div>
                 </div>
                 <div class="o-group o-group--justify o-f">
                     <div class="o-group o-group--l">
@@ -1063,8 +1079,7 @@
 81
                             </a>
                         <repost-button   kind="cjr" token="AiMCU0xJVAAEAAaPtwBAAAGnAAAAAAAAAAAAAAAAAAAAAAAAAAAAMEPoF9NJpoBSgtqSaNXn4MUIUW2m91w"
-                                                                                                                                count="2" 
-></repost-button>
+  count="2"   ></repost-button>
                     </div>
                 </div>
         <div class="x-box-nav">
@@ -1074,8 +1089,8 @@
     </div>
 
     
-
 </div>
+
 
 
         <div class="x-box o-f">
@@ -1084,7 +1099,7 @@
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_1481012203583458" style="min-height: calc(85px + 165px);"></div>
+        <div id="adfox_1481012203583458" style="min-height: calc(26px + 224px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1092,7 +1107,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '10a59c9d4729bfd1a385f3167ef22cda',
+                        'eid1': 'a21005a4b80cdcf06befbdaf967f6c19',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -1117,10 +1132,10 @@
 
 
 
-
-    <h2 style="display: none;">
-        KIA Sportage 2000, двигатель дизельный 2.0 л, 82 л. с., полный привод, механическая коробка передач — своими руками
-    </h2>
+    
+        <h2 style="display: none;">
+            KIA Sportage 2000, двигатель дизельный 2.0 л, 82 л. с., полный привод, механическая коробка передач — своими руками
+        </h2>
 
     <div class="u-mobile-noselect x-box x-box--legacy o-f x-box--w-label" data-slot="drom.root" data-ym-view="drom_logbook_view">
         <div class="o-group o-group--justify o-group--top">
@@ -1145,29 +1160,29 @@
             </div>
         </div>
         <div class="drom-grid" style="--cols: 4" >
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/609531573.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPmSn_5ACLeegEAABAIAABUANYT92elloHziHLq_99hBdwO_">
+                <a class="drom-item" href="https://auto.drom.ru/odintsovo/kia/sportage/833883194.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimfV7vEgCLeegEAABAIAACOGyqik3xrJA3p4JISXbtTT5nHp">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/yNxYS_UcM48jLI6YsSyJcG_PZleEQ_2nWbHjpMbmaSAlpEkZsEp88mMtPEz433Rtd8y9ojhaNlJHMjWQ/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
+                    <div class="drom-item__location">Одинцово</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2002</h4>
+                    <div class="drom-item__price">570 000 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/vladimir/kia/sportage/532712847.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimfV7vEgCLeegEAABAIAACOGyqik3xrJA3p4JISXbtTT5nHp">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/4MJpKBAV_ExL9FNVWsUCQlHh9zgtS9WuxmmL5uzgTFYLo9ttiJ4bAGkG3LPUvUjzSGBLR1NO9ymAHcGS/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
+                    <div class="drom-item__location">Владимир</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 1993</h4>
+                    <div class="drom-item__price">279 999 ₽</div>
+                </a>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/609531573.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimfV7vEgCLeegEAABAIAACOGyqik3xrJA3p4JISXbtTT5nHp">
 <x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/wYwUu-HhjzJcdsADCUPBfCcKYpuosyY5gU967uPQGqVTGYbYZ1T4aY1ZRUr6deZg4XyLRNOXaGtHwg7y/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
                     <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
                     <div class="drom-item__price">250 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/843803035.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPmSn_5ACLeegEAABAIAABUANYT92elloHziHLq_99hBdwO_">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/5aFk2ysWAG3XZqypxug8X5fAJIDvghI1BLXtWADy9OpLK1oCm705e_0YfqO_TCXvLOkWYqcG4IesfGmu/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/596616897.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimfV7vEgCLeegEAABAIAACOGyqik3xrJA3p4JISXbtTT5nHp">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/zOSlpY6uokvwoQmi0hq76u4mHYQodFVEO-PJKd-CjtP6CitoRWuRsgz_uE5qLXZ_B5p1Au2cTZyStQtZ/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
-                    <div class="drom-item__price">230 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/600539109.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPmSn_5ACLeegEAABAIAABUANYT92elloHziHLq_99hBdwO_">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="451"><img src="https://s11.auto.drom.ru/photo/v2/ySdgGafBI7G7224E0LMGik1O3SfE5C3qVST1Qg0A1oPCzgXVYmF8w84l1CLt3Q2EZ8xtiUj_at9KHLD6/gen600.jpg" width="600" height="451" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 1998</h4>
-                    <div class="drom-item__price">190 000 ₽</div>
-                </a>
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/667784256.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPmSn_5ACLeegEAABAIAABUANYT92elloHziHLq_99hBdwO_">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/BF05sdcaDQp9_QH6qTG4BX8nVTgIx0oXWhDwNrIJNuecu7X4Z-mcQ4lHt7phIKjkXtm0k3FzB5kpWqjw/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
-                    <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
-                    <div class="drom-item__price">265 000 ₽</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2000</h4>
+                    <div class="drom-item__price">650 000 ₽</div>
                 </a>
         </div>
         <a class="x-box-more" href="https://auto.drom.ru/moscow/kia/sportage/generation1/?distance=200&amp;ph=1&amp;unsold=1&amp;utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click">Посмотреть ещё</a>
@@ -1175,7 +1190,7 @@
     </div>
 
 
-        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjegPmSnKLgCLi5QEAAF4IAANzNs4YlFyurKxlsRjx-5Qd2A5pE">
+        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjeimfV7DIACLi5QEAAF4IAAPF2qVr5sCFDbry6Hub_0LHI5q-p">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -1184,7 +1199,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',                    params: {
-                        'eid1': '10a59c9d4729bfd1a385f3167ef22cda',
+                        'eid1': 'a21005a4b80cdcf06befbdaf967f6c19',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -1204,13 +1219,13 @@
 
         </div>
 
-    <div class="o-columns o-f">
-        <div id="comments" class="x-box">
-                    <h3 class="x-header x-header--m" id="commentstitle">
-                        Комментарии
-                            <span class="c-counter">81</span>
-                    </h3>
-                        
+        <div class="o-columns o-f">
+            <div id="comments" class="x-box">
+                        <h3 class="x-header x-header--m" id="commentstitle">
+                            Комментарии
+                                <span class="c-counter">81</span>
+                        </h3>
+                                
 <div class="c-link-decorated o-b-xl x-text">
     Войдите или зарегистрируйтесь, чтобы писать комментарии, задавать вопросы и&nbsp;участвовать в&nbsp;обсуждении.
     <div class="o-t-l o-group o-group--v">
@@ -1220,7 +1235,7 @@
 </div>
 
 
-            <div class="c-comments o-f">
+                <div class="c-comments o-f">
 
 
     <div id="a517674539564400742" class="c-comment"
@@ -1231,8 +1246,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/bastersaint/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #a2917c;" width="60" height="60"><img src="https://a.d-cd.net/jkAAAgFdgeA-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/bastersaint/" data-ihc-token="p/2468745" itemprop="url"><span  itemprop="name">bastersaint</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/bastersaint/" data-ihc-token="p/2468745" itemprop="url"><span itemprop="name">bastersaint</span></a>
 
 
 
@@ -1278,8 +1292,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1327,8 +1340,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/savant/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b924e6u-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/savant/" data-ihc-token="p/4899916394579280317" itemprop="url"><span  itemprop="name">SAVant</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/savant/" data-ihc-token="p/4899916394579280317" itemprop="url"><span itemprop="name">SAVant</span></a>
 
 
 
@@ -1376,8 +1388,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1425,8 +1436,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/savant/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b924e6u-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/savant/" data-ihc-token="p/4899916394579280317" itemprop="url"><span  itemprop="name">SAVant</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/savant/" data-ihc-token="p/4899916394579280317" itemprop="url"><span itemprop="name">SAVant</span></a>
 
 
 
@@ -1472,8 +1482,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1521,8 +1530,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1582,8 +1590,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/savant/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/b924e6u-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/savant/" data-ihc-token="p/4899916394579280317" itemprop="url"><span  itemprop="name">SAVant</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/savant/" data-ihc-token="p/4899916394579280317" itemprop="url"><span itemprop="name">SAVant</span></a>
 
 
 
@@ -1631,8 +1638,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1680,8 +1686,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -1727,8 +1732,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1776,8 +1780,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -1825,8 +1828,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/tararik/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #56505c;" width="60" height="60"><img src="https://a.d-cd.net/4a02056s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/tararik/" data-ihc-token="p/3145750" itemprop="url"><span  itemprop="name">Tararik</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/tararik/" data-ihc-token="p/3145750" itemprop="url"><span itemprop="name">Tararik</span></a>
 
 
 
@@ -1885,8 +1887,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1934,8 +1935,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/tararik/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #56505c;" width="60" height="60"><img src="https://a.d-cd.net/4a02056s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/tararik/" data-ihc-token="p/3145750" itemprop="url"><span  itemprop="name">Tararik</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/tararik/" data-ihc-token="p/3145750" itemprop="url"><span itemprop="name">Tararik</span></a>
 
 
 
@@ -1982,8 +1982,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2031,8 +2030,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/tararik/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #56505c;" width="60" height="60"><img src="https://a.d-cd.net/4a02056s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/tararik/" data-ihc-token="p/3145750" itemprop="url"><span  itemprop="name">Tararik</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/tararik/" data-ihc-token="p/3145750" itemprop="url"><span itemprop="name">Tararik</span></a>
 
 
 
@@ -2079,8 +2077,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2128,8 +2125,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2189,8 +2185,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -2236,8 +2231,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2285,8 +2279,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -2332,8 +2325,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2381,8 +2373,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/rnt777/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #747666;" width="60" height="60"><img src="https://a.d-cd.net/f56jas-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/rnt777/" data-ihc-token="p/4062246863888195097" itemprop="url"><span  itemprop="name">rnt777</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/rnt777/" data-ihc-token="p/4062246863888195097" itemprop="url"><span itemprop="name">rnt777</span></a>
 
 
 
@@ -2441,8 +2432,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -2488,8 +2478,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/rnt777/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #747666;" width="60" height="60"><img src="https://a.d-cd.net/f56jas-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/rnt777/" data-ihc-token="p/4062246863888195097" itemprop="url"><span  itemprop="name">rnt777</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/rnt777/" data-ihc-token="p/4062246863888195097" itemprop="url"><span itemprop="name">rnt777</span></a>
 
 
 
@@ -2536,8 +2525,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -2583,8 +2571,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2644,8 +2631,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/rnt777/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #747666;" width="60" height="60"><img src="https://a.d-cd.net/f56jas-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/rnt777/" data-ihc-token="p/4062246863888195097" itemprop="url"><span  itemprop="name">rnt777</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/rnt777/" data-ihc-token="p/4062246863888195097" itemprop="url"><span itemprop="name">rnt777</span></a>
 
 
 
@@ -2694,8 +2680,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2741,8 +2726,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/somebody/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #969696;" width="60" height="60"><img src="../assets/images/default/avatar-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span  itemprop="name">somebody</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span itemprop="name">somebody</span></a>
 
 
         <div class="c-user-system">
@@ -2791,8 +2775,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2840,8 +2823,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2901,8 +2883,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2948,8 +2929,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2997,8 +2977,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3046,8 +3025,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/nzdv/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #a88c84;" width="60" height="60"><img src="https://a.d-cd.net/f90cbe1s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/nzdv/" data-ihc-token="p/2701218" itemprop="url"><span  itemprop="name">nzdv</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/nzdv/" data-ihc-token="p/2701218" itemprop="url"><span itemprop="name">nzdv</span></a>
 
 
 
@@ -3095,8 +3073,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3144,8 +3121,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3191,8 +3167,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3242,8 +3217,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3289,8 +3263,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3338,8 +3311,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3387,8 +3359,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3436,8 +3407,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3485,8 +3455,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3544,8 +3513,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3603,8 +3571,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3652,8 +3619,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -3699,8 +3665,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lubkorem/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #574d4a;" width="60" height="60"><img src="https://a.d-cd.net/34947bcs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lubkorem/" data-ihc-token="p/1981295" itemprop="url"><span  itemprop="name">Lubkorem</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lubkorem/" data-ihc-token="p/1981295" itemprop="url"><span itemprop="name">Lubkorem</span></a>
 
 
 
@@ -3748,8 +3713,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3797,8 +3761,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/pro-noob/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #6c5b42;" width="60" height="60"><img src="https://a.d-cd.net/1f63541s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/pro-noob/" data-ihc-token="p/194049" itemprop="url"><span  itemprop="name">pro-noob</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/pro-noob/" data-ihc-token="p/194049" itemprop="url"><span itemprop="name">pro-noob</span></a>
 
 
 
@@ -3847,8 +3810,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -3896,8 +3858,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kuchum76/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #636770;" width="60" height="60"><img src="https://a.d-cd.net/52947a4s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span  itemprop="name">kuchum76</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span itemprop="name">kuchum76</span></a>
 
 
 
@@ -3912,7 +3873,7 @@
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p><a href="https://www.drive2.ru/parts/mercedes/a1244630432/B9bkAEADPFI" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADPFI" data-track="AjIBRE1NVAjegPmSqelQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6g9CJ1zd3C43izw9UN5id6oPfOg4" data-ym-target="parts_from_comment">A1244630432</a> Арт детали, размер по осям в выдвинутом состоянии 570 мм, крепления более качественные можно посмотреть на уазбуке</p>
+                <p><a href="https://www.drive2.ru/parts/mercedes/a1244630432/B9bkAEADPFI" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADPFI" data-track="AjIBRE1NVAjeimfV-VFgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6HZR9sxVsFb3KFktvBniFCWi2t5o" data-ym-target="parts_from_comment">A1244630432</a> Арт детали, размер по осям в выдвинутом состоянии 570 мм, крепления более качественные можно посмотреть на уазбуке</p>
                 
                 </emoji-zoom>
             </div>
@@ -3945,8 +3906,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/korol85/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #96765d;" width="60" height="60"><img src="https://a.d-cd.net/641d91as-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/korol85/" data-ihc-token="p/72005" itemprop="url"><span  itemprop="name">Korol85</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/korol85/" data-ihc-token="p/72005" itemprop="url"><span itemprop="name">Korol85</span></a>
 
 
 
@@ -3962,7 +3922,7 @@
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p><a href="https://www.drive2.ru/parts/trucktec-automotive/0237006/Ce5nAEAAGwo" class="c-link c-link--text u-bold" data-ihc-token="cp/Ce5nAEAAGwo" data-track="AjIBRE1NVAjegPmSqjdwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6ddCwhNPBxIeu4QQKFs0kiBV7fnY" data-ym-target="parts_from_comment">0237006</a> вот еще какой есть</p>
+                <p><a href="https://www.drive2.ru/parts/trucktec-automotive/0237006/Ce5nAEAAGwo" class="c-link c-link--text u-bold" data-ihc-token="cp/Ce5nAEAAGwo" data-track="AjIBRE1NVAjeimfV-Z-ACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6cMtdTp_qBuZCB78M6m_TgxYLlEk" data-ym-target="parts_from_comment">0237006</a> вот еще какой есть</p>
                 
                 </emoji-zoom>
             </div>
@@ -3995,8 +3955,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kuchum76/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #636770;" width="60" height="60"><img src="https://a.d-cd.net/52947a4s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span  itemprop="name">kuchum76</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span itemprop="name">kuchum76</span></a>
 
 
 
@@ -4042,8 +4001,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4066,7 +4024,7 @@
                                         kuchum76
                                     </b>
                                 </p>
-                                                        <p><a href="https://www.drive2.ru/parts/mercedes/a1244630432/B9bkAEADPFI" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADPFI" data-track="AjIBRE1NVAjegPmSqoWQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6NpIGi1KGUNRsA5y6ZA6VVjFwqXU" data-ym-target="parts_from_comment">A1244630432</a> Арт детали, размер по осям в выдвинутом состоянии 570 мм, крепления более качественные можно посмотреть на уазбуке</p>
+                                                        <p><a href="https://www.drive2.ru/parts/mercedes/a1244630432/B9bkAEADPFI" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADPFI" data-track="AjIBRE1NVAjeimfV-caQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR67TU9JJkBkEEA4g2u0soTkkQprgU" data-ym-target="parts_from_comment">A1244630432</a> Арт детали, размер по осям в выдвинутом состоянии 570 мм, крепления более качественные можно посмотреть на уазбуке</p>
                             
                         </div>
                     </div>
@@ -4103,8 +4061,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kuchum76/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #636770;" width="60" height="60"><img src="https://a.d-cd.net/52947a4s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span  itemprop="name">kuchum76</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kuchum76/" data-ihc-token="p/954221" itemprop="url"><span itemprop="name">kuchum76</span></a>
 
 
 
@@ -4152,8 +4109,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4201,8 +4157,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/aveimmortal/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #606065;" width="60" height="60"><img src="https://a.d-cd.net/9ab35des-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/aveimmortal/" data-ihc-token="p/650842" itemprop="url"><span  itemprop="name">AveImmortal</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/aveimmortal/" data-ihc-token="p/650842" itemprop="url"><span itemprop="name">AveImmortal</span></a>
 
 
 
@@ -4251,8 +4206,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4300,8 +4254,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/snegkin/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #79706c;" width="60" height="60"><img src="https://a.d-cd.net/8115ae6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/snegkin/" data-ihc-token="p/1177355" itemprop="url"><span  itemprop="name">snegkin</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/snegkin/" data-ihc-token="p/1177355" itemprop="url"><span itemprop="name">snegkin</span></a>
 
 
 
@@ -4349,8 +4302,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4398,8 +4350,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4459,8 +4410,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/himon-tazovod/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #aba248;" width="60" height="60"><img src="https://a.d-cd.net/d93b1c6s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span  itemprop="name">himon-tazovod</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/himon-tazovod/" data-ihc-token="p/3036417" itemprop="url"><span itemprop="name">himon-tazovod</span></a>
 
 
 
@@ -4506,8 +4456,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/apueu/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #929f7b;" width="60" height="60"><img src="https://a.d-cd.net/1d82d81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span  itemprop="name">Apueu</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span itemprop="name">Apueu</span></a>
 
 
 
@@ -4556,8 +4505,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4605,8 +4553,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/apueu/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #929f7b;" width="60" height="60"><img src="https://a.d-cd.net/1d82d81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span  itemprop="name">Apueu</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span itemprop="name">Apueu</span></a>
 
 
 
@@ -4653,8 +4600,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4702,8 +4648,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/apueu/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #929f7b;" width="60" height="60"><img src="https://a.d-cd.net/1d82d81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span  itemprop="name">Apueu</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span itemprop="name">Apueu</span></a>
 
 
 
@@ -4750,8 +4695,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4799,8 +4743,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lubkorem/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #574d4a;" width="60" height="60"><img src="https://a.d-cd.net/34947bcs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lubkorem/" data-ihc-token="p/1981295" itemprop="url"><span  itemprop="name">Lubkorem</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lubkorem/" data-ihc-token="p/1981295" itemprop="url"><span itemprop="name">Lubkorem</span></a>
 
 
 
@@ -4848,8 +4791,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -4897,8 +4839,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lubkorem/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #574d4a;" width="60" height="60"><img src="https://a.d-cd.net/34947bcs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lubkorem/" data-ihc-token="p/1981295" itemprop="url"><span  itemprop="name">Lubkorem</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lubkorem/" data-ihc-token="p/1981295" itemprop="url"><span itemprop="name">Lubkorem</span></a>
 
 
 
@@ -4944,8 +4885,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/andruxa61rus/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/ae31b6u-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andruxa61rus/" data-ihc-token="p/288230376151758833" itemprop="url"><span  itemprop="name">andruxa61rus</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andruxa61rus/" data-ihc-token="p/288230376151758833" itemprop="url"><span itemprop="name">andruxa61rus</span></a>
 
 
 
@@ -5003,8 +4943,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/apueu/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #929f7b;" width="60" height="60"><img src="https://a.d-cd.net/1d82d81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span  itemprop="name">Apueu</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span itemprop="name">Apueu</span></a>
 
 
 
@@ -5051,8 +4990,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/andruxa61rus/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/ae31b6u-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andruxa61rus/" data-ihc-token="p/288230376151758833" itemprop="url"><span  itemprop="name">andruxa61rus</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andruxa61rus/" data-ihc-token="p/288230376151758833" itemprop="url"><span itemprop="name">andruxa61rus</span></a>
 
 
 
@@ -5098,8 +5036,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/apueu/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #929f7b;" width="60" height="60"><img src="https://a.d-cd.net/1d82d81s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span  itemprop="name">Apueu</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/apueu/" data-ihc-token="p/841119" itemprop="url"><span itemprop="name">Apueu</span></a>
 
 
 
@@ -5146,8 +5083,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/andruxa61rus/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/ae31b6u-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andruxa61rus/" data-ihc-token="p/288230376151758833" itemprop="url"><span  itemprop="name">andruxa61rus</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/andruxa61rus/" data-ihc-token="p/288230376151758833" itemprop="url"><span itemprop="name">andruxa61rus</span></a>
 
 
 
@@ -5193,8 +5129,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/lvg/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #909491;" width="60" height="60"><img src="https://a.d-cd.net/75ec0d2s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lvg/" data-ihc-token="p/288230376151894629" itemprop="url"><span  itemprop="name">LVG</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/lvg/" data-ihc-token="p/288230376151894629" itemprop="url"><span itemprop="name">LVG</span></a>
 
 
 
@@ -5242,8 +5177,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/khabar78/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #868983;" width="60" height="60"><img src="https://a.d-cd.net/51641ces-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span  itemprop="name">Khabar78</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/khabar78/" data-ihc-token="p/3163112" itemprop="url"><span itemprop="name">Khabar78</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -5283,13 +5217,13 @@
     </div>
 
 
+                </div>
+                                                    <a class="x-box-more" href="https://www.drive2.ru/l/472797697598816679?page=0#comments">Все комментарии</a>
             </div>
-                                        <a class="x-box-more" href="https://www.drive2.ru/l/472797697598816679?page=0#comments">Все комментарии</a>
-        </div>
-            <div>
+                <div>
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_151031424031449778" style="max-height: calc(61vh + 9vh);"></div>
+        <div id="adfox_151031424031449778" style="max-height: calc(66vh + 4vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -5297,7 +5231,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '10a59c9d4729bfd1a385f3167ef22cda',
+                        'eid1': 'a21005a4b80cdcf06befbdaf967f6c19',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',
@@ -5317,8 +5251,8 @@
 
         </div>
 
-            </div>
-    </div>
+                </div>
+        </div>
 </div>
 
 
@@ -5351,6 +5285,7 @@
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/rules/">Правила сайта</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/">Пользовательское соглашение</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/data-use/">Политика конфиденциальности</a>
+                                            <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/recommendations/">Применяются рекомендательные технологии</a>
                                         </p>
                                 </div>
                             <div class="c-footer__copyrights">

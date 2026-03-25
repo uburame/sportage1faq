@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="light d ru"  lang="ru" prefix="og: https://ogp.me/ns#">
-<!-- X-Request-ID: 00219914f4830d038709386201eafa72 -->
+<!-- X-Request-ID: 3df0f2d9eada0e44dc82049c415c3950 -->
 
 <head>
     <meta charset="utf-8">
@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://ad.mail.ru">
     <script>
         window.d2Env = Object.freeze({
-                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2h3d0FJQUFKQ3M2HBIwCLi8LW_MxqEykKM4L4gpwQ' },
+                        formContext: { '.FCTX': '_wfqzlwoyisNAAQLQ2gtUVFJQUFCZ2_UfE4D8NVyts46JFFSuK_4TStGJA' },
             recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
             smartCaptchaSiteKey: 'lWZhRvvzouarem9Fc6bmmrf2O45tfRfxT8fsKrFx',
             uploadUrl: 'https://upload-www.drive2.ru/_api/upload?.AMIG=.AMIG',
-            requestId: '00219914f4830d038709386201eafa72',
+            requestId: '3df0f2d9eada0e44dc82049c415c3950',
             context: 'hurricane',
             isDesktop: true,
             isMobile: false,
@@ -33,9 +33,27 @@
             && 'intersectionRatio' in window.IntersectionObserverEntry.prototype;
         
         {
-            if (navigator.webdriver === false) {
+            {
+                const body = {
+                    webdriver: navigator?.webdriver,
+                    notChrome: !window.chrome,
+                    noPlugins: navigator?.plugins?.length === 0,
+                    oddSampleRate: false,
+                    noAvailScreen: window.screen?.availWidth === 0 || window.screen?.availHeight === 0,
+                }
+                try {
+                    const audioCtx = new AudioContext();
+                    if (audioCtx.sampleRate === 24000) body.oddSampleRate = true;
+                    audioCtx.close();
+                } catch {}
                 const ac = new AbortController();
-                fetch('/_api/vuv', { method: 'POST', body: '00219914f4830d038709386201eafa72', signal: ac.signal })
+                fetch('/_api/vuv', {
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8',
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    signal: ac.signal })
                     .finally((e) => {
                         window.verificationInProgress = undefined;
                         document.dispatchEvent(new CustomEvent('verification-complete'));
@@ -46,16 +64,16 @@
         }
         
     </script>
-    <script src="../assets/js/sync-start.Jt2FpfMcIudHRv6nGJHtvtbyQpY.js"></script>
+    <script src="../assets/js/sync-start.UptCqyzjzTTavRXIb_CY4pZfF68.js"></script>
     
-    <link rel="stylesheet" href="../assets/css/d/main.x3yjlldghefGxzIMrmg51ek89mA.css">
+    <link rel="stylesheet" href="../assets/css/d/main.vzcnltE4RCshacLrElVzi1zsd90.css">
     <link rel="stylesheet" href="../assets/css/d/res.tl63HPykNqAv7UeLg2Ubh8Fr_Qs.css">
     
     <link rel="stylesheet" href="../assets/css/d/car.IyqRU4Nc3uNM5zszOrOLtoWCmes.css">
 
-    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-YKS6ehaH.js">
+    <link rel="modulepreload" href="https://www.drive2.ru/assets/js/ru/main-DRDg6CPe.js">
     
-    <script type="module" src="../assets/js/ru/maina.3wj6DcI1nd_4SUpiWJ__oLuvVmk.js"></script>
+    <script type="module" src="../assets/js/ru/maina.LwqEs1dvGLYX_LxwsaKkgCHR7pU.js"></script>
     
 <script src="../assets/js/prebid.H8BYrr2pgsYqN2DE_TmOxjCyv38.js" async></script>
 <script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
@@ -695,7 +713,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_171317619374072133',                    params: {
-                        'eid1': '00219914f4830d038709386201eafa72',
+                        'eid1': '3df0f2d9eada0e44dc82049c415c3950',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'iyew',
@@ -716,7 +734,7 @@
     <div class="c-top__container">
         
         
-<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjegPt06PWACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkKcR1sFs_BENwrw0l7j8An5DkFV6A">
+<a class="c-logo" rel="home" href="https://www.drive2.ru/" data-ym-target="menu_logo" data-track="AiIBRE1NVAjeimm7T2GQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkJp2_QRAqSkHkCPqwwHExsRs_ETtQ">
     <span>DRIVE2.RU</span>
 </a>
 
@@ -736,7 +754,7 @@
 </form>
                 </div>
                     <div class="o-group">
-                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F476874686714610192" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjegPt06PWACad0gEAABsIAAQmneMBAAAMCCamMAEAAFkQqKDR5xl8Dlpcy6RJ07h0rxC4yRQ">Войти</a>
+                        <a class="c-button" href="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2Fl%2F476874686714610192" data-ym-target="login_from_top_by_email menu_top_entry"  data-track="AiIBRE1NVAjeimm7T2GQCad0gEAABsIAAQmneMBAAAMCCamMAEAAFkS67CAv5S3ZiOvpDbVow6XoxI11Iw">Войти</a>
                         <a class="c-button" href="https://www.drive2.ru/signup/" data-ym-target="menu_top_entry">Зарегистрироваться</a>
                     </div>
 
@@ -754,7 +772,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_1480674180674',                    params: {
-                        'eid1': '00219914f4830d038709386201eafa72',
+                        'eid1': '3df0f2d9eada0e44dc82049c415c3950',
                         'pp': 'g',
                         'ps': 'nkx',
                         'p2': 'emuv',
@@ -793,25 +811,25 @@
         <nav class="c-nav-block is-active" data-slot="nav.section ">
 
             <div class="c-nav-list"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIz8SfRKwd1r_gHNhvWAhbStR5Rmqg">
+                        <a class="c-nav-block__item c-nav-block__item--caption c-nav-block__item--icon" href="https://www.drive2.ru/_api/drom/navigate"   data-ym-target="menu_drom"  data-track="AiIBRE1NVAjeimm7TxNwCad0gEAABsIAAQmneMBAAAMCCNCiQEAADIxqOZuaLCZaJPabQoN0wmFU_DQFZQ">
                             <div class="c-nav-block-icon m-basic-icon c-icon i-drom"></div>
                             <span class="u-nobr" style="letter-spacing:-.2px;"><b>Купить машину</b> на Дроме</span>                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIyE4ck9M1RlowBsnr7IhkeTEISJA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/"   data-ym-target="menu_cars"  data-track="AiIBRE1NVAjeimm7TxNwCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoIoCopIZVzBP7bYq0pP19eXkara2g">
                             
                             Машины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoNWIGNQuYYkaKysrtq_elzDdPsqNQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/experience/"   data-ym-target="menu_exp"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoMh8TNH2iPH11vU68PcDUvHx69txA">
                             
                             Бортжурналы                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoQ3LpIyPsge5QnwqH0fx6harUCvHQ">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/communities/"   data-ym-target="menu_communities"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoSIWIz7kvYF9OzjVhU4KhnZHxup2Q">
                             
                             Сообщества                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoX2YNLPEw47wsSUJP0iwh3iNYjhxA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/companies/"   data-ym-target="menu_companies"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoXIFawzIouFsZvjwFHnOw0TupUK0Q">
                             
                             Автосервисы и магазины                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5RtOHbWsvqa1csEgFvpgrREX7DeLA">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/market/"   data-ym-target="menu_market"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCPKoQEAAC5SpFBE-g3cpI2gQ9rmRXS8LkCY3EQ">
                             
                             Барахолка                        </a>
-                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKobLCPLUtQR5W4u1JIg6lu09A74Vsw">
+                        <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/featured-topics/"   data-ym-target="menu_new_featured"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoZ6q7lxdIRtObYPNYq6-I1gCPtTkw">
                             
                             Самое интересное                        </a>
                         <a class="c-nav-block__item u-bold c-nav-block__item--caption" href="https://www.drive2.ru/cars/?sort=selling"    >
@@ -826,15 +844,15 @@
                 </h3>
 
             <div class="c-nav-list"   data-id="section-2"  style="" data-slot="nav.list">
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoeOAYnJwcmaL03iy9040Us4UarNGw">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/cars/kia/sportage/g569/"   data-ym-target="menu_guest_cars"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKofBIWA2F1_7sHNTIy0umDROX2Gcvg">
                             
                             Все Sportage (1G) на DRIVE2                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjegPt06M5wCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoja7IoncPhaqUgAtFvtjdYLcysifA">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/experience/kia/g569/"   data-ym-target="menu_guest_exp"  data-track="AiIBRE1NVAjeimm7TzqACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKoja7YNwkRV4YcFy1JVJpLrmaLDfJw">
                             
                             Бортжурналы владельцев                        </a>
-                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjegPt06PWACad0gEAABsIAAQmneMBAAAMCCaeQAEAAKomYVPjKwBrFB2L4b5xyJy1M8RK-Wg">
+                        <a class="c-nav-block__item" href="https://www.drive2.ru/market/?generation=569"   data-ym-target="menu_guest_market"  data-track="AiIBRE1NVAjeimm7T2GQCad0gEAABsIAAQmneMBAAAMCCaeQAEAAKolGo1bEZPdl0oLkaBEomcy5JIk_QA">
                             
-                            Запчасти в Барахолке <span class="c-notification-bubble">7</span>                        </a>
+                            Запчасти в Барахолке <span class="c-notification-bubble">11</span>                        </a>
             </div>
         </nav>
 </fancy-scroll>
@@ -896,7 +914,7 @@
 
 
 <div class="u-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
-
+    
 
 <div id="j476874686714610192" class="g-full-size-post c-post o-f">
     <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://www.drive2.ru/l/476874686714610192/">
@@ -966,17 +984,21 @@
                 <h3 class="x-header">
                     Запчасти KIA — это РОССКО
                 </h3>
-                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>ROSSKO</span></a>
+                <a class="rossko-logo" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko"><span>РОССКО</span></a>
                     <button class="r-button-unstyled u-extended-area u-icon-hover rossko-dots" data-action="menu.show">
                         <div class="m-icon c-icon i-dots"></div>
                     </button>
                     <div hidden>
                         <header>Реклама</header>
-                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAQ/">Информация о рекламе</a>
+                        <a href="https://www.drive2.ru/ads/AAAAAAAACux1CfQNgEAAJQIAAg/">Информация о рекламе</a>
                     </div>
             </div>
-            <p>Та самая запчасть в наличии <span>сегодня</span></p>
-            <a class="rossko-button c-button c-button--primary c-button--standard c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcXHQQebhMmnBkgXttRV3E" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
+            <ul>
+                <li>Без контрафакта <span>Прямые контракты с брендами</span></li>
+                <li>1,5 млн. наименований <span>запчастей в ассортименте</span></li>
+                <li>Быстрая доставка <span>От 30 минут</span></li>
+            </ul>
+            <a class="rossko-button c-button c-button--primary c-button--alt-l" href="https://rossko.ru/?utm_source=drive2&amp;utm_medium=cpc&amp;utm_campaign=posts&amp;erid=9RCQq4g6SaPWEFAe2YfDp4t1SMEqtkqEoJdEcYuX3AV6ihWLGaR3wBqpk" rel="noopener" target="_blank" data-track="1" data-track-type="rossko">
                 Купить в РОССКО
             </a>
         </div>
@@ -993,8 +1015,6 @@
                     </a>
                     <div class="c-user-mcard__username">
                         <div class="c-user-mcard__group">
-                            
-
 <a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
                         </div>
 
@@ -1005,7 +1025,7 @@
         </div>
                             <div class="c-post__body js-gallery o-f">
                 <div class="c-link-decorated" itemprop="articleBody">
-<p>Решил перед поездкой на развал-схождение пораскручивать все регулировочные узлы. Развальные привел в порядок еще при замене пружин, а вот болты схождения на рулевых тягах не трогал. Сегодня полез. Левая сторона была раскручена, почищена, смазана графиткой и скручена без особых проблем. В правой — регулировочный болт закис в наружном наконечнике. Причем насмерть((<br />Сдернул шар с поворотного кулака, руками выкрутил наконечник вместе с болтом из ответки, зажал в тиски, и… И грел, и ломом, и молотком… Сижу, бумаю — все, попадалово на наконечники. Рядом лежит регулировочный комплект для панары, из вазовских втулок. Выкрутил болт, приложил — ОНО! Резьба М18х1.5, правая, левая, и шестигранник поболее. Вкрутил, для проверки, в наконечник который на машине остался — как там и был!<br />В общем, есиче — Сгонка рулевых тяг 2110.</p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/c9f6da9s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1440,1920" style="--ar:960/1280; --height:1280px;" rel="noopener" target="_blank"><x-img title="сгонка рул. тяг 2110 на KIA Sportage 1" style="--ar: 960/1280; --color: #8e8d8b;" width="960" height="1280"><img alt="сгонка рул. тяг 2110 на KIA Sportage 1 — KIA Sportage (1G)" src="https://a.d-cd.net/c9f6da9s-960.jpg" width="960" height="1280" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">сгонка рул. тяг 2110 на KIA Sportage 1</figcaption></figure><p>ЗЫ: А кто знает родные номера наконечников отдельно, тяг в сборе и прочей рулевой требухи?</p><p>UPD:<br />Заготовочка в справочник:<br />Рулевая тяга в сборе, левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjegPt04cmQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6cGY80erlIdlF2wqq0AmJbljpNhg" data-ym-target="parts_from_text">0K011-32270A</a> замена CTR <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjegPt04cmQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6cGY80erlIdlF2wqq0AmJbljpNhg" data-ym-target="parts_from_text">CSKK-1L</a><br />Рулевая тяга в сборе, правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjegPt04cmQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6cGY80erlIdlF2wqq0AmJbljpNhg" data-ym-target="parts_from_text">0K011-32290A</a> замена CTR <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjegPt04cmQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6cGY80erlIdlF2wqq0AmJbljpNhg" data-ym-target="parts_from_text">CSKK-1R</a><br />Наконечник левый, наружный ?<br />Наконечник левый, внутренний ?<br />Наконечник правый, наружный ?<br />Наконечник правый, внутренний ?<br />Болт-сгонка ? замена ВАЗ 2110<br />Гайки — номера похерим. Резьба М18х1.5 одна правая, одна левая на каждую тягу. На базарах навалом за дёшево.</p>                </div>
+<p>Решил перед поездкой на развал-схождение пораскручивать все регулировочные узлы. Развальные привел в порядок еще при замене пружин, а вот болты схождения на рулевых тягах не трогал. Сегодня полез. Левая сторона была раскручена, почищена, смазана графиткой и скручена без особых проблем. В правой — регулировочный болт закис в наружном наконечнике. Причем насмерть((<br />Сдернул шар с поворотного кулака, руками выкрутил наконечник вместе с болтом из ответки, зажал в тиски, и… И грел, и ломом, и молотком… Сижу, бумаю — все, попадалово на наконечники. Рядом лежит регулировочный комплект для панары, из вазовских втулок. Выкрутил болт, приложил — ОНО! Резьба М18х1.5, правая, левая, и шестигранник поболее. Вкрутил, для проверки, в наконечник который на машине остался — как там и был!<br />В общем, есиче — Сгонка рулевых тяг 2110.</p><figure class="c-post__pic c-post__pic--vertical" itemscope itemtype="https://schema.org/ImageObject"><a href="https://a.d-cd.net/c9f6da9s-1920.jpg" class="c-lightbox-anchor" data-action="lightbox.zoom" data-size="1440,1920" style="--ar:960/1280; --height:1280px;" rel="noopener" target="_blank"><x-img title="сгонка рул. тяг 2110 на KIA Sportage 1" style="--ar: 960/1280; --color: #8e8d8b;" width="960" height="1280"><img alt="сгонка рул. тяг 2110 на KIA Sportage 1 — KIA Sportage (1G)" src="https://a.d-cd.net/c9f6da9s-960.jpg" width="960" height="1280" loading="lazy" itemprop="contentUrl"></x-img></a><figcaption class="c-post__desc" itemprop="description">сгонка рул. тяг 2110 на KIA Sportage 1</figcaption></figure><p>ЗЫ: А кто знает родные номера наконечников отдельно, тяг в сборе и прочей рулевой требухи?</p><p>UPD:<br />Заготовочка в справочник:<br />Рулевая тяга в сборе, левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjeimm7RyQwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Ghteb5KQpjBV5Q46tGg61_LfZ-A" data-ym-target="parts_from_text">0K011-32270A</a> замена CTR <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjeimm7RyQwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Ghteb5KQpjBV5Q46tGg61_LfZ-A" data-ym-target="parts_from_text">CSKK-1L</a><br />Рулевая тяга в сборе, правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjeimm7RyQwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Ghteb5KQpjBV5Q46tGg61_LfZ-A" data-ym-target="parts_from_text">0K011-32290A</a> замена CTR <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjeimm7RyQwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAARd0J1i-AQAALCwkcQcBAACR6Ghteb5KQpjBV5Q46tGg61_LfZ-A" data-ym-target="parts_from_text">CSKK-1R</a><br />Наконечник левый, наружный ?<br />Наконечник левый, внутренний ?<br />Наконечник правый, наружный ?<br />Наконечник правый, внутренний ?<br />Болт-сгонка ? замена ВАЗ 2110<br />Гайки — номера похерим. Резьба М18х1.5 одна правая, одна левая на каждую тягу. На базарах навалом за дёшево.</p>                </div>
 
                 
 
@@ -1015,11 +1035,7 @@
                     <div>
                             <span class="c-post-meta__item">29 июня 2017</span>
                                                                                                             <span class="c-post-meta__item">Метки: <a class="c-link c-link--current" href="https://www.drive2.ru/experience/kia/g569/?t=165" itemprop="about">своими руками</a></span>
-                                                                    </div>
-
-                    <div>
-                        
-                    </div>
+                                            </div>
                 </div>
                 <div class="o-group o-group--justify o-f">
                     <div class="o-group o-group--l">
@@ -1051,7 +1067,7 @@
     </summary>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegPt05DqQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHpqqGnrmx1x8o5Oyzkj-u-B3G219g">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeimm7SW4gCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHo0sqI8qX_wB0esAyEz0WhrziO01w">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Наконечник рулевой тяги</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">0K01132270A</span></div>
                     <div class="c-post-part__manufacturer">KIA HYUNDAI</div>
@@ -1061,7 +1077,7 @@
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegPt05DqQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHpqqGnrmx1x8o5Oyzkj-u-B3G219g">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeimm7SW4gCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHo0sqI8qX_wB0esAyEz0WhrziO01w">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Рулевая тяга</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">CSKK1L</span></div>
                     <div class="c-post-part__manufacturer">CTR</div>
@@ -1071,7 +1087,7 @@
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegPt05DqQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHpqqGnrmx1x8o5Oyzkj-u-B3G219g">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeimm7SW4gCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHo0sqI8qX_wB0esAyEz0WhrziO01w">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Рулевая тяга</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">0K01132290A</span></div>
                     <div class="c-post-part__manufacturer">KIA HYUNDAI</div>
@@ -1081,7 +1097,7 @@
         </div>
         <div class="x-form__item" data-slot="post.part">
             <div class="x-form__body">
-                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjegPt05DqQCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHpqqGnrmx1x8o5Oyzkj-u-B3G219g">
+                <a class="c-post-part has-hover" href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" data-ym-target="parts_from_undertext" data-track="AiIBRE1NVAjeimm7SW4gCeUPAEAALokAAQnWL4BAAAsLCRxBwEAAJHo0sqI8qX_wB0esAyEz0WhrziO01w">
                     <div class="c-post-part__name"><span class="c-link c-link--current">Рулевая тяга</span></div>
                     <div class="c-post-part__code"><span class="c-link c-link--current">CSKK1R</span></div>
                     <div class="c-post-part__manufacturer">CTR</div>
@@ -1094,8 +1110,8 @@
    __run('d2.ym')('posts_with_parts');
 </script>
 
-
 </div>
+
 
 
         <div class="x-box o-f">
@@ -1104,7 +1120,7 @@
             <div class="c-dv-sns">
                 <div class="c-dv-sns__i">
 
-        <div id="adfox_1481012203583458" style="min-height: calc(164px + 86px);"></div>
+        <div id="adfox_1481012203583458" style="min-height: calc(13px + 237px);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -1112,7 +1128,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_1481012203583458',
                     params: {
-                        'eid1': '00219914f4830d038709386201eafa72',
+                        'eid1': '3df0f2d9eada0e44dc82049c415c3950',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'y',
@@ -1137,10 +1153,10 @@
 
 
 
-
-    <h2 style="display: none;">
-        KIA Sportage 2001, двигатель бензиновый 2.0 л, 127 л. с., полный привод, механическая коробка передач — своими руками
-    </h2>
+    
+        <h2 style="display: none;">
+            KIA Sportage 2001, двигатель бензиновый 2.0 л, 127 л. с., полный привод, механическая коробка передач — своими руками
+        </h2>
 
     <div class="u-mobile-noselect x-box x-box--legacy o-f x-box--w-label" data-slot="drom.root" data-ym-view="drom_logbook_view">
         <div class="o-group o-group--justify o-group--top">
@@ -1165,29 +1181,29 @@
             </div>
         </div>
         <div class="drom-grid" style="--cols: 4" >
-                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/667784256.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPt05IiwCLeegEAABAIAAD1xxdYpu70Y-fyjPXj2mrp7sUYs">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/BF05sdcaDQp9_QH6qTG4BX8nVTgIx0oXWhDwNrIJNuecu7X4Z-mcQ4lHt7phIKjkXtm0k3FzB5kpWqjw/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/609531573.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimm7SgpgCLeegEAABAIAAIuEpvY_8ccmHutrvPEAOUTJ1oyS">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/wYwUu-HhjzJcdsADCUPBfCcKYpuosyY5gU967uPQGqVTGYbYZ1T4aY1ZRUr6deZg4XyLRNOXaGtHwg7y/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
                     <div class="drom-item__location">Москва</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2001</h4>
-                    <div class="drom-item__price">265 000 ₽</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
+                    <div class="drom-item__price">250 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/orehovo-zuevo/kia/sportage/417823419.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPt05IiwCLeegEAABAIAAD1xxdYpu70Y-fyjPXj2mrp7sUYs">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/CvYbSIwkp8dNRXXiHtzN0lRhAn4SN9ee34OIO8BsyuTNJZV9t4CjTUEtJ4MhNEYUnHmduk054Nxr2FLT/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
-                    <div class="drom-item__location">Орехово-Зуево</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 1995</h4>
-                    <div class="drom-item__price">210 000 ₽</div>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/766720248.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimm7SgpgCLeegEAABAIAAIuEpvY_8ccmHutrvPEAOUTJ1oyS">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/yA-If2ldfmZGqidJ1wueNuZwHbSZwJIoYYRLOXHZWi6GwaFk7QPwBa1qeZc7A53T9LRxUpCikZwmHT_W/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                    <div class="drom-item__location">Москва</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2003</h4>
+                    <div class="drom-item__price">390 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/vladimir/kia/sportage/532712847.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPt05IiwCLeegEAABAIAAD1xxdYpu70Y-fyjPXj2mrp7sUYs">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/4MJpKBAV_ExL9FNVWsUCQlHh9zgtS9WuxmmL5uzgTFYLo9ttiJ4bAGkG3LPUvUjzSGBLR1NO9ymAHcGS/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
-                    <div class="drom-item__location">Владимир</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 1993</h4>
-                    <div class="drom-item__price">279 999 ₽</div>
+                <a class="drom-item" href="https://auto.drom.ru/moscow/kia/sportage/750984383.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimm7SgpgCLeegEAABAIAAIuEpvY_8ccmHutrvPEAOUTJ1oyS">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/C1qZ8XDzL1jI2nS450Ub8X2HVtOb32pknhaR2lnYc1PNCJaaIww_Wp2UwvC8fou23Gwg3SKySryc2uVq/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
+                    <div class="drom-item__location">Москва</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 2000</h4>
+                    <div class="drom-item__price">180 000 ₽</div>
                 </a>
-                <a class="drom-item" href="https://auto.drom.ru/odintsovo/kia/sportage/833883194.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjegPt05IiwCLeegEAABAIAAD1xxdYpu70Y-fyjPXj2mrp7sUYs">
-<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="800"><img src="https://s11.auto.drom.ru/photo/v2/yNxYS_UcM48jLI6YsSyJcG_PZleEQ_2nWbHjpMbmaSAlpEkZsEp88mMtPEz433Rtd8y9ojhaNlJHMjWQ/gen600.jpg" width="600" height="800" loading="lazy"></x-img>
-                    <div class="drom-item__location">Одинцово</div>
-                    <h4 class="drom-item__caption">Kia Sportage, 2002</h4>
-                    <div class="drom-item__price">570 000 ₽</div>
+                <a class="drom-item" href="https://auto.drom.ru/pushkino/kia/sportage/292528576.html?utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click" data-track="AhIBRE1NVAjeimm7SgpgCLeegEAABAIAAIuEpvY_8ccmHutrvPEAOUTJ1oyS">
+<x-img class="is-rounded has-darkening-hover u-vignette drom-item__pic" style="--ar: 16/9;" fit="cover" width="600" height="450"><img src="https://s11.auto.drom.ru/photo/v2/VGMZ-OJaaeG9cq_vOr9sL7Wi8opKaxSlmshJinmSZq32KKscMQA1HCnr6XHn4CGBV50egajpZNOezYGf/gen600.jpg" width="600" height="450" loading="lazy"></x-img>
+                    <div class="drom-item__location">Пушкино</div>
+                    <h4 class="drom-item__caption">Kia Sportage, 1999</h4>
+                    <div class="drom-item__price">110 000 ₽</div>
                 </a>
         </div>
         <a class="x-box-more" href="https://auto.drom.ru/moscow/kia/sportage/generation1/?distance=200&amp;ph=1&amp;unsold=1&amp;utm_source=drive2&amp;utm_medium=cpt&amp;utm_campaign=drom_00_russia_integration_desktop_media_handmade&amp;utm_content=desktop_integration_logbook&amp;erid=S4Ssbqz46iH2eGDJtKZsvraaAMLn6eMX8DpWbrbGQUhmdM6tpRNvnx" rel="noopener" target="_blank" data-ym-target="drom_logbook_click">Посмотреть ещё</a>
@@ -1195,7 +1211,7 @@
     </div>
 
 
-        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjegPt04QZACLi5QEAAF4IAADd7rxwVXMCQAnzogPjPUc2auHRR">
+        <div class="x-box x-box--mh o-f" data-track="AhIBRE1NVAjeimm7RjnQCLi5QEAAF4IAADVptuk-XdRnPuZBnTVElAR9SJuq">
 
         <div id="adfox_158704272297053743"></div>
         <script>
@@ -1204,7 +1220,7 @@
                     ownerId: 59610,
                     sequentialLoading: true,
                     containerId: 'adfox_158704272297053743',                    params: {
-                        'eid1': '00219914f4830d038709386201eafa72',
+                        'eid1': '3df0f2d9eada0e44dc82049c415c3950',
                         'pp': 'h',
                         'ps': 'nkx',
                         'p2': 'gqqu',
@@ -1224,13 +1240,13 @@
 
         </div>
 
-    <div class="o-columns o-f">
-        <div id="comments" class="x-box">
-                    <h3 class="x-header x-header--m" id="commentstitle">
-                        Комментарии
-                            <span class="c-counter">28</span>
-                    </h3>
-                        
+        <div class="o-columns o-f">
+            <div id="comments" class="x-box">
+                        <h3 class="x-header x-header--m" id="commentstitle">
+                            Комментарии
+                                <span class="c-counter">28</span>
+                        </h3>
+                                
 <div class="c-link-decorated o-b-xl x-text">
     Войдите или зарегистрируйтесь, чтобы писать комментарии, задавать вопросы и&nbsp;участвовать в&nbsp;обсуждении.
     <div class="o-t-l o-group o-group--v">
@@ -1240,7 +1256,7 @@
 </div>
 
 
-            <div class="c-comments o-f">
+                <div class="c-comments o-f">
 
 
     <div id="a476945605214601606" class="c-comment"
@@ -1251,8 +1267,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/aristarh62/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #757171;" width="60" height="60"><img src="https://a.d-cd.net/11e2694s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/aristarh62/" data-ihc-token="p/424115" itemprop="url"><span  itemprop="name">Aristarh62</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/aristarh62/" data-ihc-token="p/424115" itemprop="url"><span itemprop="name">Aristarh62</span></a>
 
 
 
@@ -1267,7 +1282,7 @@
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p>У меня вот такие есть номера.Но возможно, перепутано: внутр с внешн или лев с прав:<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132250a/B-BxAEAABVI" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVI" data-track="AjIBRE1NVAjegPt05XMQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SmnzR_k7JlhivAl9Gw1V0bFKhtE" data-ym-target="parts_from_comment">0K01132250A</a> Рулевой наконечник правой тяги внешний<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132280/B-BxAEAABVU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVU" data-track="AjIBRE1NVAjegPt05XMQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SmnzR_k7JlhivAl9Gw1V0bFKhtE" data-ym-target="parts_from_comment">0K01132280</a> правой тяги внутренний<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132230/B-BxAEAABVA" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVA" data-track="AjIBRE1NVAjegPt05XMQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SmnzR_k7JlhivAl9Gw1V0bFKhtE" data-ym-target="parts_from_comment">0K01132230</a> левой тяги внешний<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132240a/B-BxAEAABVE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVE" data-track="AjIBRE1NVAjegPt05XMQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SmnzR_k7JlhivAl9Gw1V0bFKhtE" data-ym-target="parts_from_comment">0K01132240A</a> левой тяги внутренний</p>
+                <p>У меня вот такие есть номера.Но возможно, перепутано: внутр с внешн или лев с прав:<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132250a/B-BxAEAABVI" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVI" data-track="AjIBRE1NVAjeimm7SxvQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6nUg2bTsyXcQEX7bonAezG9Rtp4A" data-ym-target="parts_from_comment">0K01132250A</a> Рулевой наконечник правой тяги внешний<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132280/B-BxAEAABVU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVU" data-track="AjIBRE1NVAjeimm7SxvQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6nUg2bTsyXcQEX7bonAezG9Rtp4A" data-ym-target="parts_from_comment">0K01132280</a> правой тяги внутренний<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132230/B-BxAEAABVA" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVA" data-track="AjIBRE1NVAjeimm7SxvQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6nUg2bTsyXcQEX7bonAezG9Rtp4A" data-ym-target="parts_from_comment">0K01132230</a> левой тяги внешний<br /><a href="https://www.drive2.ru/parts/kia-hyundai/0k01132240a/B-BxAEAABVE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-BxAEAABVE" data-track="AjIBRE1NVAjeimm7SxvQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6nUg2bTsyXcQEX7bonAezG9Rtp4A" data-ym-target="parts_from_comment">0K01132240A</a> левой тяги внутренний</p>
                 
                 </emoji-zoom>
             </div>
@@ -1298,8 +1313,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1346,8 +1360,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/nzdv/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #a88c84;" width="60" height="60"><img src="https://a.d-cd.net/f90cbe1s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/nzdv/" data-ihc-token="p/2701218" itemprop="url"><span  itemprop="name">nzdv</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/nzdv/" data-ihc-token="p/2701218" itemprop="url"><span itemprop="name">nzdv</span></a>
 
 
 
@@ -1393,8 +1406,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/somebody/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #969696;" width="60" height="60"><img src="../assets/images/default/avatar-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span  itemprop="name">somebody</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span itemprop="name">somebody</span></a>
 
 
         <div class="c-user-system">
@@ -1412,7 +1424,7 @@
         <div class="c-comment__text c-link-decorated" itemprop="text">
             <div>
                 <emoji-zoom data-slot="comment.text">
-                <p>Вот, что у меня есть, готовился к замене, но пока не покупал:<br />Рулевая тяга левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">0K01132270A</a><br />Рулевая тяга центральная <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132260a/B9bkAEADfq4" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADfq4" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">0K01132260A</a><br />Рулевая тяга правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">0K01132290A</a><br />Корончатая гайка на шаровые <a href="https://www.drive2.ru/parts/kia-hyundai/k999241201/B-ZOQEAGvUE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGvUE" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">K999241201</a><br />Шплинт на корончатую гайку шаровых <a href="https://www.drive2.ru/parts/kia-hyundai/k992213020/B-ZOQEAGu64" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGu64" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">K992213020</a><br />Рулевая тяга левая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CSKK-1L</a><br />Рулевая тяга центральная CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cckk4/B-JggEAAENc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAENc" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CCKK-4</a><br />Рулевая тяга правая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CSKK-1R</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk16l/B-JggEAAGV8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGV8" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CEKK-16L</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk17l/B-JggEAAGWM" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWM" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CEKK-17L</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk16r/B-JggEAAGWE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWE" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CEKK-16R</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk17r/B-JggEAAGWU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWU" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">CEKK-17R</a></p><p>Крестовины рулевого вала GMB <a href="https://www.drive2.ru/parts?query=ST1639" class="c-link c-link--text u-bold" data-ihc-token="cc/ST1639" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">ST1639</a></p><p>Рулевая тяга левая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110032/CKzXgEAAOO0" class="c-link c-link--text u-bold" data-ihc-token="cp/CKzXgEAAOO0" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">09110032</a><br />Рулевая тяга правая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110031/CFN-AEACIwo" class="c-link c-link--text u-bold" data-ihc-token="cp/CFN-AEACIwo" data-track="AjIBRE1NVAjegPt05g9QCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6__-4JuMHMmb2FTCO8Atxe8YgoyM" data-ym-target="parts_from_comment">09110031</a></p>
+                <p>Вот, что у меня есть, готовился к замене, но пока не покупал:<br />Рулевая тяга левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjeimm7S7gQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6eRaqPUEVtHhIyoH07NGAaWGDEXA" data-ym-target="parts_from_comment">0K01132270A</a><br />Рулевая тяга центральная <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132260a/B9bkAEADfq4" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADfq4" data-track="AjIBRE1NVAjeimm7S7gQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6eRaqPUEVtHhIyoH07NGAaWGDEXA" data-ym-target="parts_from_comment">0K01132260A</a><br />Рулевая тяга правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjeimm7S7gQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6eRaqPUEVtHhIyoH07NGAaWGDEXA" data-ym-target="parts_from_comment">0K01132290A</a><br />Корончатая гайка на шаровые <a href="https://www.drive2.ru/parts/kia-hyundai/k999241201/B-ZOQEAGvUE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGvUE" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">K999241201</a><br />Шплинт на корончатую гайку шаровых <a href="https://www.drive2.ru/parts/kia-hyundai/k992213020/B-ZOQEAGu64" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGu64" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">K992213020</a><br />Рулевая тяга левая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CSKK-1L</a><br />Рулевая тяга центральная CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cckk4/B-JggEAAENc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAENc" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CCKK-4</a><br />Рулевая тяга правая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CSKK-1R</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk16l/B-JggEAAGV8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGV8" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CEKK-16L</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk17l/B-JggEAAGWM" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWM" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CEKK-17L</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk16r/B-JggEAAGWE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWE" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CEKK-16R</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk17r/B-JggEAAGWU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWU" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">CEKK-17R</a></p><p>Крестовины рулевого вала GMB <a href="https://www.drive2.ru/parts?query=ST1639" class="c-link c-link--text u-bold" data-ihc-token="cc/ST1639" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">ST1639</a></p><p>Рулевая тяга левая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110032/CKzXgEAAOO0" class="c-link c-link--text u-bold" data-ihc-token="cp/CKzXgEAAOO0" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">09110032</a><br />Рулевая тяга правая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110031/CFN-AEACIwo" class="c-link c-link--text u-bold" data-ihc-token="cp/CFN-AEACIwo" data-track="AjIBRE1NVAjeimm7S98gCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6hBzdc6jEOe2e57XhOt84PjIj-hU" data-ym-target="parts_from_comment">09110031</a></p>
                 
                 </emoji-zoom>
             </div>
@@ -1445,8 +1457,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/somebody/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #969696;" width="60" height="60"><img src="../assets/images/default/avatar-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span  itemprop="name">somebody</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span itemprop="name">somebody</span></a>
 
 
         <div class="c-user-system">
@@ -1495,8 +1506,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/somebody/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #969696;" width="60" height="60"><img src="../assets/images/default/avatar-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span  itemprop="name">somebody</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span itemprop="name">somebody</span></a>
 
 
         <div class="c-user-system">
@@ -1545,8 +1555,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1563,7 +1572,7 @@
                     <div class="c-comment__original is-closed is-off m-icon-before u-icon-hover" data-role="comment-original">
                         <a class="u-link-area" href="https://www.drive2.ru/l/476874686714610192/#a476905747918094671"></a>
                         <div class="c-comment__original-text">
-                                                        <p>Вот, что у меня есть, готовился к замене, но пока не покупал:<br />Рулевая тяга левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">0K01132270A</a><br />Рулевая тяга центральная <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132260a/B9bkAEADfq4" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADfq4" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">0K01132260A</a><br />Рулевая тяга правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">0K01132290A</a><br />Корончатая гайка на шаровые <a href="https://www.drive2.ru/parts/kia-hyundai/k999241201/B-ZOQEAGvUE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGvUE" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">K999241201</a><br />Шплинт на корончатую гайку шаровых <a href="https://www.drive2.ru/parts/kia-hyundai/k992213020/B-ZOQEAGu64" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGu64" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">K992213020</a><br />Рулевая тяга левая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">CSKK-1L</a><br />Рулевая тяга центральная CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cckk4/B-JggEAAENc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAENc" data-track="AjIBRE1NVAjegPt05l1wCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR60MSGBie3yVXdUq3CaoL4aajZAWE" data-ym-target="parts_from_comment">CCKK-4</a><br />Рулевая тяга правая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">CSKK-1R</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk16l/B-JggEAAGV8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGV8" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">CEKK-16L</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk17l/B-JggEAAGWM" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWM" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">CEKK-17L</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk16r/B-JggEAAGWE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWE" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">CEKK-16R</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk17r/B-JggEAAGWU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWU" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">CEKK-17R</a></p><p>Крестовины рулевого вала GMB <a href="https://www.drive2.ru/parts?query=ST1639" class="c-link c-link--text u-bold" data-ihc-token="cc/ST1639" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">ST1639</a></p><p>Рулевая тяга левая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110032/CKzXgEAAOO0" class="c-link c-link--text u-bold" data-ihc-token="cp/CKzXgEAAOO0" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">09110032</a><br />Рулевая тяга правая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110031/CFN-AEACIwo" class="c-link c-link--text u-bold" data-ihc-token="cp/CFN-AEACIwo" data-track="AjIBRE1NVAjegPt05oSACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6TZeCkDCxOVYZvT86ZMDk_DXHcm0" data-ym-target="parts_from_comment">09110031</a></p>
+                                                        <p>Вот, что у меня есть, готовился к замене, но пока не покупал:<br />Рулевая тяга левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">0K01132270A</a><br />Рулевая тяга центральная <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132260a/B9bkAEADfq4" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADfq4" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">0K01132260A</a><br />Рулевая тяга правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">0K01132290A</a><br />Корончатая гайка на шаровые <a href="https://www.drive2.ru/parts/kia-hyundai/k999241201/B-ZOQEAGvUE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGvUE" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">K999241201</a><br />Шплинт на корончатую гайку шаровых <a href="https://www.drive2.ru/parts/kia-hyundai/k992213020/B-ZOQEAGu64" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGu64" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">K992213020</a><br />Рулевая тяга левая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CSKK-1L</a><br />Рулевая тяга центральная CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cckk4/B-JggEAAENc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAENc" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CCKK-4</a><br />Рулевая тяга правая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CSKK-1R</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk16l/B-JggEAAGV8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGV8" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CEKK-16L</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk17l/B-JggEAAGWM" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWM" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CEKK-17L</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk16r/B-JggEAAGWE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWE" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CEKK-16R</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk17r/B-JggEAAGWU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWU" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">CEKK-17R</a></p><p>Крестовины рулевого вала GMB <a href="https://www.drive2.ru/parts?query=ST1639" class="c-link c-link--text u-bold" data-ihc-token="cc/ST1639" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">ST1639</a></p><p>Рулевая тяга левая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110032/CKzXgEAAOO0" class="c-link c-link--text u-bold" data-ihc-token="cp/CKzXgEAAOO0" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">09110032</a><br />Рулевая тяга правая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110031/CFN-AEACIwo" class="c-link c-link--text u-bold" data-ihc-token="cp/CFN-AEACIwo" data-track="AjIBRE1NVAjeimm7TFRQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6SuoXGnmnxWXhLhkhC6DVLsWsJKA" data-ym-target="parts_from_comment">09110031</a></p>
                             
                         </div>
                     </div>
@@ -1600,8 +1609,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/somebody/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #969696;" width="60" height="60"><img src="../assets/images/default/avatar-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span  itemprop="name">somebody</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span itemprop="name">somebody</span></a>
 
 
         <div class="c-user-system">
@@ -1650,8 +1658,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1668,7 +1675,7 @@
                     <div class="c-comment__original is-closed is-off m-icon-before u-icon-hover" data-role="comment-original">
                         <a class="u-link-area" href="https://www.drive2.ru/l/476874686714610192/#a476905747918094671"></a>
                         <div class="c-comment__original-text">
-                                                        <p>Вот, что у меня есть, готовился к замене, но пока не покупал:<br />Рулевая тяга левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjegPt05quQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR62IK0IoMDNuxA4BwWDrxkVJ61COg" data-ym-target="parts_from_comment">0K01132270A</a><br />Рулевая тяга центральная <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132260a/B9bkAEADfq4" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADfq4" data-track="AjIBRE1NVAjegPt05quQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR62IK0IoMDNuxA4BwWDrxkVJ61COg" data-ym-target="parts_from_comment">0K01132260A</a><br />Рулевая тяга правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjegPt05quQCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR62IK0IoMDNuxA4BwWDrxkVJ61COg" data-ym-target="parts_from_comment">0K01132290A</a><br />Корончатая гайка на шаровые <a href="https://www.drive2.ru/parts/kia-hyundai/k999241201/B-ZOQEAGvUE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGvUE" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">K999241201</a><br />Шплинт на корончатую гайку шаровых <a href="https://www.drive2.ru/parts/kia-hyundai/k992213020/B-ZOQEAGu64" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGu64" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">K992213020</a><br />Рулевая тяга левая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CSKK-1L</a><br />Рулевая тяга центральная CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cckk4/B-JggEAAENc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAENc" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CCKK-4</a><br />Рулевая тяга правая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CSKK-1R</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk16l/B-JggEAAGV8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGV8" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CEKK-16L</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk17l/B-JggEAAGWM" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWM" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CEKK-17L</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk16r/B-JggEAAGWE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWE" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CEKK-16R</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk17r/B-JggEAAGWU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWU" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">CEKK-17R</a></p><p>Крестовины рулевого вала GMB <a href="https://www.drive2.ru/parts?query=ST1639" class="c-link c-link--text u-bold" data-ihc-token="cc/ST1639" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">ST1639</a></p><p>Рулевая тяга левая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110032/CKzXgEAAOO0" class="c-link c-link--text u-bold" data-ihc-token="cp/CKzXgEAAOO0" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">09110032</a><br />Рулевая тяга правая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110031/CFN-AEACIwo" class="c-link c-link--text u-bold" data-ihc-token="cp/CFN-AEACIwo" data-track="AjIBRE1NVAjegPt05tKgCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6Ou_031OtzViFPMg4NJdSI-htyKA" data-ym-target="parts_from_comment">09110031</a></p>
+                                                        <p>Вот, что у меня есть, готовился к замене, но пока не покупал:<br />Рулевая тяга левая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132270a/B9bkAEADu4Y" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADu4Y" data-track="AjIBRE1NVAjeimm7TKJwCdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6gOz1pWqlxBPhQYR_72URhftKj08" data-ym-target="parts_from_comment">0K01132270A</a><br />Рулевая тяга центральная <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132260a/B9bkAEADfq4" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bkAEADfq4" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">0K01132260A</a><br />Рулевая тяга правая <a href="https://www.drive2.ru/parts/kia-hyundai/0k01132290a/B9bjwEACJ0c" class="c-link c-link--text u-bold" data-ihc-token="cp/B9bjwEACJ0c" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">0K01132290A</a><br />Корончатая гайка на шаровые <a href="https://www.drive2.ru/parts/kia-hyundai/k999241201/B-ZOQEAGvUE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGvUE" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">K999241201</a><br />Шплинт на корончатую гайку шаровых <a href="https://www.drive2.ru/parts/kia-hyundai/k992213020/B-ZOQEAGu64" class="c-link c-link--text u-bold" data-ihc-token="cp/B-ZOQEAGu64" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">K992213020</a><br />Рулевая тяга левая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1l/B-JggEAASzY" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzY" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CSKK-1L</a><br />Рулевая тяга центральная CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cckk4/B-JggEAAENc" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAENc" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CCKK-4</a><br />Рулевая тяга правая CTR с гайками и шплинтами <a href="https://www.drive2.ru/parts/ctr/cskk1r/B-JggEAASzg" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAASzg" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CSKK-1R</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk16l/B-JggEAAGV8" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGV8" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CEKK-16L</a><br />Рулевой наконечник левый <a href="https://www.drive2.ru/parts/ctr/cekk17l/B-JggEAAGWM" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWM" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CEKK-17L</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk16r/B-JggEAAGWE" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWE" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CEKK-16R</a><br />Рулевой наконечник правый <a href="https://www.drive2.ru/parts/ctr/cekk17r/B-JggEAAGWU" class="c-link c-link--text u-bold" data-ihc-token="cp/B-JggEAAGWU" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">CEKK-17R</a></p><p>Крестовины рулевого вала GMB <a href="https://www.drive2.ru/parts?query=ST1639" class="c-link c-link--text u-bold" data-ihc-token="cc/ST1639" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">ST1639</a></p><p>Рулевая тяга левая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110032/CKzXgEAAOO0" class="c-link c-link--text u-bold" data-ihc-token="cp/CKzXgEAAOO0" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">09110032</a><br />Рулевая тяга правая GMB с прессмалсёнкми <a href="https://www.drive2.ru/parts/gmb/09110031/CFN-AEACIwo" class="c-link c-link--text u-bold" data-ihc-token="cp/CFN-AEACIwo" data-track="AjIBRE1NVAjeimm7TMmACdYywEAANIkAAgnWL4BAAAsKCRgdAEAAVcQJ1i-AQAALCwkcQcBAACR6m-15BOo5Zn9rDIIZp_K8YnMLwVk" data-ym-target="parts_from_comment">09110031</a></p>
                             
                         </div>
                     </div>
@@ -1705,8 +1712,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/somebody/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #969696;" width="60" height="60"><img src="../assets/images/default/avatar-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span  itemprop="name">somebody</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/somebody/" data-ihc-token="p/6917529027641082779" itemprop="url"><span itemprop="name">somebody</span></a>
 
 
         <div class="c-user-system">
@@ -1755,8 +1761,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1803,8 +1808,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/genrih4/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #332226;" width="60" height="60"><img src="https://a.d-cd.net/724ba42s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/genrih4/" data-ihc-token="p/609632" itemprop="url"><span  itemprop="name">genrih4</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/genrih4/" data-ihc-token="p/609632" itemprop="url"><span itemprop="name">genrih4</span></a>
 
 
 
@@ -1850,8 +1854,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1898,8 +1901,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -1946,8 +1948,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/valiko361/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #514f51;" width="60" height="60"><img src="https://a.d-cd.net/eca52a9s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/valiko361/" data-ihc-token="p/1059003" itemprop="url"><span  itemprop="name">valiko361</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/valiko361/" data-ihc-token="p/1059003" itemprop="url"><span itemprop="name">valiko361</span></a>
 
 
 
@@ -1993,8 +1994,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2041,8 +2041,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/valiko361/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #514f51;" width="60" height="60"><img src="https://a.d-cd.net/eca52a9s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/valiko361/" data-ihc-token="p/1059003" itemprop="url"><span  itemprop="name">valiko361</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/valiko361/" data-ihc-token="p/1059003" itemprop="url"><span itemprop="name">valiko361</span></a>
 
 
 
@@ -2088,8 +2087,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2136,8 +2134,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2183,8 +2180,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2232,8 +2228,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/vint-136/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/d6c299cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span  itemprop="name">ViNT-136</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/vint-136/" data-ihc-token="p/1957779" itemprop="url"><span itemprop="name">ViNT-136</span></a>
 
 
 
@@ -2281,8 +2276,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2329,8 +2323,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kalipco/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/69892cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kalipco/" data-ihc-token="p/1726892" itemprop="url"><span  itemprop="name">Kalipco</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kalipco/" data-ihc-token="p/1726892" itemprop="url"><span itemprop="name">Kalipco</span></a>
 
 
 
@@ -2378,8 +2371,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kalipco/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/69892cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kalipco/" data-ihc-token="p/1726892" itemprop="url"><span  itemprop="name">Kalipco</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kalipco/" data-ihc-token="p/1726892" itemprop="url"><span itemprop="name">Kalipco</span></a>
 
 
 
@@ -2439,8 +2431,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/kalipco/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/69892cs-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kalipco/" data-ihc-token="p/1726892" itemprop="url"><span  itemprop="name">Kalipco</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/kalipco/" data-ihc-token="p/1726892" itemprop="url"><span itemprop="name">Kalipco</span></a>
 
 
 
@@ -2498,8 +2489,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/yura-kia96grand/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #535b57;" width="60" height="60"><img src="https://a.d-cd.net/8f242cas-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/yura-kia96grand/" data-ihc-token="p/2767760" itemprop="url"><span  itemprop="name">Yura-kia96grand</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/yura-kia96grand/" data-ihc-token="p/2767760" itemprop="url"><span itemprop="name">Yura-kia96grand</span></a>
 
 
 
@@ -2547,8 +2537,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/eugenego/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60;" width="60" height="60"><img src="https://a.d-cd.net/4586394s-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span  itemprop="name">EugeneGO</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/eugenego/" data-ihc-token="p/1235703" itemprop="url"><span itemprop="name">EugeneGO</span></a>
 
                 <span class="c-user-mcard__label c-user-mcard__label--owner">Автор</span>
 
@@ -2595,8 +2584,7 @@
     <a class="c-user-mcard__pic" href="https://www.drive2.ru/users/yura-kia96grand/"><x-img class="has-darkening-hover u-vignette c-avatar-user" style="--ar: 60/60; --color: #535b57;" width="60" height="60"><img src="https://a.d-cd.net/8f242cas-60.jpg" width="60" height="60" loading="lazy"></x-img></a>
     <div class="c-user-mcard__username">
         <div class="c-user-mcard__group">
-<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/yura-kia96grand/" data-ihc-token="p/2767760" itemprop="url"><span  itemprop="name">Yura-kia96grand</span></a>
-
+<a class="c-link c-link--color00 c-username c-username--wrap" href="https://www.drive2.ru/users/yura-kia96grand/" data-ihc-token="p/2767760" itemprop="url"><span itemprop="name">Yura-kia96grand</span></a>
 
 
 
@@ -2634,13 +2622,13 @@
     </div>
 
 
+                </div>
+                                                    <a class="x-box-more" href="https://www.drive2.ru/l/476874686714610192?page=0#comments">Все комментарии</a>
             </div>
-                                        <a class="x-box-more" href="https://www.drive2.ru/l/476874686714610192?page=0#comments">Все комментарии</a>
-        </div>
-            <div>
+                <div>
         <div class="c-dv-side o-row o-sticky o-f">
 
-        <div id="adfox_151031424031449778" style="max-height: calc(12vh + 58vh);"></div>
+        <div id="adfox_151031424031449778" style="max-height: calc(47vh + 23vh);"></div>
         <script>
             window.yaContextCb.push(() => {
                 Ya.adfoxCode.createScroll({
@@ -2648,7 +2636,7 @@
                     sequentialLoading: true,
                     containerId: 'adfox_151031424031449778',
                     params: {
-                        'eid1': '00219914f4830d038709386201eafa72',
+                        'eid1': '3df0f2d9eada0e44dc82049c415c3950',
                         'pp': 'i',
                         'ps': 'nkx',
                         'p2': 'eifa',
@@ -2668,8 +2656,8 @@
 
         </div>
 
-            </div>
-    </div>
+                </div>
+        </div>
 </div>
 
 
@@ -2702,6 +2690,7 @@
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/rules/">Правила сайта</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/">Пользовательское соглашение</a>
                                             <a class="c-link c-link--current" href="https://www.drive2.ru/data-use/">Политика конфиденциальности</a>
+                                            <a class="c-link c-link--current" href="https://www.drive2.ru/agreement/recommendations/">Применяются рекомендательные технологии</a>
                                         </p>
                                 </div>
                             <div class="c-footer__copyrights">
